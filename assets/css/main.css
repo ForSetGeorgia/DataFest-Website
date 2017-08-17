@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'latina-ub';
+  src: url('../fonts/Latina-UltraBold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'latina-m';
+  src: url('../fonts/Latina-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'latina-l';
+  src: url('../fonts/Latina-Light.ttf') format("truetype");
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  position: relative;
+  text-align: center;
+  min-height: 100%;
+  overflow: hidden;
+  // z-index: 2;
+}
+.content .logo {
+  max-width: 416px;
+  margin: 100px 0;
+}
+.content > h1 {
+  font: 34px latina-ub;
+  color: #4f4f8e;
+  margin-bottom: 18px;
+}
+.content > h2 {
+  font: 34px latina-l;
+  color: #4f4f8e;
+  margin-bottom: 18px;
+}
+.content > p {
+  display: inline-block;
+  max-width: 600px;
+  font: 17px/32px latina-m;
+  color: #70707f;
+  margin-bottom: 72px;
+}
+.content > p span {
+  font: 16px latina-m;
+  color: #4d4d66;
+  margin: 0 5px;
+}
+
+/* ----------------------- schedule */
+
+  .schedule {
+    margin-bottom: 72px;
+  }
+  .schedule li {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: top;
+  }
+  .schedule li.day1 { }
+  .schedule li.day2 { }
+  .schedule li.day3 { }
+  .schedule li h3 {
+    display: inline-block;
+    font: 29px latina-ub;
+    color: #4f4f8e;
+    padding: 18px 40px;
+    border-radius: 40px;
+    margin-bottom: 12px;
+  }
+  .schedule li.day1 h3, .schedule li.day1 .info p { background-color: #fff9a3; }
+  .schedule li.day2 h3, .schedule li.day2 .info p { background-color: #fff068; }
+  .schedule li.day3 h3, .schedule li.day3 .info p { background-color: #ffe458; }
+
+  .schedule li .info {
+    max-width: 240px;
+  }
+  .schedule li .info h4 {
+    font: 21px latina-m;
+    color: #4f4f8e;
+    padding: 21px 56px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .schedule li.day1 .info h4 { background-color: #0fcaed; }
+  .schedule li.day2 .info h4 { background-color: #0fb9ed; }
+  .schedule li.day3 .info h4 { background-color: #0faaed; }
+  .schedule li .info p {
+    font: 13px/25px latina-m;
+    color: #4f4f8e;
+    padding: 14px 30px 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    min-height: 136px;
+  }
+
+/* ----------------------- subscribe */
+  .subscribe {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .subscribe .mc-fields-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    vertical-align: top;
+  }
+  .subscribe label {
+    font: 15px latina-m;
+    color: #70707f;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .subscribe .email {
+    font: 17px latina-m;
+    color: #70707f;
+    width: 200px;
+    /* height: 40px; */
+    padding: 17px 25px;
+    margin-right: 10px;
+    border: 1px solid #4f4f8e;
+    border-radius: 40px;
+    outline: none;
+    -webkit-transition: border .2s ease-in-out;
+    -moz-transition: border .2s ease-in-out;
+    -ms-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+  }
+  .subscribe .email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #70707f;
+  }
+  .subscribe .email::-moz-placeholder { /* Firefox 19+ */
+    color: #70707f;
+  }
+  .subscribe .email:-ms-input-placeholder { /* IE 10+ */
+    color: #70707f;
+  }
+  .subscribe .email:-moz-placeholder { /* Firefox 18- */
+    color: #70707f;
+  }
+  .subscribe .email:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4f4f8e;
+  }
+  .subscribe .email:focus::-moz-placeholder { /* Firefox 19+ */
+    color: #4f4f8e;
+  }
+  .subscribe .email:focus:-ms-input-placeholder { /* IE 10+ */
+    color: #4f4f8e;
+  }
+  .subscribe .email:focus:-moz-placeholder { /* Firefox 18- */
+    color: #4f4f8e;
+  }
+
+
+  .subscribe .button {
+    font: 20px latina-m;
+    color: #ffe458;
+    background-color: #4f4f8e;
+    /* height: 40px; */
+    padding: 16px 24px;
+    border-radius: 40px;
+    outline: none;
+    border: 0;
+  }
+  .subscribe .button:hover {
+    background-color: #ff7632;
+    color: #ffe458;
+    cursor: pointer;
+  }
+
+  /* .mc-field-group {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .mc-fields-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .input-group {
+    margin: 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .input-group ul {
+    text-align: left;
+  }
+  .input-group li {
+    margin: 0 0 15px;
+  }
+  #mc_embed_signup .mc-field-group div.mce_inline_error {
+    display: block;
+    margin: 0;
+    padding: 2px 0 0 14px;
+    background-color: transparent;
+    font: 12px main-en;
+    font-weight: normal;
+    color: #e08383;
+    text-align: left;
+  }
+  #mc_embed_signup .mc-field-group input.mce_inline_error {
+    border-color: #e08383;
+  }
+  #mce-responses {
+    display: inline-block;
+  }
+  #mce-responses .response {
+    display: block;
+    margin: 0;
+    padding: 2px 0 0 14px;
+    background-color: transparent;
+    font: 12px main-en;
+    font-weight: normal;
+    color: #e08383;
+    text-align: left;
+  }
+  #mce-responses .response a {
+    font: 12px main-en;
+  }
+ */
+
+
+/* ----------------------- facebook */
+
+  .facebook {
+    display: block;
+    font: 21px latina-m;
+    color: #4f4f8e;
+    margin-bottom: 90px;
+    text-decoration: none;
+  }
+
+/* ----------------------- partnership */
+
+  .partnership {
+    display: block;
+    font: 18px latina-m;
+    color: #8a8a9b;
+    margin-bottom: 130px;
+  }
+  .partnership b {
+    font: 22px latina-ub;
+    color: #944c68;
+  }
+  .partnership a {
+    font: 18px latina-m;
+    color: #454559;
+  }
+
+/* ----------------------- landscape */
+
+  .landscape {}
+  .landscape > a {
+    display: block;
+    font: 22px latina-ub;
+    color: #944e68;
+    margin-bottom: 36px;
+  }
+  .landscape ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .landscape ul li {
+    margin: 0 50px;
+  }
+  .landscape ul li label {
+    display: block;
+    font: 18px latina-m;
+    color: #70707f;
+    margin-bottom: 8px;
+  }
+  .landscape ul li a{
+    display: block;
+    font: 18px latina-ub;
+    color: #4f4f8e;
+    margin-bottom: 12px;
+  }
