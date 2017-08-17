@@ -20,35 +20,47 @@ html, body {
 a {
   text-decoration: none;
 }
+.hidden {
+  opacity: 0;
+}
 .app {
   position: relative;
   text-align: center;
   min-height: 100%;
   overflow: hidden;
-  // z-index: 2;
+  background: transparent url(../images/landscape.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
-.content .logo {
+.content {
+  padding: 0 10px;
+}
+.logo {
+  width: 100%;
   max-width: 416px;
-  margin: 100px 0;
+  margin: 50px 0;
 }
-.content > h1 {
+.intro {
+  opacity: 0;
+}
+.intro > h1 {
   font: 34px latina-ub;
   color: #4f4f8e;
   margin-bottom: 18px;
 }
-.content > h2 {
+.intro > h2 {
   font: 34px latina-l;
   color: #4f4f8e;
   margin-bottom: 18px;
 }
-.content > p {
+.intro > p {
   display: inline-block;
   max-width: 600px;
   font: 17px/32px latina-m;
   color: #70707f;
-  margin-bottom: 72px;
+  margin-bottom: 36px;
 }
-.content > p span {
+.intro > p span {
   font: 16px latina-m;
   color: #4d4d66;
   margin: 0 5px;
@@ -57,12 +69,14 @@ a {
 /* ----------------------- schedule */
 
   .schedule {
-    margin-bottom: 72px;
+    margin-bottom: 26px;
+    opacity: 0;
   }
   .schedule li {
     display: inline-block;
     margin: 0 15px;
     vertical-align: top;
+    margin-bottom: 20px;
   }
   .schedule li.day1 { }
   .schedule li.day2 { }
@@ -111,19 +125,20 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     vertical-align: top;
+    justify-content: center;
   }
   .subscribe label {
     font: 15px latina-m;
     color: #70707f;
-    text-align: right;
-    margin-right: 20px;
+    text-align: left;
+    margin:0 20px 10px 0;
   }
   .subscribe .email {
     font: 17px latina-m;
     color: #70707f;
     width: 200px;
-    /* height: 40px; */
-    padding: 17px 25px;
+    height: 40px;
+    padding: 6px 25px;
     margin-right: 10px;
     border: 1px solid #4f4f8e;
     border-radius: 40px;
@@ -164,8 +179,8 @@ a {
     font: 20px latina-m;
     color: #ffe458;
     background-color: #4f4f8e;
-    /* height: 40px; */
-    padding: 16px 24px;
+    height: 40px;
+    padding: 6px 25px;
     border-radius: 40px;
     outline: none;
     border: 0;
@@ -176,35 +191,12 @@ a {
     cursor: pointer;
   }
 
-  /* .mc-field-group {
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  .mc-fields-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .input-group {
-    margin: 15px 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .input-group ul {
-    text-align: left;
-  }
-  .input-group li {
-    margin: 0 0 15px;
-  }
   #mc_embed_signup .mc-field-group div.mce_inline_error {
     display: block;
     margin: 0;
-    padding: 2px 0 0 14px;
+    padding: 6px 0 0 14px;
     background-color: transparent;
-    font: 12px main-en;
-    font-weight: normal;
+    font: 14px latina-l;
     color: #e08383;
     text-align: left;
   }
@@ -213,21 +205,20 @@ a {
   }
   #mce-responses {
     display: inline-block;
+    max-width: 600px;
   }
   #mce-responses .response {
     display: block;
     margin: 0;
-    padding: 2px 0 0 14px;
+    padding: 6px 0 0 14px;
     background-color: transparent;
-    font: 12px main-en;
-    font-weight: normal;
+    font: 14px latina-l;
     color: #e08383;
     text-align: left;
   }
   #mce-responses .response a {
-    font: 12px main-en;
+    font: 14px latina-l;
   }
- */
 
 
 /* ----------------------- facebook */
@@ -236,54 +227,109 @@ a {
     display: block;
     font: 21px latina-m;
     color: #4f4f8e;
-    margin-bottom: 90px;
+    margin-bottom: 45px;
     text-decoration: none;
   }
 
 /* ----------------------- partnership */
 
-  .partnership {
+  .partnership p {
     display: block;
     font: 18px latina-m;
     color: #8a8a9b;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
   }
-  .partnership b {
+  .partnership p strong {
+    display: block;
     font: 22px latina-ub;
     color: #944c68;
+    margin-bottom: 20px;
   }
-  .partnership a {
+  .partnership p a {
     font: 18px latina-m;
     color: #454559;
   }
 
-/* ----------------------- landscape */
-
-  .landscape {}
-  .landscape > a {
+/* ----------------------- partners */
+  .partners .hashtag {
     display: block;
     font: 22px latina-ub;
     color: #944e68;
     margin-bottom: 36px;
   }
-  .landscape ul {
+  .partners ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .landscape ul li {
-    margin: 0 50px;
+  .partners ul li {
+    margin: 0 50px 10px;
   }
-  .landscape ul li label {
+  .partners ul li label {
     display: block;
     font: 18px latina-m;
     color: #70707f;
     margin-bottom: 8px;
   }
-  .landscape ul li a{
+  .partners ul li a {
     display: block;
     font: 18px latina-ub;
     color: #4f4f8e;
     margin-bottom: 12px;
+  }
+
+/* ----------------------- animation */
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeIn1, .fadeIn2, .fadeIn3, .fadeIn4 {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    animation-name: fadeIn;
+  }
+  .fadeIn2 { animation-delay: .2s; }
+  .fadeIn3 { animation-delay: .4s; }
+  .fadeIn4 { animation-delay: .7s; }
+
+/* ----------------------- media */
+
+  @media (min-width: 1200px) {
+    body {
+      background: transparent url(../images/scene.svg) no-repeat;
+      background-position-y: -100%;
+      background-position-x: 50%;
+      background-size: 90%;
+    }
+    .app {
+      background: transparent url(../images/landscape@2x.png) no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+    .logo {
+      margin: 100px 0;
+    }
+    .intro > p {
+      margin-bottom: 72px;
+    }
+    .schedule {
+      margin-bottom: 52px;
+    }
+    .subscribe label {
+      text-align: right;
+    }
+    .facebook {
+      margin-bottom: 90px;
+    }
+    .partnership p {
+      margin-bottom: 140px;
+    }
   }

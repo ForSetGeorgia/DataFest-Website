@@ -25,19 +25,22 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css?v=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/circular_progress_button_component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/progress.css?v=1.0" />
+    <script src="assets/js/modernizr.custom.js"></script>
   </head>
 
   <body>
     <div class="app">
+      <img src="assets/images/datafest.png" class="logo" />
       <div class="content">
-        <img src="assets/images/datafest.png" class="logo" />
-        <h1>14-16 November 2017</h1>
-        <h2>Tbilisi, Georgia</h2>
-        <p>
-          3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to <br /><span>Inspire</span><span> • </span><span>Share knowledge</span><span> • </span><span>Network</span><span> • </span><span>Collaborate</span>
-        </p>
-        <ul class="schedule">
+        <div class="intro fadeIn1">
+          <h1>14-16 November 2017</h1>
+          <h2>Tbilisi, Georgia</h2>
+          <p>
+            3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to <br /><span>Inspire</span><span> • </span><span>Share knowledge</span><span> • </span><span>Network</span><span> • </span><span>Collaborate</span>
+          </p>
+        </div>
+        <ul class="schedule fadeIn2">
           <li class="day1">
             <h3>Day 1</h3>
             <div class="info">
@@ -60,41 +63,46 @@
             </div>
           </li>
         </ul>
-        <div class="subscribe">
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="//twitter.us16.list-manage.com/subscribe/post?u=4c5461b661acbc0f12e0cc253&amp;id=78e226c9bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-fields-row">
-                  <label>Stay in touch to get updates about<br /> agenda and travel grants!</label>
-                  <div class="mc-field-group">
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" title="Your Email" placeholder="Your Email">
-                  </div>
-                  <div class="progress-button">
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><span>Send</span></button>
+        <div class="fadeIn3">
+          <div class="subscribe">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="//twitter.us16.list-manage.com/subscribe/post?u=4c5461b661acbc0f12e0cc253&amp;id=78e226c9bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-fields-row">
+                    <label>Stay in touch to get updates about<br /> agenda and travel grants!</label>
+                    <div class="mc-field-group">
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email">
+                    </div>
+                    <div class="progress-button">
+                      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><span>Send</span></button>
 
-                    <svg class="progress-circle" width="40" height="40"><path d="M20,2.5c9.669,0,17.5,7.831,17.5,17.5S29.669,37.5,20,37.5S2.5,29.669,2.5,20S10.331,2.5,20,2.5z"/></svg>
-                    <svg class="checkmark" width="40" height="40"><path d="M6.02,18.875l10.061,10.074 M16.081,28.949L33.98,11.051"/></svg>
-                    <svg class="cross" width="40" height="40"><path d="M20,20l-9.3-9.3"/><path d="M20,20l9.3,9.3"/><path d="M20,20l-9.3,9.3"/><path d="M20,20l9.3-9.3"/></svg>
+                      <svg class="progress-circle" width="40" height="40"><path d="M20,2.5c9.669,0,17.5,7.831,17.5,17.5S29.669,37.5,20,37.5S2.5,29.669,2.5,20S10.331,2.5,20,2.5z"/></svg>
+                      <svg class="checkmark" width="40" height="40"><path d="M6.02,18.875l10.061,10.074 M16.081,28.949L33.98,11.051"/></svg>
+                      <svg class="cross" width="40" height="40"><path d="M20,20l-9.3-9.3"/><path d="M20,20l9.3,9.3"/><path d="M20,20l-9.3,9.3"/><path d="M20,20l9.3-9.3"/></svg>
+                    </div>
                   </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c5461b661acbc0f12e0cc253_78e226c9bc" tabindex="-1" value=""></div>
                 </div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c5461b661acbc0f12e0cc253_78e226c9bc" tabindex="-1" value=""></div>
-              </div>
-            </form>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
           </div>
-          <!--End mc_embed_signup-->
+
+          <a class="facebook" href="https://www.facebook.com/DataFestTbilisi/" target="_blank">Follow us on Facebook</a>
+          <div class="partnership">
+            <p>
+              <strong>Interested in partnership?</strong>
+              Nino Macharashvili: <a href="mailto:nino@forset.ge" target="_top">nino@forset.ge</a>
+            </p>
+          </div>
         </div>
-        <a class="facebook" href="https://www.facebook.com/DataFestTbilisi/" target="_blank">Follow us on Facebook</a>
-        <p class="partnership">
-          <b>Interested in partnership?</b><br />
-          Nino Macharashvili: <a href="mailto:nino@forset.ge" target="_top">nino@forset.ge</a>
-        </p>
-        <div class="landscape">
-          <a href="" target="_blank">#DataFestTbilisi</a>
+        <div class="partners fadeIn4">
+          <div class="hashtag">#DataFestTbilisi</div>
           <ul>
             <li>
               <label>Organized by</label>
@@ -113,18 +121,17 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/mc-validate.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uiProgressButton.js"></script>
     <script>
-      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      // ga('create', 'UA-100354106-3', 'auto');
-      // ga('send', 'pageview');
-
+      ga('create', 'UA-100354106-3', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>

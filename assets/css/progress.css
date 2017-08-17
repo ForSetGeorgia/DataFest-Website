@@ -3,19 +3,17 @@
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	// width: 45%;
 	min-width: 100px;
-	margin-left: 10px;
 }
 
 /* Button style */
 .progress-button button {
 	display: block;
-	/* margin: 0 auto;
-	padding: 0;
+/* 	margin: 0 auto;
+	padding: 0; */
 	width: 100px;
 	height: 40px;
-  border: 1px solid #ad83e0;
+  /* border: 1px solid #ad83e0;
 	border-radius: 20px;
 	background: transparent;
   color: #ad83e0;
@@ -63,13 +61,12 @@
 }
 
 .progress-button svg.progress-circle path {
-	stroke: #ffdd04;
+	stroke: #ff7632;
 	stroke-width: 5;
 }
 
 .progress-button svg.checkmark path,
 .progress-button svg.cross path {
-	stroke: #fff;
 	stroke-linecap: round;
 	stroke-width: 4;
 	-webkit-transition: opacity 0.1s;
@@ -78,13 +75,15 @@
 .progress-button svg.checkmark path {
 	stroke: #6b1eca;
 }
+.progress-button svg.cross path {
+	stroke: #fff;
+}
 /* Loading, success and error effects */
 .loading.progress-button button {
 	width: 40px; /* make a circle */
 	border-width: 5px;
 	border-color: #ad83e0;
 	background-color: transparent;
-	color: #fff;
 }
 
 .loading.progress-button span {
@@ -105,8 +104,8 @@
 }
 
 .success.progress-button button {
-	border-color: #4ae9ba;
-	background-color: #4ae9ba;
+	border-color: #56db9e;
+	background-color: #56db9e;
 }
 
 .error.progress-button button {
