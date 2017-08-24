@@ -32,16 +32,28 @@
 
   <body>
     <div class="app">
+      <div id="scene">
+        <img class="circle" data-id="1" src="assets/images/a1.svg" />
+        <img class="circle" data-id="2" src="assets/images/a2.svg" />
+        <img class="circle" data-id="3" src="assets/images/a3.svg" />
+        <img class="circle" data-id="4" src="assets/images/a4.svg" />
+        <img class="circle" data-id="5" src="assets/images/a5.svg" />
+        <img class="circle" data-id="6" src="assets/images/a6.svg" />
+        <img class="circle" data-id="7" src="assets/images/a7.svg" />
+        <img class="circle" data-id="8" src="assets/images/a1.svg" />
+        <img class="circle" data-id="9" src="assets/images/a2.svg" />
+        <img class="circle" data-id="10" src="assets/images/a3.svg" />
+      </div>
       <img src="assets/images/datafest.png" class="logo" />
       <div class="content">
-        <div class="intro fadeIn1">
+        <div class="intro" data-fade-id="1">
           <h1>14-16 November 2017</h1>
           <h2>Tbilisi, Georgia</h2>
           <p>
             3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to <br /><span>Inspire</span><span> • </span><span>Share knowledge</span><span> • </span><span>Network</span><span> • </span><span>Collaborate</span>
           </p>
         </div>
-        <ul class="schedule fadeIn2">
+        <ul class="schedule" data-fade-id="2">
           <li class="day1">
             <h3>Day 1</h3>
             <div class="info">
@@ -64,7 +76,7 @@
             </div>
           </li>
         </ul>
-        <div class="fadeIn3">
+        <div class="hidden" data-fade-id="3">
           <div class="subscribe">
             <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
@@ -102,7 +114,7 @@
             </p>
           </div>
         </div>
-        <div class="partners fadeIn4">
+        <div class="partners" data-fade-id="4">
           <div class="hashtag">#DataFestTbilisi</div>
           <ul>
             <li>
@@ -122,9 +134,11 @@
         </div>
       </div>
     </div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/mc-validate.js"></script>
     <script src="assets/js/classie.js"></script>
     <script src="assets/js/uiProgressButton.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

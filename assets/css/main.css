@@ -28,17 +28,21 @@ a {
   text-align: center;
   min-height: 100%;
   overflow: hidden;
-  /*   background: transparent url(../images/landscape.png) no-repeat;
+  background: transparent url(../images/landscape.png) no-repeat;
   background-size: contain;
-  background-position: bottom; */
+  background-position: bottom;
 }
 .content {
+  position: relative;
   padding: 0 10px;
+  z-index: 1;
 }
 .logo {
+  position: relative;
   width: 100%;
   max-width: 416px;
   margin: 50px 0;
+  z-index: 1;
 }
 .intro {
   opacity: 0;
@@ -251,6 +255,9 @@ a {
   }
 
 /* ----------------------- partners */
+  .partners {
+    opacity: 0;
+  }
   .partners .hashtag {
     display: block;
     font: 22px latina-ub;
@@ -335,45 +342,68 @@ a {
   }
 
 /* ----------------------- animation */
-
-  /** Keyframes **/
-  @keyframes fallingFlake {
-    0% {
-      transform: translate(0);
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    30% {
-      transform: translate(1%, 30%);
-    }
-    50% {
-      transform: translate(-1%, 50%);
-    }
-    80% {
-      transform: translate(0%, 80%);
-    }
-    100% {
-      transform: translate(2%, 0);
-      opacity: 0;
-    }
-  }
-  /** Setup the Animations **/
-  .a1, .a2, .a3, .a4, .a5, .a6, .a7 {
+  #scene {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    -webkit-backface-visibility: hidden;
+  }
+  .circle[data-id="1"] { max-width: 28px; }
+  .circle[data-id="2"] { max-width: 20px; }
+  .circle[data-id="3"] { max-width: 60px; }
+  .circle[data-id="4"] { max-width: 35px; }
+  .circle[data-id="5"] { max-width: 40px; }
+  .circle[data-id="6"] { max-width: 38px; }
+  .circle[data-id="7"] { max-width: 41px; }
+  /** Keyframes **/
+  @keyframes fallingFlake {
+    0% {
+      transform: scale(.6);
+      opacity: 0;
+    }
+    35% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    65% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.6);
+      opacity: 0;
+    }
+  }
+  /** Setup the Animations **/
+  .circle {
+    position: absolute;
     opacity: 0;
-    animation: 40s fallingFlake infinite;
+  }
+  [data-animation="1"],
+  [data-animation="2"],
+  [data-animation="3"],
+  [data-animation="4"],
+  [data-animation="5"],
+  [data-animation="6"],
+  [data-animation="7"] {
+    -webkit-animation: 5s fallingFlake 1;
+    -moz-animation: 5s fallingFlake 1;
+    -o-animation: 5s fallingFlake 1;
+    animation: 5s fallingFlake 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
     will-change: transform, opacity;
   }
-  .a1 { animation-delay: 0s; }
-  .a2 { animation-delay: 5s; }
-  .a3 { animation-delay: 10s; }
-  .a4 { animation-delay: 15s; }
-  .a5 { animation-delay: 20s; }
-  .a6 { animation-delay: 1s; }
-  .a7 { animation-delay: 6s; }
+  [data-animation="1"] { animation-delay: 0s; }
+  [data-animation="2"] { animation-delay: 1s; }
+  [data-animation="3"] { animation-delay: 2s; }
+  [data-animation="4"] { animation-delay: 0s; }
+  [data-animation="5"] { animation-delay: 1s; }
+  [data-animation="6"] { animation-delay: 2s; }
+  [data-animation="7"] { animation-delay: 0s; }
