@@ -1,0 +1,16 @@
+{
+  "name": "datafest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ruby build.rb",
+    "watch": "nodemon -e json,html,rb --watch . --exec ruby ./build.rb"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

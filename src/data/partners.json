@@ -1,0 +1,52 @@
+{
+  "slug": "partners",
+  "title": "Partners",
+  "description": "Partners Description",
+  "items": [
+    {
+      "caption": "Organized by",
+      "entities": [
+        {
+          "name": "ForSet",
+          "description": "ForSet - lorem ipsum",
+          "logo": "partners/forset.svg"
+        },
+        {
+          "name": "DCN",
+          "description": "DCN - lorem ipsum",
+          "logo": "partners/dcn.svg"
+        }
+      ]
+    },
+    {
+      "caption": "Sponsored by",
+      "entities": [
+        {
+          "name": "ForSet",
+          "description": "ForSet - lorem ipsum",
+          "logo": "partners/forset.svg"
+        },
+        {
+          "name": "DCN",
+          "description": "DCN - lorem ipsum",
+          "logo": "partners/dcn.svg"
+        }
+      ]
+    },
+    {
+      "caption": "Community",
+      "entities": [
+        {
+          "name": "ForSet",
+          "description": "ForSet - lorem ipsum",
+          "logo": "partners/forset.svg"
+        },
+        {
+          "name": "DCN",
+          "description": "DCN - lorem ipsum",
+          "logo": "partners/dcn.svg"
+        }
+      ]
+    }
+  ]
+}
