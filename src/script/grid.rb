@@ -7,14 +7,14 @@ def grid(page, items)
   with_end = false
   items.each_with_index {|item, item_i|
     with_end = false
-    klass = item_i+1 > 6 ? " more" : ""
+    # klass = item_i+1 > 6 ? " more" : ""
     fade_id = ""
     if item_i+1 < 6 && item_i % 3 == 0
       fade_id = " data-fade-id=\"#{fade_n}\""
       fade_n += 1
     end
     html +=
-      (item_i % 3 == 0 ? "<div class=\"row#{klass}\"#{fade_id}>" : "") +
+      (item_i % 3 == 0 ? "<div class=\"row\"#{fade_id}>" : "") +
       "<div class=\"card\">" +
         "<div class=\"info\">" +
           "<div class='photo'><img src='assets/images/#{page}/#{item[:photo]}'/></div>" +
@@ -22,7 +22,7 @@ def grid(page, items)
           "<div class='position'>#{item[:position]}</div>" +
             socials(page, item) +
         "</div>" +
-        "<div class='summary fadeIn animated'>#{item[:summary]}</div>" +
+        (item.key?(:summary) ? "<div class='summary fadeIn animated'>#{item[:summary]}</div>" : "") +
       "</div>"
     if item_i % 3 == 2
       html += "</div>"
@@ -31,7 +31,7 @@ def grid(page, items)
   }
   html += "</div>" if !with_end
 
-  html += items.length > 6 ? "<div id=\"viewMore\" class=\"view-more\">View More</div>" : "<div class=\"space\"></div>"
+  # html += items.length > 6 ? "<div id=\"viewMore\" class=\"view-more\">View More</div>" : "<div class=\"space\"></div>"
 
   html += "</div>"
 end

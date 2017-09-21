@@ -63,7 +63,7 @@ def init
 
     # create partial json page
     File.open("../public/partial/#{page[:slug]}.json", "w") { |file|
-      file.write("{\"title\":\"#{page[:title]}\", \"description\":\"#{page[:description]}\", \"html\":" + content.to_json + "}")
+      file.write("{\"title\":\"#{page[:title]} | DataFest Tbilisi\", \"description\":\"#{page[:description]}\", \"html\":" + content.to_json + "}")
     }
   }
 end

@@ -4,26 +4,8 @@
   "description": "Partners Description",
   "items": [
     {
-      "slug": "organized",
-      "caption": "ORGANIZED BY",
-      "entities": [
-        {
-          "name": "ForSet",
-          "description": "ForSet - lorem ipsum",
-          "logo": "bm_logo.png",
-          "url": "www.google.com"
-        },
-        {
-          "name": "DCN",
-          "description": "DCN - lorem ipsum",
-          "logo": "gg_logo.jpg",
-          "url": "www.google.com"
-        }
-      ]
-    },
-    {
-      "slug": "sponsored",
-      "caption": "SPONSORED BY",
+      "slug": "supported",
+      "caption": "SUPPORTED BY",
       "entities": [
         {
           "name": "ForSet",
@@ -58,19 +40,19 @@
       ]
     },
     {
-      "slug": "test",
-      "caption": "TEST",
+      "slug": "organized",
+      "caption": "ORGANIZED BY",
       "entities": [
         {
           "name": "ForSet",
           "description": "ForSet - lorem ipsum",
-          "logo": "forset.svg",
+          "logo": "bm_logo.png",
           "url": "www.google.com"
         },
         {
           "name": "DCN",
           "description": "DCN - lorem ipsum",
-          "logo": "usaid_logo.jpg",
+          "logo": "gg_logo.jpg",
           "url": "www.google.com"
         }
       ]

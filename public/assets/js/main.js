@@ -40,6 +40,8 @@ $(document).ready(function() {
       })
       positions = generatePositionsArray(sw-maxWidth*sw/1745, scene.height(), maxWidth*sw/1745, 10);
       startCircleAnimation()
+
+      $app.css('left', b.width()>992 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
     }
 
     function startCircleAnimation() {
@@ -140,7 +142,7 @@ $(document).ready(function() {
     function render(page) {
       var data = pageCache[page]
       $(".content-container").html( data.html )
-      $(".app").get(0).scrollTop = 0
+      // $(".app").get(0).scrollTop = 0
       document.title = data.title
       $("meta[property='og:title']").attr('content', data.title)
       $("meta[name='description']").attr('content', data.description)
@@ -148,10 +150,25 @@ $(document).ready(function() {
       b.attr('data-page', page);
       window.history.pushState({},"", page)
       dataFadeByIds()
-      $nav.trigger('click')
+      // $nav.trigger('click')
+    }
+
+    function dataFadeByIds () {
+      $("[data-fade-id]").each(function() {
+        var $t = $(this)
+        $t.addClass("fadeIn" + $t.attr('data-fade-id'))
+        $t.removeAttr('data-fade-id')
+      })
     }
 
   // bind
+
+    var b = $('body');
+    var $app = $('.app')
+    var $nav = $('nav')
+    var pageCache = {};
+    var currentPage = b.attr('data-page');
+
     $(window).resize(function () {
       resize()
     })
@@ -159,10 +176,9 @@ $(document).ready(function() {
     $(".circle").on(animationEvent, function(){
       setCircleAnimation($(this))
     })
-    var pageCache = {};
-    var b = $('body');
-    var currentPage = b.attr('data-page');
-    var $nav = $('nav')
+
+
+
     $("nav a").on('click', function(event){
       var t = $(this)
       var page = t.attr('href')
@@ -185,65 +201,33 @@ $(document).ready(function() {
       event.stopPropagation();
     })
 
-    $(document).on('click', '#viewMore', function () {
-      var p = $(this).parent()
-      var lis = p.find('.more')
-      var ln = currentPage === 'partners' ? 1 :  2
-
-      if (lis.length <= ln) {
-        $('#viewMore').remove()
-        p.append('<div class="space"></div>')
+    $(document).on('click', 'nav', function() {
+      if(b.width() < 992) {
+        $app.animate({
+          left: $app.hasClass('toggled') ? -Math.round($nav.width())-1 : '0'
+        },
+        {
+          duration: 400,
+          easing: "easeInOutCubic"
+        });
+        $app.toggleClass('toggled')
       }
-
-      lis.each(function (i, d) {
-        if(ln-- === 0) { return false; }
-        $(d).removeClass('more');
-      })
-      lis.first().get(0).scrollIntoView(true);
-
+    })
+    var touchevent = ('ontouchstart' in window) ? 'touchstart' : ((window.DocumentTouch && document instanceof DocumentTouch) ? 'tap' : 'click');
+    $(document).on(touchevent, '[data-page="speakers"] .grid .card', function(e) {
+      $(this).toggleClass('hover')
+    })
+    $(document).on('mouseenter', '[data-page="speakers"] .grid .card', function(e) {
+      $(this).addClass('hover')
+    })
+    $(document).on('mouseleave', '[data-page="speakers"] .grid .card', function(e) {
+      $(this).removeClass('hover')
     })
 
   // init
-    setTimeout(resize, 1000);
-    function dataFadeByIds () {
-      $("[data-fade-id]").each(function() {
-        var $t = $(this)
-        $t.addClass("fadeIn" + $t.attr('data-fade-id'))
-        $t.removeAttr('data-fade-id')
-      })
-    }
-    dataFadeByIds()
-    var $app = $('.app')
-    var $nav = $('nav')
-
-
-     var touch = ('ontouchstart' in window) || window.DocumentTouch && window.document instanceof DocumentTouch || window.navigator.maxTouchPoints || window.navigator.msMaxTouchPoints ? true : false
-     if(touch) {
-      $('nav').click(function() {
-         $app.animate(
-           {
-
-             left: $app.hasClass('toggled') ? -Math.round($nav.width())-1 : '0'
-           },
-           {
-             duration: 400,
-             easing: "easeInOutCubic"
-           });
-        $app.toggleClass('toggled')
-      })
-      $('.grid .card').click(function(e) {
-        $(this).toggleClass('hover')
-      })
-     }
-     else {
-       $('.grid .card').hover(function(e) {
-         $(this).addClass('hover')
-       }, function(e) {
-         $(this).removeClass('hover')
-       })
-     }
-  if(b.width() < 992) {
-    $app.css('left', -Math.round($nav.width())-1)
-  }
-  $('.loader').remove();
+    setTimeout(function() {
+      resize()
+      dataFadeByIds()
+      $('.loader').remove()
+    }, 1000)
 })
