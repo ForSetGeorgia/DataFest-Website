@@ -832,6 +832,7 @@ a {
 /* ----------------------- grid */
   .list {
     padding: 0 30px;
+    margin-top: 60px;
   }
   .space {
     margin-bottom: 75px;
