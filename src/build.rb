@@ -10,6 +10,7 @@ require 'rubygems'
 require 'fileutils'
 require 'json'
 require './script/grid.rb'
+require './script/list.rb'
 # require 'pp'
 # require 'erb'
 # require 'unidecoder'
@@ -30,6 +31,7 @@ def init
 
   pages = ['about', 'agenda', 'speakers', 'partners', 'team'] # pages that require generation
   pages_with_grid = ['speakers', 'team'] # pages that have grid
+  pages_with_list = ['partners'] # pages that have list
 
   # for each generated page two files are generated one with full html for page first load
   # and second is json partial which will be xhr-ed by browser and inserted on request
@@ -39,8 +41,12 @@ def init
 
     content = File.read("page/#{page[:slug]}.html").chomp('')
 
+
     # if page require grid
-    content.gsub!("__#{page_slug}__", pages_with_grid.include?(page_slug) ? grid(page_slug, page[:items]) : "")
+    content.gsub!("__#{page_slug}__", grid(page_slug, page[:items])) if pages_with_grid.include?(page_slug)
+    # if page require list
+
+    content.gsub!("__#{page_slug}__", list(page_slug, page[:items])) if pages_with_list.include?(page_slug)
 
     page_html = html
         .gsub('__title__', " #{page[:title]}")
@@ -63,7 +69,3 @@ def init
 end
 
 init
-
-# social links
-# change logo size
-#https://www.uplabs.com/posts/health-score-menu-interaction

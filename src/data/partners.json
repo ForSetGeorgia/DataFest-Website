@@ -4,47 +4,74 @@
   "description": "Partners Description",
   "items": [
     {
-      "caption": "Organized by",
+      "slug": "organized",
+      "caption": "ORGANIZED BY",
       "entities": [
         {
           "name": "ForSet",
           "description": "ForSet - lorem ipsum",
-          "logo": "partners/forset.svg"
+          "logo": "bm_logo.png",
+          "url": "www.google.com"
         },
         {
           "name": "DCN",
           "description": "DCN - lorem ipsum",
-          "logo": "partners/dcn.svg"
+          "logo": "gg_logo.jpg",
+          "url": "www.google.com"
         }
       ]
     },
     {
-      "caption": "Sponsored by",
+      "slug": "sponsored",
+      "caption": "SPONSORED BY",
       "entities": [
         {
           "name": "ForSet",
           "description": "ForSet - lorem ipsum",
-          "logo": "partners/forset.svg"
+          "logo": "pin.svg",
+          "url": "www.google.com"
         },
         {
           "name": "DCN",
           "description": "DCN - lorem ipsum",
-          "logo": "partners/dcn.svg"
+          "logo": "us.svg",
+          "url": "www.google.com"
         }
       ]
     },
     {
-      "caption": "Community",
+      "slug": "community",
+      "caption": "COMMUNITY",
       "entities": [
         {
           "name": "ForSet",
           "description": "ForSet - lorem ipsum",
-          "logo": "partners/forset.svg"
+          "logo": "forset.svg",
+          "url": "www.google.com"
         },
         {
           "name": "DCN",
           "description": "DCN - lorem ipsum",
-          "logo": "partners/dcn.svg"
+          "logo": "usaid_logo.jpg",
+          "url": "www.google.com"
+        }
+      ]
+    },
+    {
+      "slug": "test",
+      "caption": "TEST",
+      "entities": [
+        {
+          "name": "ForSet",
+          "description": "ForSet - lorem ipsum",
+          "logo": "forset.svg",
+          "url": "www.google.com"
+        },
+        {
+          "name": "DCN",
+          "description": "DCN - lorem ipsum",
+          "logo": "usaid_logo.jpg",
+          "url": "www.google.com"
         }
       ]
     }

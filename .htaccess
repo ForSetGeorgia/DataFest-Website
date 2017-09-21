@@ -1,0 +1,9 @@
+DirectoryIndex about.html
+
+#turn on url rewriting
+RewriteEngine on
+
+#remove the need for .html extention
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html

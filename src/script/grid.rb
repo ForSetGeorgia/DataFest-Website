@@ -4,7 +4,9 @@ def grid(page, items)
   items = items + items + [items[0], items[1], items[2]]
   html = "<div class=\"grid\">"
   fade_n = 2
+  with_end = false
   items.each_with_index {|item, item_i|
+    with_end = false
     klass = item_i+1 > 6 ? " more" : ""
     fade_id = ""
     if item_i+1 < 6 && item_i % 3 == 0
@@ -21,14 +23,17 @@ def grid(page, items)
             socials(page, item) +
         "</div>" +
         "<div class='summary fadeIn animated'>#{item[:summary]}</div>" +
-      "</div>" +
-      (item_i % 3 == 2 ? "</div>" : "")
+      "</div>"
+    if item_i % 3 == 2
+      html += "</div>"
+      with_end = true
+    end
   }
-  html += "</div>"
+  html += "</div>" if !with_end
 
-  if items.length >= 6
-    html += "<div id=\"viewMore\" class=\"view-more\">View More</div>"
-  end
+  html += items.length > 6 ? "<div id=\"viewMore\" class=\"view-more\">View More</div>" : "<div class=\"space\"></div>"
+
+  html += "</div>"
 end
 
 def socials(page, item)
