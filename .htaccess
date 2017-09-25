@@ -1,4 +1,4 @@
-DirectoryIndex about.html
+DirectoryIndex home.html
 
 #turn on url rewriting
 RewriteEngine on

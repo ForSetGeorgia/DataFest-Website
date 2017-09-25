@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 def grid(page, items)
-  items = items + items + [items[0], items[1], items[2]]
+  items = items
   html = "<div class=\"grid\">"
   fade_n = 2
   with_end = false

@@ -42,6 +42,8 @@ $(document).ready(function() {
       startCircleAnimation()
 
       $app.css('left', b.width()>992 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
+
+      desktop = b.width() >= 992
     }
 
     function startCircleAnimation() {
@@ -141,7 +143,9 @@ $(document).ready(function() {
 
     function render(page) {
       var data = pageCache[page]
-      $(".content-container").html( data.html )
+      contentContainer.css('height', contentContainer.height())
+      contentContainer.html( data.html )
+      contentContainer.css('height', '')
       // $(".app").get(0).scrollTop = 0
       document.title = data.title
       $("meta[property='og:title']").attr('content', data.title)
@@ -161,6 +165,17 @@ $(document).ready(function() {
       })
     }
 
+    function isTouchDevice() {
+      return (
+        !!(typeof window !== 'undefined' &&
+          ('ontouchstart' in window ||
+            (window.DocumentTouch &&
+              typeof document !== 'undefined' &&
+              document instanceof window.DocumentTouch))) ||
+        !!(typeof navigator !== 'undefined' &&
+          (navigator.maxTouchPoints || navigator.msMaxTouchPoints))
+      );
+    }
   // bind
 
     var b = $('body');
@@ -168,6 +183,7 @@ $(document).ready(function() {
     var $nav = $('nav')
     var pageCache = {};
     var currentPage = b.attr('data-page');
+    var contentContainer = $('.content-container')
 
     $(window).resize(function () {
       resize()
@@ -202,7 +218,7 @@ $(document).ready(function() {
     })
 
     $(document).on('click', 'nav', function() {
-      if(b.width() < 992) {
+      if(!desktop) {
         $app.animate({
           left: $app.hasClass('toggled') ? -Math.round($nav.width())-1 : '0'
         },
@@ -213,16 +229,34 @@ $(document).ready(function() {
         $app.toggleClass('toggled')
       }
     })
-    var touchevent = ('ontouchstart' in window) ? 'touchstart' : ((window.DocumentTouch && document instanceof DocumentTouch) ? 'tap' : 'click');
-    $(document).on(touchevent, '[data-page="speakers"] .grid .card', function(e) {
-      $(this).toggleClass('hover')
-    })
-    $(document).on('mouseenter', '[data-page="speakers"] .grid .card', function(e) {
-      $(this).addClass('hover')
-    })
-    $(document).on('mouseleave', '[data-page="speakers"] .grid .card', function(e) {
-      $(this).removeClass('hover')
-    })
+
+    // console.log(isTouchDevice())
+    var selector = '[data-page="speakers"] .grid .card'
+    if (isTouchDevice()) {
+      var touchevent = ('ontouchstart' in window) ? 'touchstart' : ((window.DocumentTouch && document instanceof DocumentTouch) ? 'tap' : 'click');
+      $(document).on(touchevent, selector + ' a', function(e) { e.stopPropagation(); })
+      $(document).on(touchevent, selector, function(e) { $(this).toggleClass('hover') })
+    }
+    else {
+      $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); })
+      $(document).on('click', selector, function(e) {
+        if(!desktop) {
+          $(this).toggleClass('hover')
+        }
+      })
+      $(document).on('mouseenter', selector, function(e) {
+        if(desktop) {
+          $(this).addClass('hover')
+        }
+      })
+      $(document).on('mouseleave', selector, function(e) {
+        if(desktop) {
+          $(this).removeClass('hover')
+        }
+      })
+    }
+
+
 
   // init
     setTimeout(function() {

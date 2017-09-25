@@ -98,9 +98,6 @@ a {
     background-size: contain;
 
   }
-  #scene {
-    // z-index: 66;
-  }
   .content-container {
     // z-index: 67;
     position: relative;
@@ -190,6 +187,7 @@ a {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 5px 0px 0 10px;
+    cursor: pointer;
   }
   nav ul li.live {
     order: 2;
@@ -301,9 +299,6 @@ a {
     }
     .subscribe label {
       text-align: right;
-    }
-    .social {
-      margin-bottom: 90px;
     }
   }
 
@@ -466,14 +461,14 @@ a {
 /* ----------------------- social */
 
   .social {
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
   }
   .social label {
-    display: block;
+    display: inline-block;
     font: 21px latina-m;
     color: #4f4f8e;
     text-decoration: none;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   .social a {
     display: inline-block;
@@ -486,9 +481,9 @@ a {
     height: 16px;
     background: transparent url(../images/social.svg) no-repeat;
   }
-  .social a i.facebook { background-position: 0px -33px; }
-  .social a i.twitter { background-position: -17px -33px; }
-  .social a i.instagram { background-position: -33px -33px; }
+  .social a i.facebook { width: 24px; height: 24px; background-position: 0px -33px; }
+  .social a i.twitter { width: 24px; height: 24px; background-position: -25px -33px; }
+  .social a i.instagram { width: 24px; height: 24px; background-position: -50px -33px; }
   .social-speakers a i.facebook { background-position: 0px 0px; }
   .social-speakers a i.twitter { background-position: -17px 0px; }
   .social-speakers a i.instagram { background-position: -50px 0px; }
@@ -497,7 +492,11 @@ a {
   .social-team a i.twitter { background-position: -17px -17px; }
   .social-team a i.instagram { background-position: -50px -17px; }
   .social-team a i.linkedin { background-position: -33px -17px; }
-
+  @media (min-width: 992px) {
+    .social {
+      // margin-bottom: 90px;
+    }
+  }
 /* ----------------------- partnership */
 
 
@@ -529,37 +528,32 @@ a {
     display: block;
     font: 22px latina-ub;
     color: #944e68;
-    margin-top: 50px;
-    margin-bottom: 36px;
+    // margin-top: 50px;
+    // margin-bottom: 36px;
     text-align: center;
-  }
-  .partners ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .partners ul li {
-    margin: 0 50px 10px;
-  }
-  .partners ul li label {
-    display: block;
-    font: 18px latina-m;
-    color: #70707f;
-    margin-bottom: 8px;
-  }
-  .partners ul li a {
-    display: block;
-    font: 18px latina-ub;
-    color: #4f4f8e;
-    margin-bottom: 12px;
   }
   @media (min-width: 1200px) {
     .partners .hashtag {
-      margin-top: 140px;
+      // margin-top: 140px;
     }
   }
 
+
+/* ----------------------- footer */
+  footer {
+    margin-top: 30px;
+    margin-bottom: 36px;
+  }
+  footer > div {
+    display: inline-block;
+    margin: 20px 36px;
+    // margin-top: 50px;
+  }
+  @media (min-width: 1200px) {
+    footer {
+      margin-top: 120px;
+    }
+  }
 /* ----------------------- animation */
 
   @keyframes fadeIn {
@@ -589,6 +583,7 @@ a {
     right: 0;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
+    pointer-events: none;
   }
   .circle[data-id="1"] { max-width: 28px; }
   .circle[data-id="2"] { max-width: 20px; }
@@ -727,7 +722,7 @@ a {
     width: 100%;
     padding: 0 20px 35px;
     border: 1px solid rgba(189, 189, 189, 0.24);
-    border-top: 0;
+    border-top-color: transparent;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     z-index: 1;
@@ -739,7 +734,7 @@ a {
 
   }
   .grid .card.hover .info {
-    border-bottom: 0;
+    border-bottom-color: transparent;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -753,7 +748,7 @@ a {
     }
     .grid .row {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: start;
       align-items: stretch;
     }
@@ -768,7 +763,7 @@ a {
     .grid .row .card:first-of-type {
       margin-left: 0;
     }
-    .grid .row .card:last-of-type {
+    .grid .row .card:nth-of-type(3) {
       margin-right: 0;
     }
     .grid .card.hover .name, .grid .card.hover .position, .grid .card.hover .grid-social {
@@ -786,7 +781,7 @@ a {
       height: 100%;
       padding: 50px 27px;
       border: 1px solid rgba(189, 189, 189, 0.24);
-      border-left: 0;
+      border-left-color: transparent;
       border-radius: 12px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -804,18 +799,18 @@ a {
       border-bottom-left-radius: 12px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      border-right: 0;
+      border-right-color: transparent;
       border-bottom: 1px solid rgba(189, 189, 189, 0.24);
     }
-    .grid .row .card.hover:last-of-type .info {
+    .grid .row .card.hover:nth-of-type(3) .info {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
-      border-left: 0;
+      border-left-color: transparent;
       border-right: 1px solid rgba(189, 189, 189, 0.24);
     }
-    .grid .row .card.hover:last-of-type .summary {
+    .grid .row .card.hover:nth-of-type(3) .summary {
       position: absolute;
       top: 0;
       right: 100%;
@@ -824,7 +819,7 @@ a {
       border-bottom-right-radius: 0;
       border-top-left-radius: 12px;
       border-bottom-left-radius: 12px;
-      border-right: 0;
+      border-right-color: transparent;
       border-left: 1px solid rgba(189, 189, 189, 0.24);
     }
   }

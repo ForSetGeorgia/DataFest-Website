@@ -29,7 +29,7 @@ def init
 
   description = 'DataFest Tbilisi is the first annual international data event in South Caucasus supporting cross-sector and cross-border cooperation, strengthening communities and inspiring individuals to pursue and explore opportunities created by data and technology.'
 
-  pages = ['about', 'agenda', 'speakers', 'partners', 'team'] # pages that require generation
+  pages = ['home', 'agenda', 'speakers', 'partners', 'team'] # pages that require generation
   pages_with_grid = ['speakers', 'team'] # pages that have grid
   pages_with_list = ['partners'] # pages that have list
 
