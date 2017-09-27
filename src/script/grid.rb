@@ -39,7 +39,7 @@ end
 def socials(page, item)
   html = ""
   [:facebook, :twitter, :instagram, :linkedin].each {|social|
-    if item.key?(social)
+    if item.key?(social) && !item[social].empty?
       html += "<a href=\"#{item[social]}\" target=\"_blank\"><i class=\"#{social}\"></i></a>"
     end
   }

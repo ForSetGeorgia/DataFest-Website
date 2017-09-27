@@ -8,16 +8,22 @@
       "caption": "SUPPORTED BY",
       "entities": [
         {
-          "name": "ForSet",
-          "description": "ForSet - lorem ipsum",
-          "logo": "pin.svg",
-          "url": "www.google.com"
+          "name": "United Nations Development Programme (UNDP)",
+          "description": "United Nations Development Programme (UNDP)",
+          "logo": "undp.png",
+          "url": "http://www.undp.org/content/undp/en/home.html"
         },
         {
-          "name": "DCN",
-          "description": "DCN - lorem ipsum",
-          "logo": "us.svg",
-          "url": "www.google.com"
+          "name": "Ministry of Finance of the Slovak Republic",
+          "description": "Ministry of Finance of the Slovak Republic",
+          "logo": "mofsr.png",
+          "url": "http://www.finance.gov.sk/en/"
+        },
+        {
+          "name": "Prague Civil Society Centre",
+          "description": "Prague Civil Society Centre",
+          "logo": "pcs.png",
+          "url": "https://praguecivilsociety.org"
         }
       ]
     },
@@ -26,16 +32,10 @@
       "caption": "COMMUNITY PARTNERS",
       "entities": [
         {
-          "name": "ForSet",
-          "description": "ForSet - lorem ipsum",
-          "logo": "forset.svg",
-          "url": "www.google.com"
-        },
-        {
-          "name": "DCN",
-          "description": "DCN - lorem ipsum",
-          "logo": "usaid_logo.jpg",
-          "url": "www.google.com"
+          "name": "Data Science Tbilisi",
+          "description": "Data Science Tbilisi",
+          "logo": "dst.png",
+          "url": "https://www.facebook.com/groups/DataScienceTbilisi/"
         }
       ]
     },
@@ -45,15 +45,15 @@
       "entities": [
         {
           "name": "ForSet",
-          "description": "ForSet - lorem ipsum",
-          "logo": "bm_logo.png",
-          "url": "www.google.com"
+          "description": "ForSet",
+          "logo": "forset.png",
+          "url": "https://forset.ge/en/"
         },
         {
-          "name": "DCN",
-          "description": "DCN - lorem ipsum",
-          "logo": "gg_logo.jpg",
-          "url": "www.google.com"
+          "name": "Digital Communication Network",
+          "description": "Digital Communication Network",
+          "logo": "dcn.png",
+          "url": "https://digicomnet.org"
         }
       ]
     }

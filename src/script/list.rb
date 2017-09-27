@@ -6,11 +6,11 @@ def list(page, items)
 
   items.each_with_index {|item, item_i|
     # klass = item_i+1 > 3 ? " more" : ""
-    fade_id = ""
-    if item_i+1 < 3
-      fade_id = " data-fade-id=\"#{fade_n}\""
-      fade_n += 1
-    end
+    # fade_id = ""
+    # if item_i+1 < 3
+    fade_id = " data-fade-id=\"#{fade_n}\""
+    fade_n += 1
+    # end
 
 
     html +=
@@ -29,8 +29,8 @@ def sublist(page, items)
 
   items.each {|item|
     html +=
-      "<li><a href=\"#{item[:url]}\" title=\"#{item[:name]} - #{item[:description]}\" target=\"_blank\">" +
-        "<img src=\"assets/images/#{page}/#{item[:logo]}\" alt=\"#{item[:name]} - #{item[:description]}\" />" +
+      "<li><a href=\"#{item[:url]}\" title=\"#{item[:name]}\" target=\"_blank\">" +
+        "<img src=\"assets/images/#{page}/#{item[:logo]}\" alt=\"#{item[:name]}\" />" +
         "</a></li>"
   }
   html += "</ul>"

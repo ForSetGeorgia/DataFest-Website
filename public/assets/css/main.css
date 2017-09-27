@@ -499,7 +499,9 @@ a {
   }
 /* ----------------------- partnership */
 
-
+  .partnership {
+    opacity: 0;
+  }
   .partnership p {
     display: block;
     font: 18px latina-m;
@@ -521,9 +523,6 @@ a {
   }
 
 /* ----------------------- partners */
-  .partners {
-    opacity: 0;
-  }
   .partners .hashtag {
     display: block;
     font: 22px latina-ub;
@@ -543,6 +542,7 @@ a {
   footer {
     margin-top: 30px;
     margin-bottom: 36px;
+    opacity: 0;
   }
   footer > div {
     display: inline-block;
@@ -869,6 +869,7 @@ a {
   }
   .list-category ul li {
     margin: 45px 0 0;
+    vertical-align: top;
   }
   .list-category ul li:first-of-type {
     margin-left: 0;

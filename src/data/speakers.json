@@ -4,48 +4,194 @@
   "description": "Speakers Description",
   "items": [
     {
-      "name": "Eric Nicholas Barrett",
+      "name": "Amil Osmanli",
+      "position": "Software Engineer - Zalando Ireland",
+      "summary":
+        "",
+      "photo": "amil_osmanli.jpg",
+      "facebook": "https://www.facebook.com/radiobashsh",
+      "twitter": "https://twitter.com/aosmanli",
+      "linkedin": "https://www.linkedin.com/in/amilosmanli/"
+    },
+    {
+      "name": "Andriy Gazin",
+      "position": "",
+      "summary":
+        "Data journalist, who uses programming, data analysis and data visualization for finding and telling stories. Big fan of R programming language, self-tracking, lifelogging, comic books and graphic novels. Open data activist. Running a blog about data analysis and visualization – Textura.in.ua. Providing training sessions on data analysis and visualization for journalists and NGO. Used to work as a head of infographics department at weekly magazines Korrespondent and Novoe Vremya, and as a data journalist at online-media Texty.",
+      "photo": "andriy_gazin.jpg",
+      "facebook": "https://www.facebook.com/andriy.gazin",
+      "twitter": "https://twitter.com/AndriyGazin",
+      "linkedin": "https://www.linkedin.com/in/andriygazin"
+    },
+    {
+      "name": "Beata Biel",
+      "position": "",
+      "summary":
+        "Journalist & media training specialist, throughout her whole professional life has been working in the media industry. She began her career as a journalist at TVN, Poland’s leading commercial TV channel, in 2001. She stayed there for 10 years, also as an editor. Since 2010 she has been working as a freelancer, directing and producing documentary series. For last 4 years she has also been working as a media training specialist, mainly with Google News Lab (past 1.5 year), representing the team in Central & Eastern Europe and working with newsrooms and journalists in CEE to enhance digital knowledge and drive innovation in the media. Winner of several journalism awards, 2011 Transatlantic Media Fellow at CSIS in Washington DC.",
+      "photo": "beata_biel.jpg",
+      "facebook": "https://www.facebook.com/betiwhite",
+      "twitter": "https://twitter.com/beatabiel",
+      "linkedin": "https://www.linkedin.com/in/beata-biel-b76269118/"
+    },
+    {
+      "name": "Christiaan Triebert",
+      "position": "Bellingcat",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "",
+      "twitter": "https://twitter.com/trbrtc",
+      "linkedin": "https://www.linkedin.com/in/christiaantriebert/"
+    },
+    {
+      "name": "Eric Barrett",
       "position": "Data Consultant",
-      "summary": "Eric Barrett has worked in the field of data, technology, and transparency for almost ten years. From 2008-2010 he worked at Transparency International Georgia as Digital Organizer. In 2010, he joined the JumpStart Georgia team, then known as Open Maps Caucasus. Eric became Executive Director in 2012 and took JumpStart into a new direction - combining data and visualizations with journalism to tell stories in innovative ways in Georgia all the while advocating for open data principles and practices among NGOs and government. Eric left JumpStart at the end of 2016 and now teaches and works with organizations in the Caucasus to tell stories when data and design are crucial components. He lives in Tbilisi, Georgia with his wife, daughter and a newborn son.",
-      "photo": "1.jpg",
-      "facebook": "https://www.facebook.com/DataFestTbilisi/",
-      "twitter": "https://twitter.com/DataFestTbilisi",
-      "instagram": "https://www.instagram.com/datafesttbilisi/",
-      "linkedin": "https://www.instagram.com/datafesttbilisi/"
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "",
+      "twitter": "https://twitter.com/brrttwrks",
+      "linkedin": ""
     },
     {
       "name": "Jakub Gornicki",
-      "position": "Journalist And Social Entrepreneur Reporter, Outriders",
-      "summary": "Jakub Gornicki is a Reporter for and Co-Founder of Outriders. He combines new technologies and storytelling with journalism, blogging, government accountability, and transparency. Formerly, Gornicki was a board member and COO of the ePaństwo Foundation, which he developed into an internationally prominent open data and transparency NGO. He also established the organization Code for Poland and combined it with Code for All, in collaboration with Code for America. Gornicki also contributes to the Open Cities Program, which helps European cities adopt open data policies, as well as the Personal Democracy Forum in CEE and TransparenCEE. He was a 2014 New Europe Challenger (first round) and was later named one of the 28 most innovative Poles by newspaper Puls Biznesu. Gornicki also formerly worked for Sourcefabric, where he supported the media sectors in Turkey, Yemen, Georgia, and Ghana by providing training and open source software implementation.",
-      "photo": "2.jpg",
-      "twitter": "https://twitter.com/DataFestTbilisi",
-      "instagram": "https://www.instagram.com/datafesttbilisi/",
-      "linkedin": "https://www.instagram.com/datafesttbilisi/"
+      "position": "",
+      "summary":
+        "Jakub Gornicki is a Reporter for and Co-Founder of Outriders. He combines new technologies and storytelling with journalism, blogging, government accountability, and transparency. Formerly, Jakub was a board member and COO of the ePaństwo Foundation, which he developed into an internationally prominent open data and transparency NGO. He also established the organization Code for Poland and combined it with Code for All, in collaboration with Code for America. Jakub also contributes to the Open Cities Program, which helps European cities adopt open data policies, as well as the Personal Democracy Forum in CEE and TransparenCEE. He was a 2014 New Europe Challenger (first round) and was later named one of the 28 most innovative Poles by newspaper Puls Biznesu. Jakub previously worked for Sourcefabric, where he supported the media sectors in Turkey, Yemen, Georgia, and Ghana by providing training and open source software implementation.",
+      "photo": "jakub_gornicki.jpg",
+      "facebook": "https://www.facebook.com/jakubgornicki",
+      "twitter": "https://twitter.com/jakubgornicki",
+      "linkedin": "https://www.linkedin.com/in/jakubgornicki"
+    },
+    {
+      "name": "Jason Addie",
+      "position": "ForSet - Data Wrangler",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/jason.addie",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/jasonaddie/"
+    },
+    {
+      "name": "Levan Tsinadze",
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/levan-tsinadze-246a1b2a/"
     },
     {
       "name": "Mariam Kobuladze",
-      "position": "Freelance Dataviz Designer, Georgia",
-      "summary": "Mariam Kobuladze has more than 5 years experience in information graphic and UI/UX design. Currently she is working on various projects as a freelance designer. Previously she worked at JumpStart Georgia for 4 years designing award-winning infographics, interactive visualizations and data portals. Mariam also teaches at Caucasus School of Technology in Tbilisi, Georgia.",
-      "photo": "3.jpg",
-      "facebook": "https://www.facebook.com/DataFestTbilisi/",
-      "instagram": "https://www.instagram.com/datafesttbilisi/",
-      "linkedin": "https://www.instagram.com/datafesttbilisi/"
+      "position": "Freelancer - DataViz designer",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/memerenard/"
+    },
+    {
+      "name": "Michael Crawford",
+      "position": "Head of Data & Analytics at Barnett Waddingham",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/michael.crawford.5855",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
+    },
+    {
+      "name": "Mick Cooney",
+      "position": "",
+      "summary":
+        "",
+      "photo": "mick_cooney.jpg",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
+    },
+    {
+      "name": "Miriam Quick",
+      "position": "Researcher for information visualisation. Data journalist at infogr8",
+      "summary":
+        "",
+      "photo": "miriam_quick.jpg",
+      "facebook": "https://www.facebook.com/miriam.quick",
+      "twitter": "https://twitter.com/miriamquick",
+      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
     },
     {
       "name": "Nadiia Babynska",
-      "position": "Open Data Policy Expert, Open Data Lab Ukraine",
-      "summary": "Nadiia Babynska (Virna) is a media-expert, investigative journalist, open data and access to public information activist, trainer from Ukraine. She is a consultant of the open data project in TAPAS and volunteer, also a coordinator of the Technovation Challenge in Ukraine. Currently she also coordinates Youth Innovation Challenge on democracy and human rights in Ukraine. Nadiia was a project manager of the Open Data Portal of Ukrainian Parliament project, an expert of Apps4Cities project (open city data) in Ukraine.",
-      "photo": "4.jpg",
-      "facebook": "https://www.facebook.com/DataFestTbilisi/",
-      "twitter": "https://twitter.com/DataFestTbilisi",
-      "linkedin": "https://www.instagram.com/datafesttbilisi/"
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/nadiia.babynska",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/nadiia-babynska-53277a4/"
     },
     {
-      "name": "Shelley Inglis",
-      "position": "Governance And Peacebuilding Team Leader, Undp Istanbul Hub",
-      "summary": "Shelley Inglis is the United Nations Development Programme Regional Cluster Leader of Governance and Peacebuilding for Europe and CIS, and previously Policy Advisor and Team Leader in the Democratic Governance Group. Prior to UNDP, she was in the Rule of Law Unit in the Office of the United Nations Deputy Secretary-General working on system-wide policy coordination and coherence in the field of rule of law. She has worked previously on security governance, human rights and rule of law for the Department of Peacekeeping Operations, the Office of the High Commissioner for Human Rights in Geneva, and the United Nations Development Fund for Women (UNIFEM). She is a graduate of Columbia School of Law (JD) and Cornell University (BA).",
-      "photo": "5.jpg",
-      "facebook": "https://www.facebook.com/DataFestTbilisi/"
+      "name": "Pulsar (Dachi)",
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Richard Morrisroe",
+      "position": "Facebook - Data Scientist",
+      "summary":
+        "",
+      "photo": "richard_morrisroe.jpg",
+      "facebook": "https://www.facebook.com/richard.morrisroe",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
+    },
+    {
+      "name": "Rudolf Eremian",
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/rudolf.eremyan",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Soso Khutsishvili",
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
+    },
+    {
+      "name": "Thomas Burns",
+      "position": "",
+      "summary":
+        "Thomas Burns is an award-winning story producer and film director specializing in scripted, non-fiction, and advertising content. His background includes over a decade of training in Hollywood on feature films (Where the Wild Things Are, Die Hard 4), dramatic television (CSI, Dexter), documentaries (national Geographic, Discovery Channel), and hundreds of commercials (Porsche, McDonalds, Capital One). He has a master’s degree in documentary film from Stanford University, where one of his films won a Student Academy Award, and he received the award for Best Cinematography at the European Independent Film Festival in Paris. A former Fulbright Scholar, Thomas has been a visiting professor at the School of Theater, Film, and Television at the University of California Los Angeles, and he hosts story workshops and masterclasses around the world. His work has screened in broadcast, in gallery exhibition, and in film festivals around the world.",
+      "photo": "thomas_burns.jpg",
+      "facebook": "https://www.facebook.com/ThomasMichaelBurns",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/thomasmburns/"
+    },
+    {
+      "name": "Zaal Gachechiladze",
+      "position": "",
+      "summary":
+        "",
+      "photo": "missing.jpg",
+      "facebook": "https://www.facebook.com/zaalgachechiladze",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/zaalgachechiladze/"
     }
   ]
 }
