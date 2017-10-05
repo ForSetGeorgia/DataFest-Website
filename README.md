@@ -9,11 +9,10 @@ Change directory to ```src``` and call ```npm run watch``` this will watch src f
 # Folder Structure
 
 ```
-public
-``` - production files used to test and deploy  
+public``` 
+- production files used to test and deploy
 ```
-  assets
-```
+  assets```
 ```    css```  
 ```    fonts```  
 ```    images```  
