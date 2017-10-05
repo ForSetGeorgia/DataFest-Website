@@ -79,7 +79,12 @@
       "slug": "media",
       "caption": "MEDIA PARTNERS",
       "entities": [
-
+        {
+          "name": "On.ge",
+          "description": "On.ge",
+          "logo": "onge.png",
+          "url": "https://on.ge"
+        }
       ]
     },
     {
@@ -97,12 +102,6 @@
           "description": "Impact Hub",
           "logo": "impacthub.png",
           "url": "https://tbilisi.impacthub.net/"
-        },
-        {
-          "name": "ON.GE",
-          "description": "ON.GE",
-          "logo": "onge.png",
-          "url": "https://on.ge"
         }
       ]
     }
