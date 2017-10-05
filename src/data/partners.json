@@ -4,42 +4,6 @@
   "description": "Partners Description",
   "items": [
     {
-      "slug": "supported",
-      "caption": "SUPPORTED BY",
-      "entities": [
-        {
-          "name": "United Nations Development Programme (UNDP)",
-          "description": "United Nations Development Programme (UNDP)",
-          "logo": "undp.png",
-          "url": "http://www.undp.org/content/undp/en/home.html"
-        },
-        {
-          "name": "Ministry of Finance of the Slovak Republic",
-          "description": "Ministry of Finance of the Slovak Republic",
-          "logo": "mofsr.png",
-          "url": "http://www.finance.gov.sk/en/"
-        },
-        {
-          "name": "Prague Civil Society Centre",
-          "description": "Prague Civil Society Centre",
-          "logo": "pcs.png",
-          "url": "https://praguecivilsociety.org"
-        }
-      ]
-    },
-    {
-      "slug": "community",
-      "caption": "COMMUNITY PARTNERS",
-      "entities": [
-        {
-          "name": "Data Science Tbilisi",
-          "description": "Data Science Tbilisi",
-          "logo": "dst.png",
-          "url": "https://www.facebook.com/groups/DataScienceTbilisi/"
-        }
-      ]
-    },
-    {
       "slug": "organized",
       "caption": "ORGANIZED BY",
       "entities": [
@@ -54,6 +18,91 @@
           "description": "Digital Communication Network",
           "logo": "dcn.png",
           "url": "https://digicomnet.org"
+        }
+      ]
+    },
+    {
+      "slug": "partners",
+      "caption": "PARTNERS",
+      "entities": [
+         {
+           "name": "Prague Civil Society Centre",
+           "description": "Prague Civil Society Centre",
+           "logo": "pcs.png",
+           "url": "https://praguecivilsociety.org"
+         },
+         {
+          "name": "United Nations Development Programme (UNDP)",
+          "description": "United Nations Development Programme (UNDP)",
+          "logo": "undp.png",
+          "url": "http://www.undp.org/content/undp/en/home.html"
+        }
+      ]
+    },
+    {
+      "slug": "supporters",
+      "caption": "SUPPORTERS",
+      "entities": [
+        {
+          "name": "Ministry of Finance of the Slovak Republic",
+          "description": "Ministry of Finance of the Slovak Republic",
+          "logo": "mofsr.png",
+          "url": "http://www.finance.gov.sk/en/"
+        },
+        {
+          "name": "TBC Bank",
+          "description": "TBC Bank",
+          "logo": "tbc.png",
+          "url": "http://www.tbcbank.ge/web/ka"
+        },
+        {
+          "name": "DW Akademie",
+          "description": "DW Akademie",
+          "logo": "dwakademie.png",
+          "url": "http://www.dw.com/en/dw-akademie/about-us/s-9519"
+        }
+      ]
+    },
+    {
+      "slug": "friends",
+      "caption": "FRIENDS",
+      "entities": [
+        {
+          "name": "TransperenCEE",
+          "description": "TransperenCEE",
+          "logo": "transparencee.png",
+          "url": "https://transparencee.org/"
+        }
+      ]
+    },
+    {
+      "slug": "media",
+      "caption": "MEDIA PARTNERS",
+      "entities": [
+
+      ]
+    },
+    {
+      "slug": "community",
+      "caption": "COMMUNITY PARTNERS",
+      "entities": [
+        {
+          "name": "Data Science Tbilisi",
+          "description": "Data Science Tbilisi",
+          "logo": "dst.png",
+          "url": "https://www.facebook.com/groups/DataScienceTbilisi/"
+        },
+        {
+          "name": "Impact Hub",
+          "description": "Impact Hub",
+          "logo": "impacthub.png",
+          "url": "https://tbilisi.impacthub.net/"
+        },
+        {
+          "name": "ON.GE",
+          "description": "ON.GE",
+          "logo": "onge.png",
+          "url": "https://on.ge"
         }
       ]
     }
