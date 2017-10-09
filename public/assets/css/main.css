@@ -7,6 +7,10 @@
   src: url('../fonts/Latina-Bold.ttf') format("truetype");
 }
 @font-face {
+  font-family: 'latina-sb';
+  src: url('../fonts/Latina-SemiBold.ttf') format("truetype");
+}
+@font-face {
   font-family: 'latina-m';
   src: url('../fonts/Latina-Medium.ttf') format("truetype");
 }
@@ -488,6 +492,7 @@ a {
   .social-speakers a i.twitter { background-position: -17px 0px; }
   .social-speakers a i.instagram { background-position: -50px 0px; }
   .social-speakers a i.linkedin { background-position: -33px 0px; }
+  .social-speakers a i.filler { background-position: -67px 0px; }
   .social-team a i.facebook { background-position: 0px -17px; }
   .social-team a i.twitter { background-position: -17px -17px; }
   .social-team a i.instagram { background-position: -50px -17px; }
@@ -497,6 +502,27 @@ a {
       // margin-bottom: 90px;
     }
   }
+/* ----------------------- speakers */
+  [data-page="speakers"] .talk-workshop{
+    text-align: left;
+    margin-left: 42px;
+    font: 16px/24px latina-l;
+    color: #a3a3a3;
+  }
+
+  [data-page="speakers"] .talk-workshop img{
+    margin-right: 1px;
+  }
+
+  [data-page="speakers"] img.talk{
+    width: 9px;
+  }
+
+  [data-page="speakers"] img.workshop{
+    width: 15px;
+  }
+
+
 /* ----------------------- partnership */
 
   .partnership {
@@ -696,22 +722,51 @@ a {
     max-height: 160px;
     border-radius: 100%;
   }
+  .grid .talk-icons{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .grid .talk-icons img:last-of-type{
+    margin-left: 10px;
+  }
   .grid .name {
     font: 20px latina-b;
     color: #3d3d3d;
-    margin-bottom: 20px;
     padding: 0 20px;
   }
   .grid .position {
     font: 16px latina-l;
     color: #686868;
-    margin-bottom: 38px;
     padding: 0 20px;
     flex: 1;
+    margin-top: 20px;
+  }
+  .grid .organization {
+    font: 16px latina-sb;
+    color: #3d3d3d;
+    padding: 0 20px;
+    flex: 1;
+    margin-top: 5px;
+
+  }
+  .grid .country {
+    font: 18px latina-l;
+    color: #0FB6ED;
+    padding: 0 20px;
+    flex: 1;
+    margin-top: 5px;
+  }
+  .grid .country:after {
+    content:' ';
+    display:block;
+    border-top:1px solid #0FB6ED;
+    margin: 20px auto 0;
+    width: 75px;
   }
   .grid-social a {
     display: inline-block;
-    margin: 0 8px;
+    margin: 38px 8px 0;
   }
   .grid .card.hover .name, .grid .card.hover .position, .grid .card.hover .grid-social {
     display: none;

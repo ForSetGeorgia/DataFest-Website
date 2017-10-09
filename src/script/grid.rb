@@ -19,8 +19,11 @@ def grid(page, items)
         "<div class=\"info\">" +
           "<div class='photo'><img src='assets/images/#{page}/#{item[:photo]}'/></div>" +
           "<div class='name'>#{item[:name]}</div>" +
+            country(item) +
           "<div class='position'>#{item[:position]}</div>" +
+            organization(item) +
             socials(page, item) +
+            talk_icons(item) +
         "</div>" +
         (item.key?(:summary) ? "<div class='summary fadeIn animated'>#{item[:summary]}</div>" : "") +
       "</div>"
@@ -36,12 +39,42 @@ def grid(page, items)
   html += "</div>"
 end
 
+def country(item)
+  html = ""
+  key = :country
+  if item.key?(key) && !item[key].empty?
+    html += "#{item[key]}"
+  end
+  html != "" ? "<div class=\"country\">#{html}</div>" : ""
+end
+
+def organization(item)
+  html = ""
+  key = :organization
+  if item.key?(key) && !item[key].empty?
+    html += "#{item[key]}"
+  end
+  html != "" ? "<div class=\"organization\">#{html}</div>" : ""
+end
+
 def socials(page, item)
   html = ""
-  [:facebook, :twitter, :instagram, :linkedin].each {|social|
-    if item.key?(social) && !item[social].empty?
-      html += "<a href=\"#{item[social]}\" target=\"_blank\"><i class=\"#{social}\"></i></a>"
+  [:facebook, :twitter, :instagram, :linkedin].each {|key|
+    if item.key?(key) && !item[key].empty?
+      html += "<a href=\"#{item[key]}\" target=\"_blank\"><i class=\"#{key}\"></i></a>"
     end
   }
-  html != "" ? "<div class=\"grid-social social-#{page}\">#{html}</div>" : ""
+  # html != "" ? "<div class=\"grid-social social-#{page}\">#{html}</div>" : ""
+  html = "<a><i class=\"filler\"></i></a>" if html.empty?
+  "<div class=\"grid-social social-#{page}\">#{html}</div>"
+end
+
+def talk_icons(item)
+  html = ""
+  [:talk, :workshop].each {|key|
+    if item.key?(key) && !item[key].empty? && item[key] == "TRUE"
+      html += "<img src=\"assets/images/#{key}.svg\" class=\"#{key}\" title=\"#{key}\"/>"
+    end
+  }
+  html != "" ? "<div class=\"talk-icons\">#{html}</div>" : ""
 end

@@ -4,191 +4,378 @@
   "description": "Speakers Description",
   "items": [
     {
-      "name": "Amil Osmanli",
-      "position": "Software Engineer - Zalando Ireland",
-      "summary":
-        "",
-      "photo": "amil_osmanli.jpg",
-      "facebook": "https://www.facebook.com/radiobashsh",
-      "twitter": "https://twitter.com/aosmanli",
-      "linkedin": "https://www.linkedin.com/in/amilosmanli/"
-    },
-    {
-      "name": "Andriy Gazin",
-      "position": "",
-      "summary":
-        "Data journalist, who uses programming, data analysis and data visualization for finding and telling stories. Big fan of R programming language, self-tracking, lifelogging, comic books and graphic novels. Open data activist. Running a blog about data analysis and visualization – Textura.in.ua. Providing training sessions on data analysis and visualization for journalists and NGO. Used to work as a head of infographics department at weekly magazines Korrespondent and Novoe Vremya, and as a data journalist at online-media Texty.",
-      "photo": "andriy_gazin.jpg",
-      "facebook": "https://www.facebook.com/andriy.gazin",
-      "twitter": "https://twitter.com/AndriyGazin",
-      "linkedin": "https://www.linkedin.com/in/andriygazin"
-    },
-    {
-      "name": "Beata Biel",
-      "position": "",
-      "summary":
-        "Journalist & media training specialist, throughout her whole professional life has been working in the media industry. She began her career as a journalist at TVN, Poland’s leading commercial TV channel, in 2001. She stayed there for 10 years, also as an editor. Since 2010 she has been working as a freelancer, directing and producing documentary series. For last 4 years she has also been working as a media training specialist, mainly with Google News Lab (past 1.5 year), representing the team in Central & Eastern Europe and working with newsrooms and journalists in CEE to enhance digital knowledge and drive innovation in the media. Winner of several journalism awards, 2011 Transatlantic Media Fellow at CSIS in Washington DC.",
-      "photo": "beata_biel.jpg",
-      "facebook": "https://www.facebook.com/betiwhite",
-      "twitter": "https://twitter.com/beatabiel",
-      "linkedin": "https://www.linkedin.com/in/beata-biel-b76269118/"
-    },
-    {
-      "name": "Christiaan Triebert",
-      "position": "Bellingcat",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "",
-      "twitter": "https://twitter.com/trbrtc",
-      "linkedin": "https://www.linkedin.com/in/christiaantriebert/"
-    },
-    {
-      "name": "Eric Barrett",
-      "position": "Data Consultant",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "",
-      "twitter": "https://twitter.com/brrttwrks",
-      "linkedin": ""
-    },
-    {
-      "name": "Jakub Gornicki",
-      "position": "",
-      "summary":
-        "Jakub Gornicki is a Reporter for and Co-Founder of Outriders. He combines new technologies and storytelling with journalism, blogging, government accountability, and transparency. Formerly, Jakub was a board member and COO of the ePaństwo Foundation, which he developed into an internationally prominent open data and transparency NGO. He also established the organization Code for Poland and combined it with Code for All, in collaboration with Code for America. Jakub also contributes to the Open Cities Program, which helps European cities adopt open data policies, as well as the Personal Democracy Forum in CEE and TransparenCEE. He was a 2014 New Europe Challenger (first round) and was later named one of the 28 most innovative Poles by newspaper Puls Biznesu. Jakub previously worked for Sourcefabric, where he supported the media sectors in Turkey, Yemen, Georgia, and Ghana by providing training and open source software implementation.",
-      "photo": "jakub_gornicki.jpg",
-      "facebook": "https://www.facebook.com/jakubgornicki",
-      "twitter": "https://twitter.com/jakubgornicki",
-      "linkedin": "https://www.linkedin.com/in/jakubgornicki"
-    },
-    {
-      "name": "Jason Addie",
-      "position": "ForSet - Data Wrangler",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "https://www.facebook.com/jason.addie",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/jasonaddie/"
-    },
-    {
-      "name": "Levan Tsinadze",
-      "position": "",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/levan-tsinadze-246a1b2a/"
-    },
-    {
-      "name": "Mariam Kobuladze",
-      "position": "Freelancer - DataViz designer",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/memerenard/"
-    },
-    {
-      "name": "Michael Crawford",
-      "position": "Head of Data & Analytics at Barnett Waddingham",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "https://www.facebook.com/michael.crawford.5855",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
-    },
-    {
-      "name": "Mick Cooney",
-      "position": "",
-      "summary":
-        "",
-      "photo": "mick_cooney.jpg",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
-    },
-    {
-      "name": "Miriam Quick",
-      "position": "Researcher for information visualisation. Data journalist at infogr8",
-      "summary":
-        "",
-      "photo": "miriam_quick.jpg",
-      "facebook": "https://www.facebook.com/miriam.quick",
-      "twitter": "https://twitter.com/miriamquick",
-      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
-    },
-    {
-      "name": "Nadiia Babynska",
-      "position": "",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "https://www.facebook.com/nadiia.babynska",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/nadiia-babynska-53277a4/"
-    },
-    {
-      "name": "Pulsar (Dachi)",
-      "position": "",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": ""
-    },
-    {
       "name": "Richard Morrisroe",
-      "position": "Facebook - Data Scientist",
-      "summary":
-        "",
-      "photo": "richard_morrisroe.jpg",
+      "photo": "Richard_Morrisroe.jpg",
+      "position": "Data Scientist",
+      "organization": "Facebook",
+      "country": "Ireland",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Richard Morrisroe is a Data Scientist at Facebook with man years of experience. Highly skilled with data analysis, machine learning, predictive analytics and SQL, his particular specialty is in converting business problems into forms in which they can be answered by data. He has extensive experience with extremely large data sets and uses R, Java, Python and Bash on a regular basis. Richard uses his skills in regression, time-series analysis and prediction, clustering, random forests, SVMs and Bayesian modelling to build cohort-based customer lifetime value models for Facebook customers to help them optimise their advertisement spend.",
       "facebook": "https://www.facebook.com/richard.morrisroe",
       "twitter": "",
       "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
     },
     {
-      "name": "Rudolf Eremian",
-      "position": "",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "https://www.facebook.com/rudolf.eremyan",
+      "name": "Emma Lacey Bordeaux",
+      "photo": "Emma_Lacey_Bordeaux.jpg",
+      "position": "Editor",
+      "organization": "CNN",
+      "country": "USA",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Ms. Emma Lacey-Bordeaux is a platform-agnostic journalist driven by curiosity and the desire to make connections across space and perspective. Since 2008, she has worked at CNN – first as researcher, then Associate Producer, Reporter and Producer, and since 2013 as an Editor. Ms. Lacey-Bordeaux has broken stories on loopholes in federal gun laws, the scourge of rape on college campuses, and companies using mugshots to turn a profit. She’s worked on coverage for two presidential elections; the rise of the Tea Party, Occupy, and the Black Lives Matter movement; the tragedy in Newtown; the Syrian Conflict; and the war in Ukraine. Ms. Lacey-Bordeaux’s work on the Deepwater Horizon oil spill and the Arab Spring contributed to two Peabody Awards for the network, and the Atlanta Press Club has recognized her enterprise work with an award for outstanding digital and broadcast reporting. She has also worked in politics, assisting state-wide campaigns, and running a local legislative office. She holds a Bachelor’s degree in International Studies from Georgia State University. Ms. Lacey-Bordeaux is currently a Master of Fine Arts candidate in Narrative Nonfiction at the University of Georgia, where she is working on a book focused on missed opportunities in the American juvenile justice system.",
+      "facebook": "",
       "twitter": "",
       "linkedin": ""
     },
     {
-      "name": "Soso Khutsishvili",
-      "position": "",
-      "summary":
-        "",
-      "photo": "missing.jpg",
-      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
+      "name": "Christiaan Triebert",
+      "photo": "Christiaan_Triebert.jpg",
+      "position": "Digital Forensics Researcher",
+      "organization": "Bellingcat",
+      "country": "Netherlands",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Christiaan Triebert is a conflict researcher with Bellingcat, a multi-award winning collective that uses online open source information to investigate armed conflicts and corruption. Among a wide variety of topics, Triebert has especially focused on investigating airstrikes in the Middle East, also in his capacity as geolocation expert for monitoring organisation Airwars. His digital reconstruction of the Turkish coup d’état attempt won the Innovation Award of the European Press Prize. Triebert aims to spread Bellingcat’s techniques and tools by giving worldwide digital forensics workshops, including in Iraq, Ukraine, and Colombia. He holds a Master’s degree in Conflict, Security & Development from King’s College London, and two undergraduate degrees (International Relations, Political Philosophy) from the University of Groningen. Triebert conducted fieldwork in Syria and Iraq, among other countries.",
+      "facebook": "",
+      "twitter": "https://twitter.com/trbrtc",
+      "linkedin": "https://www.linkedin.com/in/christiaantriebert/"
+    },
+    {
+      "name": "Miriam Quick",
+      "photo": "Miriam_Quick.jpg",
+      "position": "Researcher for Information Visualization",
+      "organization": "",
+      "country": "UK",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Miriam Quick is a data journalist and researcher whose work has been regularly featured on the BBC, Quartz, and informationisbeautiful.net. She was the lead research on David McCandless’s infographic book Knowledge is Beautiful, and recently analyzed the data from over 250 film critics for BBC Culture’s “Greatest Comedies” poll. Miriam spends her days writing data-driven stories and animation scripts, or researching and crafting copy for infographics. She also often collaborates with designers to create data art pieces which have been exhibited in the UK, Germany, and the US. Recent projeects include Air Transformed, a series of wearables visualizing air quality data made in collaboration with designer Stefanie Posavec, and Oddityviz, a visualization of musical data from David Bowie’s “Space Oddity” created with designer Valentina D’Efilippo.",
+      "facebook": "https://www.facebook.com/miriam.quick",
+      "twitter": "https://twitter.com/miriamquick",
+      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
+    },
+    {
+      "name": "Jelena Vasic",
+      "photo": "Jelena_Vasic.jpg",
+      "position": "Journalist/Project Manager",
+      "organization": "KRIK",
+      "country": "Serbia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Jelena Vasic is project manager and investigative reporter for the Crime and Corruption Reporting Network (KRIK) in Serbia, and has been a member of the KRIK team since its beginning in April 2015. Jelena has also worked as an investigative reporter for the Organized Crime and Corruption Reporting Project (OCCRP). In 2012 Vasic graduated from Belgrade University with a degree in journalism. From 2012 until 2015 she worked as part of a journalistic team of the Center for Investigative Journalism of Serbia (CINS). During that period Jelena won the National Annual Award for Investigative Journalism in the category of Online media. As part of the KRIK investigative team Jelena has also won the international Data Journalism Award in 2017, for developing a unique online Database of Assets of Serbian Politicians.",
+      "facebook": "",
       "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
+      "linkedin": ""
+    },
+    {
+      "name": "Jason Addie",
+      "photo": "Jason_Addie.jpg",
+      "position": "Data Wrangler",
+      "organization": "ForSet",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Jason Addie is co-founder and head of technology for ForSet, a Georgian civic tech NGO specializing in effective communications for social issues by using data, design, and technology. His passion is data, and making it available to the public in a way that is informative, engaging, and motivating. He can take lifeless 30 page reports from government agencies and transform them into stories that the public understands and cares about. He has been working in data and communications for over 5 years with both local and international organizations like UNFPA, UNICEF, Transparency International and NDI. He analyzes data, creates story concepts, builds interactive websites, and has contributed to more than 40 interactive web stories and more than 200 visualizations (such as infographics, factographs, GIFs, and animations).",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Stefan Turkheimer",
+      "photo": "Stefan_Turkheimer.jpg",
+      "position": "Political Consultant",
+      "organization": "",
+      "country": "USA",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Mr. Stefan Turkheimer is a lawyer and political consultant with offices in Atlanta, Georgia and Washington, DC. For over a decade, Mr. Turkheimer has advised candidates at the local, state, and national level. He specializes in boutique communications strategies for candidates and elected officials, providing top-to-bottom services, crafting candidates’ messaging and social media presence, and elevating the profiles of politicians even in the most crowded or competitive fields. Mr. Turkheimer is a talented speechwriter and media relations manager. When he’s not fielding client and legal requests or walking his beloved dog, Scout, Mr. Turkheimer loves playing soccer and rooting for Tottenham.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Michael Crawford",
+      "photo": "missing.jpg",
+      "position": "Head of Data & Analytics",
+      "organization": "Barnett Waddingham",
+      "country": "UK",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Michael Crawford is head of Data Analytics at Barnett Waddingham, an actuarial consultancy in London. With over thirty years of experience in financial service, Michael has worked in almost all areas of financial services and has been involved in several small businesses over the years. In the last five years he moved back to insurance and has worked on numerous projects implementing modelling systems in life insurance, general insurance and reinsurance.",
+      "facebook": "https://www.facebook.com/michael.crawford.5855",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
+    },
+    {
+      "name": "Rayna Breuer",
+      "photo": "Rayna_Breuer.jpg",
+      "position": "Data Storyteller",
+      "organization": "DW Academie",
+      "country": "Germany",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Rayna Breuer is a multimedia journalist working for Deutsche Welle, ARD, and Deutschlandfunk. She is an expert at finding stories in piles of numbers, and then telling them with innovative tools from different perspectives, Rayna is helping spearhead a new generation of journalism. Rayna previously worked with Datawrapper and other open source tools, and started with DDJ in 2012 with a project based on javascript.. In recent years she has been focusing on innovative, multimedia storytelling using the Rageflow tool.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Jakub Gornicki",
+      "photo": "Jakub_Gornicki.jpg",
+      "position": "Co-founder",
+      "organization": "Outride.rs",
+      "country": "Poland",
+      "talk": "TRUE",
+      "workshop": "FALSE",
+      "summary": "Jakub Gornicki is co-founder of, and reporter for, Outriders. His work combines new technologies and storytelling to the fields of journalism, blogging, government accountability, and transparency. Jakub was also a board member and COO of the ePaństwo Foundation, which he helped develop into an internationally prominent open data and transparency NGO, and worked in training and software implementation with Sourcefabric. Other projects have included establishing the Code for Poland organization and contributing to both the Open Cities Program, which helps European cities adopt open data policies, and the Personal Democracy Forum in CEE and TransparenCEE. Jakub has been named one of the 28 most innovative Poles by the newspaper Puls Biznesu, and was a 2014 New Europe Challenger.",
+      "facebook": "https://www.facebook.com/jakubgornicki",
+      "twitter": "https://twitter.com/jakubgornicki",
+      "linkedin": "https://www.linkedin.com/in/jakubgornicki"
+    },
+    {
+      "name": "Andriy Gazin",
+      "photo": "Andriy_Gazin.jpg",
+      "position": "Data Journalist",
+      "organization": "Textura.in.ua",
+      "country": "Ukraine",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Andriy Gazin is a data journalist who uses programming, data analysis, and data visualization to find and tell stories. Andriy’s interests include the R programming language, life-blogging, and comic books and graphic novels. The former head of the infographics department at weekly magazines Korrespondent and Novoe Vremya, Andriy now spends much of his time providing training sessions on data analysis and visualization for journalists and NGOs and keeping up his data journalism blog textura.in.ua.",
+      "facebook": "https://www.facebook.com/andriy.gazin",
+      "twitter": "https://twitter.com/AndriyGazin",
+      "linkedin": "https://www.linkedin.com/in/andriygazin"
     },
     {
       "name": "Thomas Burns",
-      "position": "",
-      "summary":
-        "Thomas Burns is an award-winning story producer and film director specializing in scripted, non-fiction, and advertising content. His background includes over a decade of training in Hollywood on feature films (Where the Wild Things Are, Die Hard 4), dramatic television (CSI, Dexter), documentaries (national Geographic, Discovery Channel), and hundreds of commercials (Porsche, McDonalds, Capital One). He has a master’s degree in documentary film from Stanford University, where one of his films won a Student Academy Award, and he received the award for Best Cinematography at the European Independent Film Festival in Paris. A former Fulbright Scholar, Thomas has been a visiting professor at the School of Theater, Film, and Television at the University of California Los Angeles, and he hosts story workshops and masterclasses around the world. His work has screened in broadcast, in gallery exhibition, and in film festivals around the world.",
-      "photo": "thomas_burns.jpg",
+      "photo": "Thomas_Burns.jpg",
+      "position": "Digital Storyteller",
+      "organization": "",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "FALSE",
+      "summary": "Thomas Burns is an award-winning story producer and film director specializing in scripted, non-fiction, and advertising content. His background includes over a decade of training in Hollywood on feature films (including Where the Wild Things Are and Die Hard 4), dramatic television (CSI, Dexter), documentaries (National Geographic, Discovery Channel), and hundreds of commercials. He has a master’s degree in documentary film from Stanford University, where one of his films won a Student Academy Award, and has received the award for Best Cinematography at the European Independent Film Festival in Paris. A former Fulbright Scholar, Thomas has been a visiting professor at the School of Theater, Film, and Television at the University of California Los Angeles, and hosts story workshops and masterclasses around the world. His work has been screened in broadcast, gallery exhibitions, and film festivals around the world.",
       "facebook": "https://www.facebook.com/ThomasMichaelBurns",
       "twitter": "",
       "linkedin": "https://www.linkedin.com/in/thomasmburns/"
     },
     {
-      "name": "Zaal Gachechiladze",
+      "name": "Eric Barrett",
+      "photo": "Eric_Barrett.jpg",
+      "position": "Data Consultant",
+      "organization": "",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Eric Barrett has worked in the field of data, technology, and transparency for almost ten years. From 2008-2010 he worked at Transparency International Georgia as Digital Organizer, and in 2010 joined the team at JumpStart Georgia (then known as Open Maps Caucasus). Eric became Executive Director in 2012 and took JumpStart in a new direction, combining data and visualizations with journalism to tell stories from Georgia in innovative ways, all the while advocating for open data principles and practices among NGOs and government. Eric left JumpStart at the end of 2016 and now teaches and works with organizations in the Caucasus, telling stories in which data and design are crucial components. He lives in Tbilisi, Georgia, with his wife, daughter and newborn son.",
+      "facebook": "",
+      "twitter": "https://twitter.com/brrttwrks",
+      "linkedin": ""
+    },
+    {
+      "name": "Anastasia Valeeva",
+      "photo": "Anastasia_Valeeva.jpg",
+      "position": "Data Journalism Trainer",
+      "organization": "",
+      "country": "Kyrgyzstan",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Anastasia Valeeva is a data journalism instructor and open data researcher. She researched the use of open data in investigative journalism as part of her fellowship at the Reuters Institute for the Study of Journalism in Oxford, UK. Anastasia has taught data journalism at Data Bootcamps in Montenegro and Germany, at Data Journalism Summer Institutes in Kyrgyzstan and Albania, and at the Higher School of Economics, Russia. She is currently a data journalism lecturer at the American University of Central Asia, Kyrgyzstan.",
+      "facebook": "@anastasiajourno",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Mariam Kobuladze",
+      "photo": "Mariam_Kobuladze.jpg",
+      "position": "DataViz Designer",
+      "organization": "",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Mariam Kobuladze has more than 5 years experience working with infographics and UI/UX design. Mariam is currently working on a variety of projects as a freelance designer. Recently she has spent four years working with JumpStart Georgia, designing award-winning infographics, interactive visualizations and data portals. Mariam also teaches at the Caucasus School of Technology in Tbilisi, Georgia.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/memerenard/"
+    },
+    {
+      "name": "Nadiia Babynska",
+      "photo": "Nadiia_Babynska.jpg",
+      "position": "Open Data Policy Expert",
+      "organization": "Open Data Lab Ukraine",
+      "country": "Ukraine",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Nadiia Babynska is a Ukrainian media expert, investigative journalist, trainer, and activist for open data and access to public information. She is a consultant for the open data project in TAPAS and a coordinator of the Technovation Challenge in Ukraine. Currently Nadiia also coordinates the Youth Innovation Challenge in democracy and human rights in Ukraine. Nadiia has previously worked as project manager for the Open Data Portal of the Ukrainian Parliament project, and with the Apps4Cities project (dealing in open city data) in Ukraine.",
+      "facebook": "https://www.facebook.com/nadiia.babynska",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/nadiia-babynska-53277a4/"
+    },
+    {
+      "name": "Valentine Gogichashvili",
+      "photo": "Valentine_Gogichashvili.jpg",
+      "position": "Head of Engineering",
+      "organization": "Zalando",
+      "country": "Germany",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "As Head of Engineering at Zalando Product Analytics, Valentine Gogichashvilil’s main goal is the creation of state-of-the-art A/B testing, tracking, and journey modelling services to enable data-informed decision-making throughout the whole company. Since joining Zalando in 2010, one of Valentine’s primary activities has been to help Zalando’s growing team of engineers to migrate from MySQL to PostgreSQL. He has been working with databases and data for more than 18 years, and began his career as an Oracle Developer and a DBA. Valentine is a frequent speaker at various conferences and a passionate supporter of open-source projects at Zalando.",
+      "facebook": "https://www.facebook.com/valgog",
+      "twitter": "https://twitter.com/valgog",
+      "linkedin": "https://www.linkedin.com/in/valentine-gogichashvili-7a18b812/"
+    },
+    {
+      "name": "Nathan Schepers",
+      "photo": "Nathan_Schepers.jpg",
       "position": "",
-      "summary":
-        "",
+      "organization": "The Romanian Center for Investigative Journalism",
+      "country": "Romania",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Nathan Scheper's engineering background spans fifteen years and incorporates many technologies. He has worked in every aspect of the software development industry, from testing and development to technical leadership and enterprise project management. Nathan currently works as technical product manager for the Romanian Centre for Investigative Journalism (CRJI), whose mission is to deconstruct and expose corrupt structures of power and to create an interdisciplinary community of collectors and disseminators of relevant and verifiable information. CRJI imbues investigative journalism with recording the colour of daily life.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Amil Osmanli",
+      "photo": "Amil_Osmanli.jpg",
+      "position": "Software Engineer",
+      "organization": "Zalando Ireland",
+      "country": "Ireland",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Amil Osmanli is a software engineer working in Dublin for one of the biggest European online retailers. He started his studies as a mathematician at Baku State University, but switched fields and joined the Dublin Institute of Technology to study Computer Science. Amil started his engineering career with Amazon Data Services Ireland, and worked on building web-services for Amazon intrastructure, after which he joined a new startup as software engineer which specialized in data analysis. Amil joined Zalando in April 2015, and is a member of a team which is working on core services for Zalando's Smart Product Platform. Amil is currently building and maintaining RESTful web-services that are an integral part of the infrastructure, and capable of throughputting high loads.",
+      "facebook": "https://www.facebook.com/radiobashsh",
+      "twitter": "https://twitter.com/aosmanli",
+      "linkedin": "https://www.linkedin.com/in/amilosmanli/"
+    },
+    {
+      "name": "Pavel Nesterov",
+      "photo": "Pavel_Nesterov.jpg",
+      "position": "Data Scientist",
+      "organization": "noon",
+      "country": "United Arab Emirates",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Pavel Nesterov talents include writing python code, stacking layers, adding more trees, generating adversarial examples, teaching deep learning, building random projections, and popularizing machine learning. Pavel holds an MS in Applied Mathematics. Sometimes Pavel works in large companies for money, but not very often.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Dmitriy Selivanov",
+      "photo": "Dmitriy_Selivanov.jpg",
+      "position": "Data Scientist",
+      "organization": "Majid Al Futtaim",
+      "country": "United Arab Emirates",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Dmitriy Selivanov is a senior data scientist at Majid Al Futtaim (Dubai, UAE). He is responsible for building recommendation systems for loyal customers. Dmitriy also develops systems to support marketing campaigns. Before joining Majid Al Futtaim, Dmitriy worked as data scientist at noon.com and Odnoklassniki, where he was involved in projects related to NLP and recommendation systems. Dmitriy develops and maintains several popular open-source projects, most notably text2vec, a framework for natural language processing in R.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Vitalii Duk",
+      "photo": "Vitalii_Duk.jpg",
+      "position": "Senior Data Scientist",
+      "organization": "Dubizzle",
+      "country": "United Arab Emirates",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Vitalii Duk is a senior data scientist at Dubizzle, and is responsible for harnessing the power of big data to improve the user experience. Working at the leading classifieds platform in the UAE, Vitalii employs analytics and insights from Dubizzle to detect fraudulent posts, ensure product price optimization, and build tailored recommendation engines in order to provide a seamless experience for Dubizzle users. Leveraging data science and machine learning, he helps to uncover hidden insights and identify key trends in the data to predict future user behaviors and preferences.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Alexey Natekin",
       "photo": "missing.jpg",
+      "position": "Data Scientist",
+      "organization": "Founder @ ods.ai, DM Labs, Arktur",
+      "country": "Russia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/natekin/"
+    },
+    {
+      "name": "Giorgi Jvaridze",
+      "photo": "missing.jpg",
+      "position": "Data Engineer",
+      "organization": "Zalando",
+      "country": "Ireland",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Giorgi Jvaridze is a software engineer specializing in Data Science, Data Engineering, and Distributed Computing topics. Giorgi currently works at Zalando, Europe's largest online fashion retailer, in their Fashion Insights Centre in Dublin. Giorgi builds software that utilizes the vast amount of customer data and produces insights which help the business to make better decisions. Prior to Zalando Giorgi was working at TripAdvisor, helping to make the website more personalized. Giorgi is also co-organizer of the Data Science Tbilisi and Dublin Data Science groups, as well as a member of the organizing team of DataFest Tbilisi 2017.",
+      "facebook": "https://www.facebook.com/jvaridze",
+      "twitter": "https://twitter.com/0xh3x",
+      "linkedin": "https://www.linkedin.com/in/jvaridze/"
+    },
+    {
+      "name": "Rudolf Eremian",
+      "photo": "Rudolf_Eremian.jpg",
+      "position": "Machine Learning Engineer",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Rudolf Eremian's interest in Natural Language Processing started in 2014, when he was developing a tool for managing linguistic corpus at the Institute of Machine Mechanics. During that project, Rudolf did research about Automatic Georgian Dialect Identification which was awarded \"Best Scientific Research of the Tbilisi State University 76th Student Conference\". Rudolf has successfully completed several courses in the field of machine learning, natural language processing, and deep learning, including the Deep Learning Udacity Nanodegree, Stanford’s online Machine Learning course, and Language and Modern Technologies at Winter School of Goethe University Frankfurt. In July of 2017, Rudolf participated in the International Summer School and Summit on Deep Learning in Bilbao, Spain. Since 2016 Rudolf has been with PulsarAI as an ML / NLP software engineer, and his team started working on several NLP-based projects. The first project was about developing a chatbot framework adapted for Georgian texts. The project faced a lot of limitations but, fortunately, they found ways to eliminate these barriers and run a beta version of the chatbot. Today, Rudolf's team is developing several tools such Georgian spell checker, Latin-to-Georgian transliterarion, and Sentiment Analysis tools.",
+      "facebook": "https://www.facebook.com/rudolf.eremyan",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Nickolai Kvantaliani",
+      "photo": "Nickolai_Kvantaliani.jpg",
+      "position": "Security Expert",
+      "organization": "",
+      "country": "Belarus",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Nikolai Kvantaliani has been the director of the “New Group” Civil Society activists since 2001. Nikolai has also worked as a board member of the National Youth Council of Belarus from 2007 – 2011 and Steering Committee member of the Eastern Partnership Civil Society Forum from 2012 – 2014, and has been training activists for more than a decade. Nikolai’s current focus is on Digital Security and New Media for NGOs, and he often acts as trainer, consultant, and as an expert in this field. Together with \"Teplitsa technologies for social good,\" Nikolai has prepared and conducted a series of workshops on digital security and advocacy. Since 2017 Nikolai has been the Digital Communication Network Country Ambassador for Belarus: “In my country we have a gap between NGOs & technology, and my mission is to deliver Technology4NGO”",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Levan Tsinadze",
+      "photo": "Levan_Tsinadze.jpg",
+      "position": "Research Scientist",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/levan-tsinadze-246a1b2a/"
+    },
+    {
+      "name": "Soso Khutsishvili",
+      "photo": "Soso_Khutsishvili.jpg",
+      "position": "Organizer",
+      "organization": "Deep Learning Tbilisi Group",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "",
+      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
+    },
+    {
+      "name": "Zaal Gachechiladze",
+      "photo": "Zaal_Gachechiladze.jpg",
+      "position": "Co-Founder & CTO",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "",
       "facebook": "https://www.facebook.com/zaalgachechiladze",
       "twitter": "",
       "linkedin": "https://www.linkedin.com/in/zaalgachechiladze/"
