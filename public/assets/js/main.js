@@ -240,21 +240,25 @@ $(document).ready(function() {
     else {
       $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); })
       $(document).on('click', selector, function(e) {
-        if(!desktop) {
+        // if(!desktop) {
           $(this).toggleClass('hover')
-        }
+        // }
       })
-      $(document).on('mouseenter', selector, function(e) {
-        if(desktop) {
-          $(this).addClass('hover')
-        }
-      })
-      $(document).on('mouseleave', selector, function(e) {
-        if(desktop) {
-          $(this).removeClass('hover')
-        }
-      })
+      // $(document).on('mouseenter', selector, function(e) {
+      //   if(desktop) {
+      //     $(this).addClass('hover')
+      //   }
+      // })
+      // $(document).on('mouseleave', selector, function(e) {
+      //   if(desktop) {
+      //     $(this).removeClass('hover')
+      //   }
+      // })
     }
+    $(document).on('click', selector + ' .summary .close', function(e) {
+      $(this).closest('.card').removeClass('hover')
+      e.stopPropagation();
+    })
 
 
 

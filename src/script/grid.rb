@@ -85,5 +85,6 @@ def summary(item)
   if item.key?(key) && !item[key].empty?
     html += "#{item[key]}"
   end
-  html != "" ? "<div class=\"summary fadeIn animated\"><div>#{html}</div></div>" : ""
+  close = "<div class=\"close\"><img src=\"assets/images/x.svg\" title=\"Close\"/></div>"
+  html != "" ? "<div class=\"summary fadeIn animated\"><div>#{html}</div>#{close}</div>" : ""
 end
