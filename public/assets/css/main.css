@@ -348,7 +348,7 @@ a {
   .schedule li.day1 .info h4 { background-color: #0fcaed; }
   .schedule li.day2 .info h4 { background-color: #0fb9ed; }
   .schedule li .info p {
-    font: 13px/25px latina-m;
+    font: 17px/25px latina-m;
     color: #4f4f8e;
     padding: 14px 30px 25px;
     border-bottom-left-radius: 40px;
@@ -782,12 +782,18 @@ a {
     border-bottom-right-radius: 12px;
     z-index: 1;
     background-color: #fff;
-    overflow: auto;
     font: 16px/21px latina-l;
     color: #6D6D6D;
     text-align: left;
 
   }
+  .grid .summary > div{
+    overflow: auto;
+    height: 100%;
+    font: 16px/21px latina-l;
+    color: #6D6D6D;
+  }
+
   .grid .card.hover .info {
     border-bottom-color: transparent;
     border-bottom-left-radius: 0;

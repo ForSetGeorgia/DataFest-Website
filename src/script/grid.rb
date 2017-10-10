@@ -25,7 +25,7 @@ def grid(page, items)
             socials(page, item) +
             talk_icons(item) +
         "</div>" +
-        (item.key?(:summary) ? "<div class='summary fadeIn animated'>#{item[:summary]}</div>" : "") +
+        summary(item) +
       "</div>"
     if item_i % 3 == 2
       html += "</div>"
@@ -77,4 +77,13 @@ def talk_icons(item)
     end
   }
   html != "" ? "<div class=\"talk-icons\">#{html}</div>" : ""
+end
+
+def summary(item)
+  html = ""
+  key = :summary
+  if item.key?(key) && !item[key].empty?
+    html += "#{item[key]}"
+  end
+  html != "" ? "<div class=\"summary fadeIn animated\"><div>#{html}</div></div>" : ""
 end
