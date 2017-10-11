@@ -215,6 +215,7 @@ $(document).ready(function() {
         event.preventDefault()
       }
       event.stopPropagation();
+      $nav.trigger('click');
     })
 
     $(document).on('click', 'nav', function() {
