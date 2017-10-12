@@ -104,6 +104,24 @@
           "url": "https://tbilisi.impacthub.net/"
         }
       ]
+    },
+    {
+      "slug": "hosts",
+      "caption": "HOSTS",
+      "entities": [
+        {
+          "name": "Free University",
+          "description": "Free University",
+          "logo": "freeuni.png",
+          "url": "http://www.freeuni.edu.ge/en"
+        },
+        {
+          "name": "Museum Hotel",
+          "description": "Museum Hotel",
+          "logo": "museumhotel.png",
+          "url": "https://www.facebook.com/MuseumHotelTbilisi/"
+        }
+      ]
     }
   ]
 }
