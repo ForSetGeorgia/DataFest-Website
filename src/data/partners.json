@@ -44,10 +44,22 @@
       "caption": "SUPPORTERS",
       "entities": [
         {
+          "name": "DW Akademie",
+          "description": "DW Akademie",
+          "logo": "dwakademie.png",
+          "url": "http://www.dw.com/en/dw-akademie/about-us/s-9519"
+        },
+        {
           "name": "Ministry of Finance of the Slovak Republic",
           "description": "Ministry of Finance of the Slovak Republic",
           "logo": "mofsr.png",
           "url": "http://www.finance.gov.sk/en/"
+        },
+        {
+          "name": "Pulsar AI",
+          "description": "Pulsar AI",
+          "logo": "pulsar.png",
+          "url": "http://www.pulsar.ai/"
         },
         {
           "name": "TBC Bank",
@@ -55,18 +67,6 @@
           "logo": "tbc.png",
           "url": "http://www.tbcbank.ge/web/ka"
         },
-        {
-          "name": "DW Akademie",
-          "description": "DW Akademie",
-          "logo": "dwakademie.png",
-          "url": "http://www.dw.com/en/dw-akademie/about-us/s-9519"
-        }
-      ]
-    },
-    {
-      "slug": "friends",
-      "caption": "FRIENDS",
-      "entities": [
         {
           "name": "TransperenCEE",
           "description": "TransperenCEE",
