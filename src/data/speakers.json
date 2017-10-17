@@ -126,7 +126,7 @@
       "position": "Data Storyteller",
       "organization": "DW Academie",
       "country": "Germany",
-      "talk": "FALSE",
+      "talk": "TRUE",
       "workshop": "TRUE",
       "summary": "Rayna Breuer is a multimedia journalist working for Deutsche Welle, ARD, and Deutschlandfunk. She is an expert at finding stories in piles of numbers, and then telling them with innovative tools from different perspectives, Rayna is helping spearhead a new generation of journalism. Rayna previously worked with Datawrapper and other open source tools, and started with DDJ in 2012 with a project based on javascript.",
       "facebook": "",
@@ -368,6 +368,19 @@
       "linkedin": ""
     },
     {
+      "name": "Dmitriy Selivanov",
+      "photo": "Dmitriy_Selivanov.jpg",
+      "position": "Data Scientist",
+      "organization": "Majid Al Futtaim",
+      "country": "United Arab Emirates",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Dmitriy Selivanov is a senior data scientist at Majid Al Futtaim (Dubai, UAE). He is responsible for building recommendation systems for loyal customers. Dmitriy also develops systems to support marketing campaigns. Before joining Majid Al Futtaim, Dmitriy worked as data scientist at noon.com and Odnoklassniki, where he was involved in projects related to NLP and recommendation systems. Dmitriy develops and maintains several popular open-source projects, most notably text2vec, a framework for natural language processing in R.",
+      "facebook": "",
+      "twitter": "https://twitter.com/dselivanov_",
+      "linkedin": "https://www.linkedin.com/in/dselivanov1/"
+    },
+    {
       "name": "Mariam Kobuladze",
       "photo": "Mariam_Kobuladze.jpg",
       "position": "DataViz Designer",
@@ -381,6 +394,45 @@
       "linkedin": "https://www.linkedin.com/in/memerenard/"
     },
     {
+      "name": "Karolis Granickas",
+      "photo": "Karolis_Granickas.jpg",
+      "position": "Senior Program Manager",
+      "organization": "Open Contracting Partnership",
+      "country": "Lithuania",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Karolis Granickas is a senior program manager at Open Contracting Partnership. Prior to that, Karolis worked with Transparency International focusing on citizen engagement using ICT. Also, together with the Epsi platform, Open Knowledge International, Open Data Institute and others, he contributed to global open data advocacy efforts. Karolis has earned his Bachelor’s degree in International Law from the University of Westminster (UK) and Master’s degree in European Union Law from the University of Maastricht (the Netherlands).",
+      "facebook": "",
+      "twitter": "https://twitter.com/granickas",
+      "linkedin": "https://www.linkedin.com/in/karolis-granickas-969b4858/"
+    },
+    {
+      "name": "Zaal Gachechiladze",
+      "photo": "Zaal_Gachechiladze.jpg",
+      "position": "Co-Founder & CTO",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Zaal Gachechiladze is a co-founder and Chief Technology Officer of Pulsar AI, Georgia based AI first company that is pioneering the adoption of Machine learning based systems in wide range of industries in Georgia. Pulsar AI started less than a year ago with the aim to build automated agents that could converse with users in Georgian. Since then, Pulsar AI team has widened its span of expertise that includes custom made Georgian NLP engine, Georgian speech to text service, deep learning based face Id technology and some vital tools for pre-processing Georgian text online.",
+      "facebook": "https://www.facebook.com/zaalgachechiladze",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/zaalgachechiladze/"
+    },
+    {
+      "name": "Dachi Choladze",
+      "photo": "Dachi_Choladze.jpg",
+      "position": "Co-Founder & CEO",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "FALSE",
+      "summary": "Dachi Choladze is a co-founder and CEO of Pulsar AI, the company that specializes in Artificial Intelligence field. Pulsar AI started less than a year ago with the aim to build automated agents that could converse with users in Georgian. Since then, the team has widened its span of expertise that includes custom made Georgian NLP engine, Georgian speech to text service, deep learning based face ID technology and some vital tools for pre-processing Georgian text online.",
+      "facebook": "https://www.facebook.com/dachicholadze",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/choladze/"
+    },
+    {
       "name": "Oana Calugar",
       "photo": "Oana_Calugar.jpg",
       "position": "Consultant",
@@ -392,19 +444,6 @@
       "facebook": "",
       "twitter": "https://twitter.com/oana_co",
       "linkedin": ""
-    },
-    {
-      "name": "Dmitriy Selivanov",
-      "photo": "Dmitriy_Selivanov.jpg",
-      "position": "Data Scientist",
-      "organization": "Majid Al Futtaim",
-      "country": "United Arab Emirates",
-      "talk": "FALSE",
-      "workshop": "TRUE",
-      "summary": "Dmitriy Selivanov is a senior data scientist at Majid Al Futtaim (Dubai, UAE). He is responsible for building recommendation systems for loyal customers. Dmitriy also develops systems to support marketing campaigns. Before joining Majid Al Futtaim, Dmitriy worked as data scientist at noon.com and Odnoklassniki, where he was involved in projects related to NLP and recommendation systems. Dmitriy develops and maintains several popular open-source projects, most notably text2vec, a framework for natural language processing in R.",
-      "facebook": "",
-      "twitter": "https://twitter.com/dselivanov_",
-      "linkedin": "https://www.linkedin.com/in/dselivanov1/"
     }
   ]
 }
