@@ -14,7 +14,7 @@ def grid(page, items)
       fade_n += 1
     end
     html +=
-      (item_i % 3 == 0 ? "<div class=\"row\"#{fade_id}>" : "") +
+      # (item_i % 3 == 0 ? "<div class=\"row\"#{fade_id}>" : "") +
       "<div class=\"card\">" +
         "<div class=\"info\">" +
           "<div class='photo'><img src='assets/images/#{page}/#{item[:photo]}'/></div>" +
@@ -27,12 +27,12 @@ def grid(page, items)
         "</div>" +
         summary(item) +
       "</div>"
-    if item_i % 3 == 2
-      html += "</div>"
-      with_end = true
-    end
+    # if item_i % 3 == 2
+    #   html += "</div>"
+    #   with_end = true
+    # end
   }
-  html += "</div>" if !with_end
+  # html += "</div>" if !with_end
 
   # html += items.length > 6 ? "<div id=\"viewMore\" class=\"view-more\">View More</div>" : "<div class=\"space\"></div>"
 
@@ -85,6 +85,6 @@ def summary(item)
   if item.key?(key) && !item[key].empty?
     html += "#{item[key]}"
   end
-  close = "<div class=\"close\"><img src=\"assets/images/close.svg\" title=\"Close\" width=\"20px\" height=\"20px\"/></div>"
+  close = "<div class=\"close\"><img src=\"assets/images/close.svg\" title=\"Close\"/></div>"
   html != "" ? "<div class=\"summary fadeIn animated\"><div class=\"text\">#{html}</div>#{close}</div>" : ""
 end

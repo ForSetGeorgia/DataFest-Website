@@ -41,7 +41,7 @@ $(document).ready(function() {
       positions = generatePositionsArray(sw-maxWidth*sw/1745, scene.height(), maxWidth*sw/1745, 10);
       startCircleAnimation()
 
-      $app.css('left', b.width()>992 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
+      $app.css('left', b.width()>991 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
 
       desktop = b.width() >= 992
     }
