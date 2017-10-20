@@ -236,32 +236,29 @@ $(document).ready(function() {
     if (isTouchDevice()) {
       var touchevent = ('ontouchstart' in window) ? 'touchstart' : ((window.DocumentTouch && document instanceof DocumentTouch) ? 'tap' : 'click');
       $(document).on(touchevent, selector + ' a', function(e) { e.stopPropagation(); })
-      $(document).on(touchevent, selector, function(e) { $(this).toggleClass('hover') })
+      $(document).on(touchevent, selector, function(e) {
+        var t = $(this);
+        if (!t.hasClass('hover')) {
+          t.addClass('hover');
+        }
+        e.stopPropagation();
+      })
+      $(document).on(touchevent, selector + ' .summary .close', function(e) {
+        $(this).closest('.card').removeClass('hover')
+        e.stopPropagation();
+      })
     }
     else {
-      $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); })
+      $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); console.log('2') })
       $(document).on('click', selector, function(e) {
-        // if(!desktop) {
-          $(this).toggleClass('hover')
-        // }
+        $(this).toggleClass('hover')
+        e.stopPropagation();
       })
-      // $(document).on('mouseenter', selector, function(e) {
-      //   if(desktop) {
-      //     $(this).addClass('hover')
-      //   }
-      // })
-      // $(document).on('mouseleave', selector, function(e) {
-      //   if(desktop) {
-      //     $(this).removeClass('hover')
-      //   }
-      // })
+      $(document).on('click', selector + ' .summary .close', function(e) {
+        $(this).closest('.card').removeClass('hover')
+        e.stopPropagation();
+      })
     }
-    $(document).on('click', selector + ' .summary .close', function(e) {
-      $(this).closest('.card').removeClass('hover')
-      e.stopPropagation();
-    })
-
-
 
   // init
     setTimeout(function() {

@@ -62,6 +62,7 @@ a {
 }
 *::-webkit-scrollbar-thumb:hover {
   background-color: #b1b1b1;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 .hidden {
@@ -506,9 +507,10 @@ a {
     }
   }
 /* ----------------------- speakers */
-  [data-page="speakers"] .talk-workshop{
-    text-align: left;
-    margin-left: 42px;
+  [data-page="speakers"] .talk-workshop {
+    text-align: right;
+    // margin-left: 42px;
+    padding: 10px 30px 0;
     font: 16px/24px latina-l;
     color: #a3a3a3;
   }
@@ -523,6 +525,12 @@ a {
 
   [data-page="speakers"] img.workshop{
     width: 15px;
+  }
+  @media (min-width: 992px) {
+    [data-page="speakers"] .talk-workshop {
+      padding: 0;
+      float: right;
+    }
   }
 
 
@@ -717,6 +725,7 @@ a {
     border: 1px solid rgba(189, 189, 189, 0.24);
     border-radius: 12px;
     background-color: #fff;
+    height: 100%;
   }
   .grid .photo {
     padding: 0 54px;
@@ -774,12 +783,16 @@ a {
     display: inline-block;
     margin: 38px 8px 0;
   }
-  .grid .card.hover .name, .grid .card.hover .position, .grid .card.hover .grid-social,
-   .grid .card.hover .country, .grid .card.hover .organization {
+  .grid .card.hover .name,
+  .grid .card.hover .position,
+  .grid .card.hover .grid-social,
+  .grid .card.hover .country,
+  .grid .card.hover .organization {
     display: none;
   }
 
   .grid .summary {
+    position: relative;
     display: none;
     width: 100%;
     padding: 0 20px 35px;
@@ -792,17 +805,25 @@ a {
     font: 16px/21px latina-l;
     color: #6D6D6D;
     text-align: left;
+    margin-top: -1px;
   }
-  .grid .summary > div{
+  .grid .summary div:not(.close) {
     overflow: auto;
     height: 100%;
     font: 16px/21px latina-l;
     color: #6D6D6D;
   }
   .grid .summary .close{
-    display: none;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    padding: 0;
   }
-
+  .grid .card.hover {
+    // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   .grid .card.hover .info {
     border-bottom-color: transparent;
     border-bottom-left-radius: 0;
@@ -823,16 +844,15 @@ a {
       align-items: stretch;
     }
     .grid .row .card {
+      // display: flex;
+      // flex-direction: row;
+      // flex-grow:1;
+      // flex-basis: 0;
       min-width: 300px;
       max-width: 300px;
       margin: 24px 12px 0;
     }
-    .grid .row .card {
-      /*display: flex;*/
-      flex-direction: row;
-      flex-grow:1;
-      flex-basis: 0;
-    }
+
     .grid .row .card:first-of-type {
       margin-left: 0;
     }
@@ -853,21 +873,19 @@ a {
       left: 0;
       width: 300px;
       height: 100%;
-      padding: 50px 27px;
+      padding: 50px 7px 50px 27px;
       border: 1px solid rgba(189, 189, 189, 0.24);
       /*border-left-color: transparent;*/
       border-radius: 12px;
 /*      border-top-left-radius: 0;
       border-bottom-left-radius: 0;
 */    }
-      .grid .summary .close{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        display: block;
-      }
-
+    .grid .summary div {
+      padding: 0 20px 0 0;
+    }
+    .grid .summary .close{
+      top: 20px;
+    }
     .grid .summary::-webkit-scrollbar-track {
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
@@ -875,15 +893,12 @@ a {
     .grid .summary::-webkit-scrollbar-thumb {
       border-radius: 12px;
     }
-/*    .grid .row .card.hover .info {
-      border-top-left-radius: 12px;
-      border-bottom-left-radius: 12px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-right-color: transparent;
+    .grid .row .card.hover .info {
+      border-radius: 12px;
       border-bottom: 1px solid rgba(189, 189, 189, 0.24);
     }
-*/    .grid .row .card.hover:nth-of-type(3) .info {
+/*
+    .grid .row .card.hover:nth-of-type(3) .info {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 12px;
@@ -891,6 +906,7 @@ a {
       border-left-color: transparent;
       border-right: 1px solid rgba(189, 189, 189, 0.24);
     }
+*/
 /*    .grid .row .card.hover:nth-of-type(3) .summary {
       position: absolute;
       top: 0;
