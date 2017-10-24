@@ -717,8 +717,11 @@ a {
       margin: 0 0 42px 0;
       box-sizing: border-box;
     }
-    .grid .card .info {
+    [data-page="speackers"] .grid .card .info {
       min-height: 456px;
+    }
+    [data-page="team"] .grid .card .info {
+      min-height: 380px;
     }
     .grid .card:nth-of-type(2n+1) .info,
     .grid .card:nth-of-type(2n+1) .summary {
