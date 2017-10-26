@@ -84,6 +84,12 @@
           "description": "On.ge",
           "logo": "onge.png",
           "url": "https://on.ge"
+        },
+        {
+          "name": "Forbes Georgia",
+          "description": "Forbes Georgia",
+          "logo": "forbes.png",
+          "url": "http://forbes.ge/"
         }
       ]
     },

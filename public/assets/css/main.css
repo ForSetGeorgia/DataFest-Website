@@ -719,11 +719,11 @@ a {
       margin: 0 0 42px 0;
       box-sizing: border-box;
     }
-    [data-page="speackers"] .grid .card .info {
-      min-height: 456px;
+    [data-page="speakers"] .grid .card .info {
+      min-height: 424px;
     }
     [data-page="team"] .grid .card .info {
-      min-height: 380px;
+      min-height: 350px;
     }
     .grid .card:nth-of-type(2n+1) .info,
     .grid .card:nth-of-type(2n+1) .summary {
@@ -837,7 +837,7 @@ a {
   }
   .grid-social a {
     display: inline-block;
-    margin: 38px 8px 0;
+    margin: 24px 8px 0;
   }
   .grid .card.hover .name,
   .grid .card.hover .position,
