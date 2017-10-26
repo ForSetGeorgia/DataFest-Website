@@ -279,9 +279,11 @@ a {
     margin-bottom: 18px;
   }
   .intro > h2 {
-    font: 34px latina-l;
-    color: #4f4f8e;
     margin-bottom: 18px;
+  }
+  .intro > h2 a {
+    font: 22px latina-l;
+    color: #4f4f8e;
   }
   .intro > p {
     display: inline-block;
