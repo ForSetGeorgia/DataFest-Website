@@ -191,7 +191,7 @@
       "position": "Data Journalism Trainer",
       "organization": "",
       "country": "Kyrgyzstan",
-      "talk": "FALSE",
+      "talk": "TRUE",
       "workshop": "TRUE",
       "summary": "Anastasia Valeeva is a data journalism instructor and open data researcher. She researched the use of open data in investigative journalism as part of her fellowship at the Reuters Institute for the Study of Journalism in Oxford, UK. Anastasia has taught data journalism at Data Bootcamps in Montenegro and Germany, at Data Journalism Summer Institutes in Kyrgyzstan, Albania, and Russia. She is currently a data journalism lecturer at the American University of Central Asia, Kyrgyzstan.",
       "facebook": "@anastasiajourno",
@@ -355,6 +355,19 @@
       "linkedin": ""
     },
     {
+      "name": "Soso Khutsishvili",
+      "photo": "Soso_Khutsishvili.jpg",
+      "position": "Organizer",
+      "organization": "Deep Learning Tbilisi",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Soso Khutsishvili is co-founder of multiple startups and an organizer of Deep Learning Tbilisi meetup group. He has more than a decade of experience with technology and data. Soso has participated in many Machine Learning projects and is interested in involving young people into data science community.",
+      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
+    },
+    {
       "name": "Viktor Nestulia",
       "photo": "Viktor_Nestulia.jpg",
       "position": "Director of Innovation Projects Programme",
@@ -444,6 +457,32 @@
       "facebook": "",
       "twitter": "https://twitter.com/oana_co",
       "linkedin": ""
+    },
+    {
+      "name": "Hrant Khachatrian",
+      "photo": "Hrant_Khachatrian.jpg",
+      "position": "Researcher",
+      "organization": "YerevaNN lab",
+      "country": "Armenia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Hrant Khachatrian is a research scientist at YerevaNN lab. His research interests include deep learning and graph theory. He got his PhD in mathematics from Yerevan State University. Hrant also works at IntelinAir, a startup that brings state-of-the-art computer vision to agriculture.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Viktor Cherkaskyi",
+      "photo": "Viktor_Cherkaskyi.jpg",
+      "position": "Data Engineer",
+      "organization": "Zalando",
+      "country": "Ireland",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Viktor Cherkaskyi is a Software Engineer at Zalando, the biggest online fashion shop in Europe. Interested in the Data Structures & Algorithms, Applied Data Science and Distributed Data Processing, Viktor is working on customer data processing software, which helps direct business decisions in various areas including marketing campaigns, A/B testing and others. Previously worked at TripAdvisor, building the data improvement automation pipeline with improvement signals coming from various sources, having different trustworthiness and quality.",
+      "facebook": "",
+      "twitter": "https://twitter.com/vcherkassky",
+      "linkedin": "https://www.linkedin.com/in/viktor-cherkaskyi-9b467718/"
     }
   ]
 }
