@@ -56,16 +56,16 @@
           "url": "http://www.finance.gov.sk/en/"
         },
         {
-          "name": "Pulsar AI",
-          "description": "Pulsar AI",
-          "logo": "pulsar.png",
-          "url": "http://www.pulsar.ai/"
-        },
-        {
           "name": "TBC Bank",
           "description": "TBC Bank",
           "logo": "tbc.png",
           "url": "http://www.tbcbank.ge/web/ka"
+        },
+        {
+          "name": "Pulsar AI",
+          "description": "Pulsar AI",
+          "logo": "pulsar.png",
+          "url": "http://www.pulsar.ai/"
         },
         {
           "name": "TransperenCEE",
