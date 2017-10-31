@@ -52,8 +52,8 @@ def init
         .gsub('__title__', " #{page[:title]}")
         .gsub('__description__', " #{page[:description]}")
         .gsub('__data-page__', " data-page=\"#{page[:slug]}\"")
-        .gsub("data-ruby-nav=\"#{page[:slug]}\"", " class=\"active\"")
-        .gsub(/data\-ruby\-nav\=\".*\"/, "")
+        .gsub("data-ruby-nav=\"#{page[:slug]}__\"", " class=\"active\"")
+        .gsub(/data\-ruby\-nav\=\".*__\"/, "")
         .gsub('__content__', content)
 
     # create full page

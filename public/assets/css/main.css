@@ -138,7 +138,7 @@ a {
       display: block;
       height: auto;
       // margin: 60px 0 0;
-       margin: 120px 0 0;
+       // margin: 120px 0 0;
       background-color: transparent;
       z-index: 1;
     }
@@ -170,6 +170,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-items: center;
     max-height: 100%;
     overflow-y: auto;
 
@@ -178,6 +179,7 @@ a {
     margin-bottom: 30px;
   }
   nav ul li a {
+    display: inline-block;
     font: 20px latina-l;
     color: #fff;
     cursor: pointer;
@@ -224,6 +226,7 @@ a {
       padding: 0;
       width: auto;
       overflow-y: initial;
+      margin-top: 20px;
     }
     nav .nav-toggle {
       display: none;
@@ -235,7 +238,7 @@ a {
       color: #4f4f8e;
       cursor: pointer;
     }
-    nav ul li:not(:last-of-type):after {
+    nav ul li:not(.no-pipe):after {
       content: "|";
       display: inline-block;
       padding: 0 25px;
@@ -263,15 +266,17 @@ a {
     padding: 0 10px;
   }
 
-  .logo {
-    position: relative;
-    width: 100%;
-    max-width: 294px;
-    margin: 50px 0;
-    z-index: 1;
+  .logo img {
+    max-width: 160px;
+    // position: relative;
+    // width: 100%;
+    // max-width: 294px;
+    // margin: 50px 0;
+    // z-index: 1;
   }
   .intro {
     opacity: 0;
+    margin-top: 80px;
   }
   .intro > h1 {
     font: 34px latina-ub;
@@ -298,8 +303,14 @@ a {
     margin: 0 5px;
   }
   @media (min-width: 1200px) {
-    .logo {
-      margin: 60px 0;
+    .logo a {
+      margin: 0 25px 0 0; /* 60px 0; */
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    .intro {
+      margin-top: 20px;
     }
     .intro > p {
       margin-bottom: 72px;
@@ -349,7 +360,6 @@ a {
     padding: 21px 25px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    white-space: nowrap;
   }
   .schedule li.day1 .info h4 { background-color: #0fcaed; }
   .schedule li.day2 .info h4 { background-color: #0fb9ed; }
@@ -361,6 +371,13 @@ a {
     border-bottom-right-radius: 40px;
     min-height: 136px;
     text-align: left;
+  }
+
+
+  @media (min-width: 992px) {
+    .schedule li .info h4 {
+      white-space: nowrap;
+    }
   }
 
 /* ----------------------- subscribe */
@@ -503,11 +520,23 @@ a {
   .social-team a i.twitter { background-position: -17px -17px; }
   .social-team a i.instagram { background-position: -50px -17px; }
   .social-team a i.linkedin { background-position: -33px -17px; }
+
+  .organized {
+    padding: 0 10px;
+  }
+  .organized img {
+    width: 100%;
+  }
   @media (min-width: 992px) {
     .social {
       // margin-bottom: 90px;
     }
+    .organized {
+      padding: 0;
+    }
   }
+
+
 /* ----------------------- speakers */
   [data-page="speakers"] .talk-workshop {
     text-align: right;
@@ -702,7 +731,7 @@ a {
 /* ----------------------- grid */
 
   .grid {
-    padding: 24px 30px 0;
+    padding: 24px 10px 0;
     text-align: center;
   }
   .grid .card {
@@ -739,6 +768,9 @@ a {
   }
 
   @media (min-width: 992px) {
+    .grid {
+      padding: 24px 30px 0;
+    }
     .grid .card {
       width: 33.33%;
       margin: 0 0 42px 0;
