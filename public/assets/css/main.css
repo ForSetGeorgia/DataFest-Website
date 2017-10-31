@@ -184,7 +184,7 @@ a {
     color: #fff;
     cursor: pointer;
   }
-  nav ul li a.active, nav ul li a:hover {
+  nav ul li:not(.logo) a.active, nav ul li:not(.logo) a:hover {
     opacity: .4;
   }
   nav .nav-toggle {
