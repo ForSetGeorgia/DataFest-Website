@@ -4,6 +4,19 @@
   "description": "3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to Inspire, Share knowledge, Network, and Collaborate.",
   "items": [
     {
+      "name": "Emma Lacey-Bordeaux",
+      "photo": "Emma_Lacey-Bordeaux.jpg",
+      "position": "Editor",
+      "organization": "CNN",
+      "country": "USA",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Emma Lacey-Bordeaux is a platform-agnostic journalist driven by curiosity and the desire to make connections across space and perspective. Since 2008, she has worked at CNN – first as researcher, then Associate Producer, Reporter and Producer, and since 2013 as an Editor. Emma has worked on coverage for two presidential elections; the rise of the Tea Party, Occupy, and the Black Lives Matter movement; the Syrian Conflict; and the war in Ukraine.",
+      "facebook": "https://www.facebook.com/EmmaLaceyBordeaux",
+      "twitter": "https://twitter.com/ELBordeaux",
+      "linkedin": ""
+    },
+    {
       "name": "Valentine Gogichashvili",
       "photo": "Valentine_Gogichashvili.jpg",
       "position": "Head of Engineering",
@@ -17,30 +30,17 @@
       "linkedin": "https://www.linkedin.com/in/valentine-gogichashvili-7a18b812/"
     },
     {
-      "name": "Michael Crawford",
-      "photo": "Michael_Crawford.jpg",
-      "position": "Head of Data & Analytics",
-      "organization": "Barnett Waddingham",
+      "name": "Miriam Quick",
+      "photo": "Miriam_Quick.jpg",
+      "position": "Researcher for Information Visualization",
+      "organization": "",
       "country": "UK",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "",
-      "facebook": "https://www.facebook.com/michael.crawford.5855",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
-    },
-    {
-      "name": "Richard Morrisroe",
-      "photo": "Richard_Morrisroe.jpg",
-      "position": "Data Scientist",
-      "organization": "Facebook",
-      "country": "Ireland",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Richard Morrisroe is a Data Scientist at Facebook with many years of experience. Highly skilled with data analysis, machine learning, predictive analytics and SQL, his particular specialty is in converting business problems into forms in which they can be answered by data. He has extensive experience with extremely large data sets and uses R, Java, Python and Bash on a regular basis. Richard uses his skills to build cohort-based customer lifetime value models for Facebook customers to help them optimize their advertisement spend.",
-      "facebook": "https://www.facebook.com/richard.morrisroe",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
+      "summary": "Miriam Quick is a data journalist and researcher whose work has been regularly featured on the BBC, Quartz, and informationisbeautiful.net. She was the lead research on David McCandless’s infographic book Knowledge is Beautiful, and recently analyzed the data from over 250 film critics for BBC Culture’s “Greatest Comedies” poll. Miriam spends her days writing data-driven stories and animation scripts, or researching and crafting copy for infographics.",
+      "facebook": "https://www.facebook.com/miriam.quick",
+      "twitter": "https://twitter.com/miriamquick",
+      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
     },
     {
       "name": "Dachi Choladze",
@@ -56,17 +56,17 @@
       "linkedin": "https://www.linkedin.com/in/choladze/"
     },
     {
-      "name": "Mick Cooney",
-      "photo": "Mick_Cooney.jpg",
-      "position": "Dublin Data Science",
-      "organization": "Organizer",
-      "country": "Ireland",
+      "name": "Rayna Breuer",
+      "photo": "Rayna_Breuer.jpg",
+      "position": "Data Storyteller",
+      "organization": "DW Academie",
+      "country": "Germany",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Mick Cooney is a statistical modelling consultant specializing in financial services, and has over 15 years of experience in quantitative finance and insurance. Mick completed a PhD in Computational Quantitative Finance and spent 10 years modelling volatility for equity and equity index derivatives. He has spent the last few years in insurance helping companies in both life and general insurance with their modelling needs and has a particular focus on pricing and risk modelling for specialty insurance.",
+      "summary": "Rayna Breuer is a multimedia journalist working for Deutsche Welle, ARD, and Deutschlandfunk. She is an expert at finding stories in piles of numbers, and then telling them with innovative tools from different perspectives, Rayna is helping spearhead a new generation of journalism. Rayna previously worked with Datawrapper and other open source tools, and started with DDJ in 2012 with a project based on javascript.",
       "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
+      "twitter": "https://twitter.com/rayna_breuer",
+      "linkedin": ""
     },
     {
       "name": "Stefan Turkheimer",
@@ -173,17 +173,17 @@
       "linkedin": "https://www.linkedin.com/in/memerenard/"
     },
     {
-      "name": "Miriam Quick",
-      "photo": "Miriam_Quick.jpg",
-      "position": "Researcher for Information Visualization",
-      "organization": "",
-      "country": "UK",
+      "name": "Richard Morrisroe",
+      "photo": "Richard_Morrisroe.jpg",
+      "position": "Data Scientist",
+      "organization": "Facebook",
+      "country": "Ireland",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Miriam Quick is a data journalist and researcher whose work has been regularly featured on the BBC, Quartz, and informationisbeautiful.net. She was the lead research on David McCandless’s infographic book Knowledge is Beautiful, and recently analyzed the data from over 250 film critics for BBC Culture’s “Greatest Comedies” poll. Miriam spends her days writing data-driven stories and animation scripts, or researching and crafting copy for infographics.",
-      "facebook": "https://www.facebook.com/miriam.quick",
-      "twitter": "https://twitter.com/miriamquick",
-      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
+      "summary": "Richard Morrisroe is a Data Scientist at Facebook with many years of experience. Highly skilled with data analysis, machine learning, predictive analytics and SQL, his particular specialty is in converting business problems into forms in which they can be answered by data. He has extensive experience with extremely large data sets and uses R, Java, Python and Bash on a regular basis. Richard uses his skills to build cohort-based customer lifetime value models for Facebook customers to help them optimize their advertisement spend.",
+      "facebook": "https://www.facebook.com/richard.morrisroe",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
     },
     {
       "name": "Andriy Gazin",
@@ -212,30 +212,30 @@
       "linkedin": ""
     },
     {
-      "name": "Rayna Breuer",
-      "photo": "Rayna_Breuer.jpg",
-      "position": "Data Storyteller",
-      "organization": "DW Academie",
-      "country": "Germany",
+      "name": "Mick Cooney",
+      "photo": "Mick_Cooney.jpg",
+      "position": "Dublin Data Science",
+      "organization": "Organizer",
+      "country": "Ireland",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Rayna Breuer is a multimedia journalist working for Deutsche Welle, ARD, and Deutschlandfunk. She is an expert at finding stories in piles of numbers, and then telling them with innovative tools from different perspectives, Rayna is helping spearhead a new generation of journalism. Rayna previously worked with Datawrapper and other open source tools, and started with DDJ in 2012 with a project based on javascript.",
+      "summary": "Mick Cooney is a statistical modelling consultant specializing in financial services, and has over 15 years of experience in quantitative finance and insurance. Mick completed a PhD in Computational Quantitative Finance and spent 10 years modelling volatility for equity and equity index derivatives. He has spent the last few years in insurance helping companies in both life and general insurance with their modelling needs and has a particular focus on pricing and risk modelling for specialty insurance.",
       "facebook": "",
-      "twitter": "https://twitter.com/rayna_breuer",
-      "linkedin": ""
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
     },
     {
-      "name": "Emma Lacey-Bordeaux",
-      "photo": "Emma_Lacey-Bordeaux.jpg",
-      "position": "Editor",
-      "organization": "CNN",
-      "country": "USA",
+      "name": "Michael Crawford",
+      "photo": "Michael_Crawford.jpg",
+      "position": "Head of Data & Analytics",
+      "organization": "Barnett Waddingham",
+      "country": "UK",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Emma Lacey-Bordeaux is a platform-agnostic journalist driven by curiosity and the desire to make connections across space and perspective. Since 2008, she has worked at CNN – first as researcher, then Associate Producer, Reporter and Producer, and since 2013 as an Editor. Emma has worked on coverage for two presidential elections; the rise of the Tea Party, Occupy, and the Black Lives Matter movement; the Syrian Conflict; and the war in Ukraine.",
-      "facebook": "https://www.facebook.com/EmmaLaceyBordeaux",
-      "twitter": "https://twitter.com/ELBordeaux",
-      "linkedin": ""
+      "summary": "",
+      "facebook": "https://www.facebook.com/michael.crawford.5855",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
     },
     {
       "name": "Eric Barrett",
@@ -454,7 +454,7 @@
       "talk": "FALSE",
       "workshop": "TRUE",
       "summary": "Hrant Khachatrian is a research scientist at YerevaNN lab. His research interests include deep learning and graph theory. He got his PhD in mathematics from Yerevan State University. Hrant also works at IntelinAir, a startup that brings state-of-the-art computer vision to agriculture.",
-      "facebook": "",
+      "facebook": "https://www.facebook.com/hrant.khachatrian",
       "twitter": "",
       "linkedin": ""
     },
@@ -494,7 +494,7 @@
       "workshop": "TRUE",
       "summary": "Andrew joined Transparency International movement 6 years ago as the director of public relations for the Russian chapter. Later he switched to be the head of Declarator.org project, which is the unified database of income and asset declaration of Russian public officials. The field of his interests include data standards, registries of public service employees and the legal limitations for them.",
       "facebook": "",
-      "twitter": "",
+      "twitter": "https://twitter.com/jvirblis",
       "linkedin": ""
     },
     {
@@ -507,8 +507,8 @@
       "workshop": "TRUE",
       "summary": "Elena Calistru is the chair and founder of Funky Citizens, a Romanian-based NGO. Funky Citizens builds research-based, data-driven advocacy tools. Funky Citizens’ tools aim to be educational and actionable, encouraging citizens to engage in accountability and government responsibility initiatives in which they can see an impact. Elena has more than 7 years of experience in civil society projects, both at national and international level. Her expertise is mainly in the area of good governance, transparency, public finance and advocacy. She strongly believes that data and online tools can empower citizens to influence public sector reform.",
       "facebook": "",
-      "twitter": "",
-      "linkedin": ""
+      "twitter": "https://twitter.com/madamadepica",
+      "linkedin": "https://ro.linkedin.com/in/elena-calistru-753a0a30"
     },
     {
       "name": "Marco Schmidt",
