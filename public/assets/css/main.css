@@ -76,6 +76,8 @@ a {
     height: 100%;
     // min-width: 100%;
     white-space: nowrap;
+    // overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   nav {
     position: relative;
