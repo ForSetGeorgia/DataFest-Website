@@ -4,19 +4,6 @@
   "description": "3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to Inspire, Share knowledge, Network, and Collaborate.",
   "items": [
     {
-      "name": "Richard Morrisroe",
-      "photo": "Richard_Morrisroe.jpg",
-      "position": "Data Scientist",
-      "organization": "Facebook",
-      "country": "Ireland",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Richard Morrisroe is a Data Scientist at Facebook with many years of experience. Highly skilled with data analysis, machine learning, predictive analytics and SQL, his particular specialty is in converting business problems into forms in which they can be answered by data. He has extensive experience with extremely large data sets and uses R, Java, Python and Bash on a regular basis. Richard uses his skills to build cohort-based customer lifetime value models for Facebook customers to help them optimize their advertisement spend.",
-      "facebook": "https://www.facebook.com/richard.morrisroe",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
-    },
-    {
       "name": "Emma Lacey-Bordeaux",
       "photo": "Emma_Lacey-Bordeaux.jpg",
       "position": "Editor",
@@ -28,71 +15,6 @@
       "facebook": "https://www.facebook.com/EmmaLaceyBordeaux",
       "twitter": "https://twitter.com/ELBordeaux",
       "linkedin": ""
-    },
-    {
-      "name": "Christiaan Triebert",
-      "photo": "Christiaan_Triebert.jpg",
-      "position": "Digital Forensics Researcher",
-      "organization": "Bellingcat",
-      "country": "Netherlands",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Christiaan Triebert is a conflict researcher with Bellingcat, a multi-award winning collective that uses online open source information to investigate armed conflicts and corruption. Among a wide variety of topics, Triebert has especially focused on investigating airstrikes in the Middle East, also in his capacity as geolocation expert for monitoring organisation Airwars. His digital reconstruction of the Turkish coup d’état attempt won the Innovation Award of the European Press Prize.",
-      "facebook": "",
-      "twitter": "https://twitter.com/trbrtc",
-      "linkedin": "https://www.linkedin.com/in/christiaantriebert/"
-    },
-    {
-      "name": "Stefan Turkheimer",
-      "photo": "Stefan_Turkheimer.jpg",
-      "position": "Political Consultant",
-      "organization": "",
-      "country": "USA",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Stefan Turkheimer is a lawyer and political consultant with offices in Atlanta, Georgia and Washington, DC. For over a decade, he has advised candidates at the local, state, and national level. He specializes in boutique communications strategies for candidates and elected officials, providing top-to-bottom services, crafting candidates’ messaging and social media presence, and elevating the profiles of politicians even in the most crowded or competitive fields.",
-      "facebook": "https://www.facebook.com/turkheimer",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/stefan-turkheimer-06466a5/"
-    },
-    {
-      "name": "Jelena Vasic",
-      "photo": "Jelena_Vasic.jpg",
-      "position": "Journalist/Project Manager",
-      "organization": "KRIK",
-      "country": "Serbia",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Jelena Vasic is project manager and investigative reporter for the Crime and Corruption Reporting Network (KRIK) in Serbia, and has been a member of the KRIK team since its beginning in April 2015. Jelena has also worked as an investigative reporter for the Organized Crime and Corruption Reporting Project (OCCRP). As part of the KRIK investigative team Jelena has also won the international Data Journalism Award in 2017, for developing a unique online Database of Assets of Serbian Politicians.",
-      "facebook": "https://www.facebook.com/jelena.vasic.50115",
-      "twitter": "https://twitter.com/_jelvas",
-      "linkedin": ""
-    },
-    {
-      "name": "Jason Addie",
-      "photo": "Jason_Addie.jpg",
-      "position": "Data Wrangler",
-      "organization": "ForSet",
-      "country": "Georgia",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Jason Addie is co-founder and head of technology for ForSet, a Georgian civic tech NGO specializing in effective communications for social issues by using data, design, and technology. He analyzes data, creates story concepts, builds interactive websites, and has contributed to more than 40 interactive web stories and more than 200 visualizations. Jason can take lifeless 30 page reports and transform them into stories that the public understands and cares about.",
-      "facebook": "https://www.facebook.com/jason.addie",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/jasonaddie/"
-    },
-    {
-      "name": "Miriam Quick",
-      "photo": "Miriam_Quick.jpg",
-      "position": "Researcher for Information Visualization",
-      "organization": "",
-      "country": "UK",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Miriam Quick is a data journalist and researcher whose work has been regularly featured on the BBC, Quartz, and informationisbeautiful.net. She was the lead research on David McCandless’s infographic book Knowledge is Beautiful, and recently analyzed the data from over 250 film critics for BBC Culture’s “Greatest Comedies” poll. Miriam spends her days writing data-driven stories and animation scripts, or researching and crafting copy for infographics.",
-      "facebook": "https://www.facebook.com/miriam.quick",
-      "twitter": "https://twitter.com/miriamquick",
-      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
     },
     {
       "name": "Valentine Gogichashvili",
@@ -108,17 +30,30 @@
       "linkedin": "https://www.linkedin.com/in/valentine-gogichashvili-7a18b812/"
     },
     {
-      "name": "Mick Cooney",
-      "photo": "Mick_Cooney.jpg",
-      "position": "Dublin Data Science",
-      "organization": "Organizer",
-      "country": "Ireland",
+      "name": "Miriam Quick",
+      "photo": "Miriam_Quick.jpg",
+      "position": "Researcher for Information Visualization",
+      "organization": "",
+      "country": "UK",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Mick Cooney is a statistical modelling consultant specializing in financial services, and has over 15 years of experience in quantitative finance and insurance. Mick completed a PhD in Computational Quantitative Finance and spent 10 years modelling volatility for equity and equity index derivatives. He has spent the last few years in insurance helping companies in both life and general insurance with their modelling needs and has a particular focus on pricing and risk modelling for specialty insurance.",
-      "facebook": "",
+      "summary": "Miriam Quick is a data journalist and researcher whose work has been regularly featured on the BBC, Quartz, and informationisbeautiful.net. She was the lead research on David McCandless’s infographic book Knowledge is Beautiful, and recently analyzed the data from over 250 film critics for BBC Culture’s “Greatest Comedies” poll. Miriam spends her days writing data-driven stories and animation scripts, or researching and crafting copy for infographics.",
+      "facebook": "https://www.facebook.com/miriam.quick",
+      "twitter": "https://twitter.com/miriamquick",
+      "linkedin": "https://www.linkedin.com/in/miriam-quick-3344a7/"
+    },
+    {
+      "name": "Dachi Choladze",
+      "photo": "Dachi_Choladze.jpg",
+      "position": "Co-Founder & CEO",
+      "organization": "Pulsar AI",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "FALSE",
+      "summary": "Dachi Choladze is a co-founder and CEO of Pulsar AI, the company that specializes in Artificial Intelligence field. Pulsar AI started less than a year ago with the aim to build automated agents that could converse with users in Georgian. Since then, the team has widened its span of expertise that includes custom made Georgian NLP engine, Georgian speech to text service, deep learning based face ID technology and some vital tools for pre-processing Georgian text online.",
+      "facebook": "https://www.facebook.com/dachicholadze",
       "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
+      "linkedin": "https://www.linkedin.com/in/choladze/"
     },
     {
       "name": "Rayna Breuer",
@@ -131,6 +66,71 @@
       "summary": "Rayna Breuer is a multimedia journalist working for Deutsche Welle, ARD, and Deutschlandfunk. She is an expert at finding stories in piles of numbers, and then telling them with innovative tools from different perspectives, Rayna is helping spearhead a new generation of journalism. Rayna previously worked with Datawrapper and other open source tools, and started with DDJ in 2012 with a project based on javascript.",
       "facebook": "",
       "twitter": "https://twitter.com/rayna_breuer",
+      "linkedin": ""
+    },
+    {
+      "name": "Stefan Turkheimer",
+      "photo": "Stefan_Turkheimer.jpg",
+      "position": "Political Consultant",
+      "organization": "",
+      "country": "USA",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Stefan Turkheimer is a lawyer and political consultant with offices in Atlanta, Georgia and Washington, DC. For over a decade, he has advised candidates at the local, state, and national level. He specializes in boutique communications strategies for candidates and elected officials, providing top-to-bottom services, crafting candidates’ messaging and social media presence, and elevating the profiles of politicians even in the most crowded or competitive fields.",
+      "facebook": "https://www.facebook.com/turkheimer",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/stefan-turkheimer-06466a5/"
+    },
+    {
+      "name": "Alexey Natekin",
+      "photo": "Alexey_Natekin.jpg",
+      "position": "Data Scientist  / Founder",
+      "organization": "ods.ai",
+      "country": "Russia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Alex Natekin is the founder of a series of Data-Science related projects and companies, among which are Open Data Science ods.ai, DM Labs consultancy agency dmlabs.org and Arktur ML competition platform arktur.io. Previously worked in various industry companies while organizing, raising and leading DS groups, thus claiming the title of Data Demiurge. Alex occasionally writes articles and does research in GBMs and ML applications.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/natekin/"
+    },
+    {
+      "name": "Christiaan Triebert",
+      "photo": "Christiaan_Triebert.jpg",
+      "position": "Digital Forensics Researcher",
+      "organization": "Bellingcat",
+      "country": "Netherlands",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Christiaan Triebert is a conflict researcher with Bellingcat, a multi-award winning collective that uses online open source information to investigate armed conflicts and corruption. Among a wide variety of topics, Triebert has especially focused on investigating airstrikes in the Middle East, also in his capacity as geolocation expert for monitoring organisation Airwars. His digital reconstruction of the Turkish coup d’état attempt won the Innovation Award of the European Press Prize.",
+      "facebook": "",
+      "twitter": "https://twitter.com/trbrtc",
+      "linkedin": "https://www.linkedin.com/in/christiaantriebert/"
+    },
+    {
+      "name": "Jason Addie",
+      "photo": "Jason_Addie.jpg",
+      "position": "Data Wrangler",
+      "organization": "ForSet",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Jason Addie is co-founder and head of technology for ForSet, a Georgian civic tech NGO specializing in effective communications for social issues by using data, design, and technology. He analyzes data, creates story concepts, builds interactive websites, and has contributed to more than 40 interactive web stories and more than 200 visualizations. Jason can take lifeless 30 page reports and transform them into stories that the public understands and cares about.",
+      "facebook": "https://www.facebook.com/jason.addie",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/jasonaddie/"
+    },
+    {
+      "name": "Jelena Vasic",
+      "photo": "Jelena_Vasic.jpg",
+      "position": "Journalist/Project Manager",
+      "organization": "KRIK",
+      "country": "Serbia",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Jelena Vasic is project manager and investigative reporter for the Crime and Corruption Reporting Network (KRIK) in Serbia, and has been a member of the KRIK team since its beginning in April 2015. Jelena has also worked as an investigative reporter for the Organized Crime and Corruption Reporting Project (OCCRP). As part of the KRIK investigative team Jelena has also won the international Data Journalism Award in 2017, for developing a unique online Database of Assets of Serbian Politicians.",
+      "facebook": "https://www.facebook.com/jelena.vasic.50115",
+      "twitter": "https://twitter.com/_jelvas",
       "linkedin": ""
     },
     {
@@ -147,19 +147,6 @@
       "linkedin": "https://www.linkedin.com/in/jakubgornicki"
     },
     {
-      "name": "Andriy Gazin",
-      "photo": "Andriy_Gazin.jpg",
-      "position": "Data Journalist",
-      "organization": "Textura.in.ua",
-      "country": "Ukraine",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Andriy Gazin is a data journalist who uses programming, data analysis, and data visualization to find and tell stories. Andriy’s interests include the R programming language, life-blogging, and comic books and graphic novels. The former head of the infographics department at weekly magazines Korrespondent and Novoe Vremya, Andriy spends much of his time providing training sessions on data analysis and visualization for journalists and NGOs and keeping up his data journalism blog textura.in.ua.",
-      "facebook": "https://www.facebook.com/andriy.gazin",
-      "twitter": "https://twitter.com/AndriyGazin",
-      "linkedin": "https://www.linkedin.com/in/andriygazin"
-    },
-    {
       "name": "Thomas Burns",
       "photo": "Thomas_Burns.jpg",
       "position": "Digital Storyteller",
@@ -173,17 +160,43 @@
       "linkedin": "https://www.linkedin.com/in/thomasmburns/"
     },
     {
-      "name": "Eric Barrett",
-      "photo": "Eric_Barrett.jpg",
-      "position": "Data Consultant",
+      "name": "Mariam Kobuladze",
+      "photo": "Mariam_Kobuladze.jpg",
+      "position": "DataViz Designer",
       "organization": "",
       "country": "Georgia",
       "talk": "TRUE",
       "workshop": "TRUE",
-      "summary": "Eric Barrett has worked in the field of data, technology, and transparency for almost 10 years. From 2008-2010 he worked at Transparency International Georgia as Digital Organizer. Eric became Executive Director in 2012 and took JumpStart in a new direction, combining data and visualizations with journalism to tell stories from Georgia in innovative ways. Eric now teaches and works with organizations in the Caucasus, telling stories in which data and design are crucial components.",
+      "summary": "Mariam Kobuladze has more than 5 years of experience working with infographics and UI/UX design. Mariam is currently working on a variety of projects as a freelance designer. Recently she has spent four years working with JumpStart Georgia, designing award-winning infographics, interactive visualizations and data portals. Mariam also teaches at the Caucasus School of Technology in Tbilisi, Georgia.",
       "facebook": "",
-      "twitter": "https://twitter.com/brrttwrks",
-      "linkedin": ""
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/memerenard/"
+    },
+    {
+      "name": "Richard Morrisroe",
+      "photo": "Richard_Morrisroe.jpg",
+      "position": "Data Scientist",
+      "organization": "Facebook",
+      "country": "Ireland",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Richard Morrisroe is a Data Scientist at Facebook with many years of experience. Highly skilled with data analysis, machine learning, predictive analytics and SQL, his particular specialty is in converting business problems into forms in which they can be answered by data. He has extensive experience with extremely large data sets and uses R, Java, Python and Bash on a regular basis. Richard uses his skills to build cohort-based customer lifetime value models for Facebook customers to help them optimize their advertisement spend.",
+      "facebook": "https://www.facebook.com/richard.morrisroe",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/richardmorrisroe/"
+    },
+    {
+      "name": "Andriy Gazin",
+      "photo": "Andriy_Gazin.jpg",
+      "position": "Data Journalist",
+      "organization": "Textura.in.ua",
+      "country": "Ukraine",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Andriy Gazin is a data journalist who uses programming, data analysis, and data visualization to find and tell stories. Andriy’s interests include the R programming language, life-blogging, and comic books and graphic novels. The former head of the infographics department at weekly magazines Korrespondent and Novoe Vremya, Andriy spends much of his time providing training sessions on data analysis and visualization for journalists and NGOs and keeping up his data journalism blog textura.in.ua.",
+      "facebook": "https://www.facebook.com/andriy.gazin",
+      "twitter": "https://twitter.com/AndriyGazin",
+      "linkedin": "https://www.linkedin.com/in/andriygazin"
     },
     {
       "name": "Anastasia Valeeva",
@@ -196,6 +209,45 @@
       "summary": "Anastasia Valeeva is a data journalism instructor and open data researcher. She researched the use of open data in investigative journalism as part of her fellowship at the Reuters Institute for the Study of Journalism in Oxford, UK. Anastasia has taught data journalism at Data Bootcamps in Montenegro and Germany, at Data Journalism Summer Institutes in Kyrgyzstan, Albania, and Russia. She is currently a data journalism lecturer at the American University of Central Asia, Kyrgyzstan.",
       "facebook": "@anastasiajourno",
       "twitter": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Mick Cooney",
+      "photo": "Mick_Cooney.jpg",
+      "position": "Dublin Data Science",
+      "organization": "Organizer",
+      "country": "Ireland",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "Mick Cooney is a statistical modelling consultant specializing in financial services, and has over 15 years of experience in quantitative finance and insurance. Mick completed a PhD in Computational Quantitative Finance and spent 10 years modelling volatility for equity and equity index derivatives. He has spent the last few years in insurance helping companies in both life and general insurance with their modelling needs and has a particular focus on pricing and risk modelling for specialty insurance.",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/mick-cooney-56b18535/"
+    },
+    {
+      "name": "Michael Crawford",
+      "photo": "Michael_Crawford.jpg",
+      "position": "Head of Data & Analytics",
+      "organization": "Barnett Waddingham",
+      "country": "UK",
+      "talk": "TRUE",
+      "workshop": "TRUE",
+      "summary": "",
+      "facebook": "https://www.facebook.com/michael.crawford.5855",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/michaelcrawford3/"
+    },
+    {
+      "name": "Eric Barrett",
+      "photo": "Eric_Barrett.jpg",
+      "position": "Data Consultant",
+      "organization": "",
+      "country": "Georgia",
+      "talk": "TRUE",
+      "workshop": "FALSE",
+      "summary": "Eric Barrett has worked in the field of data, technology, and transparency for almost 10 years. From 2008-2010 he worked at Transparency International Georgia as Digital Organizer. Eric became Executive Director in 2012 and took JumpStart in a new direction, combining data and visualizations with journalism to tell stories from Georgia in innovative ways. Eric now teaches and works with organizations in the Caucasus, telling stories in which data and design are crucial components.",
+      "facebook": "",
+      "twitter": "https://twitter.com/brrttwrks",
       "linkedin": ""
     },
     {
@@ -236,19 +288,6 @@
       "facebook": "https://www.facebook.com/jvaridze",
       "twitter": "https://twitter.com/0xh3x",
       "linkedin": "https://www.linkedin.com/in/jvaridze/"
-    },
-    {
-      "name": "Nathan Schepers",
-      "photo": "Nathan_Schepers.jpg",
-      "position": "",
-      "organization": "The Romanian Center for Investigative Journalism",
-      "country": "Romania",
-      "talk": "FALSE",
-      "workshop": "TRUE",
-      "summary": "Nathan Scheper's engineering background spans fifteen years and incorporates many technologies. He has worked in every aspect of the software development industry, from testing and development to technical leadership and enterprise project management. Nathan currently works as technical product manager for the Romanian Centre for Investigative Journalism (CRJI), whose mission is to deconstruct and expose corrupt structures of power and to create an interdisciplinary community of collectors and disseminators of relevant and verifiable information.",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/nathanschepers/"
     },
     {
       "name": "Amil Osmanli",
@@ -303,19 +342,6 @@
       "linkedin": "https://www.linkedin.com/in/vit-d/"
     },
     {
-      "name": "Alexey Natekin",
-      "photo": "Alexey_Natekin.jpg",
-      "position": "Data Scientist  / Founder",
-      "organization": "ods.ai",
-      "country": "Russia",
-      "talk": "TRUE",
-      "workshop": "TRUE",
-      "summary": "Alex Natekin is the founder of a series of Data-Science related projects and companies, among which are Open Data Science ods.ai, DM Labs consultancy agency dmlabs.org and Arktur ML competition platform arktur.io. Previously worked in various industry companies while organizing, raising and leading DS groups, thus claiming the title of Data Demiurge. Alex occasionally writes articles and does research in GBMs and ML applications.",
-      "facebook": "",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/natekin/"
-    },
-    {
       "name": "Rudolf Eremian",
       "photo": "Rudolf_Eremian.jpg",
       "position": "Machine Learning Engineer",
@@ -355,19 +381,6 @@
       "linkedin": ""
     },
     {
-      "name": "Soso Khutsishvili",
-      "photo": "Soso_Khutsishvili.jpg",
-      "position": "Organizer",
-      "organization": "Deep Learning Tbilisi",
-      "country": "Georgia",
-      "talk": "FALSE",
-      "workshop": "TRUE",
-      "summary": "Soso Khutsishvili is co-founder of multiple startups and an organizer of Deep Learning Tbilisi meetup group. He has more than a decade of experience with technology and data. Soso has participated in many Machine Learning projects and is interested in involving young people into data science community.",
-      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
-    },
-    {
       "name": "Viktor Nestulia",
       "photo": "Viktor_Nestulia.jpg",
       "position": "Director of Innovation Projects Programme",
@@ -394,17 +407,17 @@
       "linkedin": "https://www.linkedin.com/in/dselivanov1/"
     },
     {
-      "name": "Mariam Kobuladze",
-      "photo": "Mariam_Kobuladze.jpg",
-      "position": "DataViz Designer",
-      "organization": "",
+      "name": "Levan Tsinadze",
+      "photo": "Levan_Tsinadze.jpg",
+      "position": "Research Scientist",
+      "organization": "Pulsar AI",
       "country": "Georgia",
-      "talk": "TRUE",
+      "talk": "FALSE",
       "workshop": "TRUE",
-      "summary": "Mariam Kobuladze has more than 5 years of experience working with infographics and UI/UX design. Mariam is currently working on a variety of projects as a freelance designer. Recently she has spent four years working with JumpStart Georgia, designing award-winning infographics, interactive visualizations and data portals. Mariam also teaches at the Caucasus School of Technology in Tbilisi, Georgia.",
+      "summary": "",
       "facebook": "",
       "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/memerenard/"
+      "linkedin": "https://www.linkedin.com/in/levan-tsinadze-246a1b2a/"
     },
     {
       "name": "Karolis Granickas",
@@ -418,32 +431,6 @@
       "facebook": "",
       "twitter": "https://twitter.com/granickas",
       "linkedin": "https://www.linkedin.com/in/karolis-granickas-969b4858/"
-    },
-    {
-      "name": "Zaal Gachechiladze",
-      "photo": "Zaal_Gachechiladze.jpg",
-      "position": "Co-Founder & CTO",
-      "organization": "Pulsar AI",
-      "country": "Georgia",
-      "talk": "FALSE",
-      "workshop": "TRUE",
-      "summary": "Zaal Gachechiladze is a co-founder and Chief Technology Officer of Pulsar AI, Georgia based AI first company that is pioneering the adoption of Machine learning based systems in wide range of industries in Georgia. Pulsar AI started less than a year ago with the aim to build automated agents that could converse with users in Georgian. Since then, Pulsar AI team has widened its span of expertise that includes custom made Georgian NLP engine, Georgian speech to text service, deep learning based face Id technology and some vital tools for pre-processing Georgian text online.",
-      "facebook": "https://www.facebook.com/zaalgachechiladze",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/zaalgachechiladze/"
-    },
-    {
-      "name": "Dachi Choladze",
-      "photo": "Dachi_Choladze.jpg",
-      "position": "Co-Founder & CEO",
-      "organization": "Pulsar AI",
-      "country": "Georgia",
-      "talk": "TRUE",
-      "workshop": "FALSE",
-      "summary": "Dachi Choladze is a co-founder and CEO of Pulsar AI, the company that specializes in Artificial Intelligence field. Pulsar AI started less than a year ago with the aim to build automated agents that could converse with users in Georgian. Since then, the team has widened its span of expertise that includes custom made Georgian NLP engine, Georgian speech to text service, deep learning based face ID technology and some vital tools for pre-processing Georgian text online.",
-      "facebook": "https://www.facebook.com/dachicholadze",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/in/choladze/"
     },
     {
       "name": "Oana Calugar",
@@ -467,9 +454,22 @@
       "talk": "FALSE",
       "workshop": "TRUE",
       "summary": "Hrant Khachatrian is a research scientist at YerevaNN lab. His research interests include deep learning and graph theory. He got his PhD in mathematics from Yerevan State University. Hrant also works at IntelinAir, a startup that brings state-of-the-art computer vision to agriculture.",
-      "facebook": "",
+      "facebook": "https://www.facebook.com/hrant.khachatrian",
       "twitter": "",
       "linkedin": ""
+    },
+    {
+      "name": "Soso Khutsishvili",
+      "photo": "Soso_Khutsishvili.jpg",
+      "position": "Organizer",
+      "organization": "Deep Learning Tbilisi",
+      "country": "Georgia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Soso Khutsishvili is co-founder of multiple startups and an organizer of Deep Learning Tbilisi meetup group. He has more than a decade of experience with technology and data. Soso has participated in many Machine Learning projects and is interested in involving young people into data science community.",
+      "facebook": "https://www.facebook.com/profile.php?id=100009470347933",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/soso-khutsishvili-9348a8b5/"
     },
     {
       "name": "Viktor Cherkaskyi",
@@ -483,6 +483,45 @@
       "facebook": "",
       "twitter": "https://twitter.com/vcherkassky",
       "linkedin": "https://www.linkedin.com/in/viktor-cherkaskyi-9b467718/"
+    },
+    {
+      "name": "Andrew Jvirblis",
+      "photo": "Andrew_Jvirblis.jpg",
+      "position": "Declarator Project Head",
+      "organization": "Transparency International Russia",
+      "country": "Russia",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Andrew joined Transparency International movement 6 years ago as the director of public relations for the Russian chapter. Later he switched to be the head of Declarator.org project, which is the unified database of income and asset declaration of Russian public officials. The field of his interests include data standards, registries of public service employees and the legal limitations for them.",
+      "facebook": "",
+      "twitter": "https://twitter.com/jvirblis",
+      "linkedin": ""
+    },
+    {
+      "name": "Elena Calistru",
+      "photo": "Elena_Calistru.jpg",
+      "position": "The Chair and Founder",
+      "organization": "Funky Citizens",
+      "country": "Romania",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Elena Calistru is the chair and founder of Funky Citizens, a Romanian-based NGO. Funky Citizens builds research-based, data-driven advocacy tools. Funky Citizens’ tools aim to be educational and actionable, encouraging citizens to engage in accountability and government responsibility initiatives in which they can see an impact. Elena has more than 7 years of experience in civil society projects, both at national and international level. Her expertise is mainly in the area of good governance, transparency, public finance and advocacy. She strongly believes that data and online tools can empower citizens to influence public sector reform.",
+      "facebook": "",
+      "twitter": "https://twitter.com/madamadepica",
+      "linkedin": "https://ro.linkedin.com/in/elena-calistru-753a0a30"
+    },
+    {
+      "name": "Marco Schmidt",
+      "photo": "Marco_Schmidt.jpg",
+      "position": "Policy Development Officer",
+      "organization": "RIPE NCC",
+      "country": "Netherlands",
+      "talk": "FALSE",
+      "workshop": "TRUE",
+      "summary": "Marco Schmidt is the RIPE NCC’s Policy Development Officer. In this role, he supports and drives the RIPE (community) Policy Development Processes (PDP), both externally and internally. He also supports the implementation of accepted policies into RIPE NCC procedures and workflow.\n\nMarco also delivers RIPE NCC training courses to Local Internet Registries in the RIPE NCC’s service region (Europe, the Middle East and parts of Central Asia).\n\nMarco graduated from the Ilmenau University of Technology in Germany, with a diploma in Media Economy and Service Management. Prior to joining the RIPE NCC, he worked at a technical helpdesk for a global network company.",
+      "facebook": "",
+      "twitter": "https://twitter.com/PDO_RIPE_NCC",
+      "linkedin": "https://www.linkedin.com/in/marco-schmidt-206653b2/"
     }
   ]
 }
