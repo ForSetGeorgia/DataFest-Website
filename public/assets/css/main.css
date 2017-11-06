@@ -26,6 +26,9 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
+html {
+  touch-action: manipulation;
+}
 body {
   background-color: #f4f4f4;
 }
@@ -136,13 +139,21 @@ a {
       // background-position: bottom;
     }
     nav {
-      position: relative;
+      position: absolute;
+      width: 100%;
       display: block;
       height: auto;
       // margin: 60px 0 0;
        // margin: 120px 0 0;
       background-color: transparent;
-      z-index: 1;
+      z-index: 4;
+    }
+    nav.fixed {
+      position: fixed;
+      background-color: #fbfbfb;
+    }
+    nav.fixed .logo img {
+      width: 100px;
     }
     .content {
       display: block;
@@ -151,14 +162,14 @@ a {
       // text-align: left;
     }
     .content-container {
-      margin: 0 auto;
+      margin: 220px auto 0;
       max-width: 1008px;
       // max-width: 868px;
     }
     [data-page='speakers'] .content-container {
     }
     .content-container > h1 {
-      margin: 100px 0 0 42px;
+      margin: 0 0 0 42px;
       text-align: left;
     }
   }
@@ -188,6 +199,9 @@ a {
   }
   nav ul li:not(.logo) a.active, nav ul li:not(.logo) a:hover {
     opacity: .4;
+  }
+  nav ul li.logo .text-logo {
+    display: none;
   }
   nav .nav-toggle {
     position: absolute;
@@ -230,11 +244,30 @@ a {
       overflow-y: initial;
       margin-top: 20px;
     }
+    nav.fixed ul {
+      margin: 6px 0;
+    }
     nav .nav-toggle {
       display: none;
     }
     nav ul li {
       margin-bottom: 10px;
+    }
+    nav.fixed ul li {
+      margin-bottom: 0;
+    }
+    nav.fixed ul li.logo img {
+      display: none;
+    }
+    nav.fixed ul li.logo a {
+      font: 20px/22px latina-sb;
+      color: #4f4f8e;
+    }
+    nav.fixed ul li.logo .text-logo {
+      display: initial;
+    }
+    nav.fixed ul li.logo .text-logo strong {
+      font-family: latina-b;
     }
     nav ul li a {
       color: #4f4f8e;
@@ -246,6 +279,17 @@ a {
       padding: 0 25px;
       font: 20px latina-l;
       color: #4f4f8e;
+      position: relative;
+      top: -2px;
+    }
+    nav.fixed ul li.logo:after {
+      content: "|";
+      display: inline-block;
+      padding: 0 25px;
+      font: 20px latina-l;
+      color: #4f4f8e;
+      position: relative;
+      top: -2px;
     }
     nav ul li.live {
       order: 1;
@@ -305,8 +349,13 @@ a {
     margin: 0 5px;
   }
   @media (min-width: 1200px) {
-    .logo a {
+    nav .logo a {
       margin: 0 25px 0 0; /* 60px 0; */
+    }
+  }
+  @media (min-width: 1200px) {
+    nav.fixed .logo a {
+      margin: 0 0 0 0;
     }
     .logo img {
       max-width: 160px;
@@ -906,11 +955,11 @@ a {
   }
   .grid .summary .close{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
     display: block;
-    padding: 0;
+    padding: 12px;
   }
   .grid .card.hover {
     // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1019,3 +1068,56 @@ a {
       margin: 45px 30px 0;
     }
   }
+
+
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDownBig {
+  animation-name: fadeInDownBig;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}

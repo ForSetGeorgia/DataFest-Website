@@ -44,6 +44,8 @@ $(document).ready(function() {
       $app.css('left', b.width()>991 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
 
       desktop = b.width() >= 992
+      console.log('resize')
+      onScroll()
     }
 
     function startCircleAnimation() {
@@ -142,6 +144,7 @@ $(document).ready(function() {
     }
 
     function render(page) {
+      $(".content").scrollTop(0);
       var data = pageCache[page]
       contentContainer.css('height', contentContainer.height())
       contentContainer.html( data.html )
@@ -152,7 +155,7 @@ $(document).ready(function() {
       $("meta[name='description']").attr('content', data.description)
       $("meta[property='og:description']").attr('content', data.description)
       b.attr('data-page', page);
-      window.history.pushState({},"", page)
+      window.history.pushState({},"", page);
       dataFadeByIds()
       // $nav.trigger('click')
     }
@@ -179,12 +182,12 @@ $(document).ready(function() {
   // bind
 
     var b = $('body');
-    var $app = $('.app')
-    var $nav = $('nav')
+    var $app = $('.app');
+    var $nav = $('nav');
     var pageCache = {};
     var currentPage = b.attr('data-page');
-    var contentContainer = $('.content-container')
-
+    var contentContainer = $('.content-container');
+    var is_nav_fixed = false;
     $(window).resize(function () {
       resize()
     })
@@ -243,10 +246,7 @@ $(document).ready(function() {
         }
         e.stopPropagation();
       })
-      $(document).on(touchevent, selector + ' .summary .close', function(e) {
-        $(this).closest('.card').removeClass('hover')
-        e.stopPropagation();
-      })
+      function onScroll () { }
     }
     else {
       $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); console.log('2') })
@@ -254,11 +254,29 @@ $(document).ready(function() {
         $(this).toggleClass('hover')
         e.stopPropagation();
       })
-      $(document).on('click', selector + ' .summary .close', function(e) {
-        $(this).closest('.card').removeClass('hover')
-        e.stopPropagation();
-      })
+
+      $app.scroll(function() {
+        onScroll();
+      });
+
+      function onScroll () {
+        var navHeight = 80;
+        if (!is_nav_fixed && $app.scrollTop() > navHeight) {
+          is_nav_fixed = true;
+          $nav.addClass('fixed animated fadeInDown');
+        }
+
+        if(is_nav_fixed && $app.scrollTop() < navHeight) {
+          is_nav_fixed = false;
+          $nav.removeClass('fixed animated fadeInDown');
+        }
+      }
     }
+
+    $(document).on('click', selector + ' .summary .close', function(e) {
+      $(this).closest('.card').removeClass('hover')
+      e.stopPropagation();
+    })
 
   // init
     setTimeout(function() {
