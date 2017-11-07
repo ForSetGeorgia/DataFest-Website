@@ -72,24 +72,42 @@
           "description": "TransperenCEE",
           "logo": "transparencee.png",
           "url": "https://transparencee.org/"
+        },
+        {
+          "name": "Georgia's Innovation and Technology Agency",
+          "description": "Georgia's Innovation and Technology Agency",
+          "logo": "gita.png",
+          "url": "http://techpark.ge/"
+        },
+        {
+          "name": "mReady",
+          "description": "mReady",
+          "logo": "mready.png",
+          "url": "http://www.mready.net/en/"
+        },
+        {
+          "name": "Teliani Valley",
+          "description": "Teliani Valley",
+          "logo": "teliani_velli.png",
+          "url": "http://www.telianivalley.com/intro.php"
         }
       ]
     },
     {
-      "slug": "media",
-      "caption": "MEDIA PARTNERS",
+      "slug": "hosts",
+      "caption": "HOSTS",
       "entities": [
         {
-          "name": "On.ge",
-          "description": "On.ge",
-          "logo": "onge.png",
-          "url": "https://on.ge"
+          "name": "Free University",
+          "description": "Free University",
+          "logo": "freeuni2.png",
+          "url": "http://www.freeuni.edu.ge/en"
         },
         {
-          "name": "Forbes Georgia",
-          "description": "Forbes Georgia",
-          "logo": "forbes.png",
-          "url": "http://forbes.ge/"
+          "name": "Museum Hotel",
+          "description": "Museum Hotel",
+          "logo": "museumhotel.png",
+          "url": "https://www.facebook.com/MuseumHotelTbilisi/"
         }
       ]
     },
@@ -112,20 +130,20 @@
       ]
     },
     {
-      "slug": "hosts",
-      "caption": "HOSTS",
+      "slug": "media",
+      "caption": "MEDIA PARTNERS",
       "entities": [
         {
-          "name": "Free University",
-          "description": "Free University",
-          "logo": "freeuni2.png",
-          "url": "http://www.freeuni.edu.ge/en"
+          "name": "On.ge",
+          "description": "On.ge",
+          "logo": "onge.png",
+          "url": "https://on.ge"
         },
         {
-          "name": "Museum Hotel",
-          "description": "Museum Hotel",
-          "logo": "museumhotel.png",
-          "url": "https://www.facebook.com/MuseumHotelTbilisi/"
+          "name": "Forbes Georgia",
+          "description": "Forbes Georgia",
+          "logo": "forbes.png",
+          "url": "http://forbes.ge/"
         }
       ]
     }
