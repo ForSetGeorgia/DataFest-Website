@@ -18,6 +18,18 @@
   font-family: 'latina-l';
   src: url('../fonts/Latina-Light.ttf') format("truetype");
 }
+@font-face {
+  font-family: 'opensans';
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'opensans-b';
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'opensans-sb';
+  src: url('../fonts/OpenSans-Semibold.ttf') format("truetype");
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -1121,3 +1133,186 @@ a {
 .fadeOutUp {
   animation-name: fadeOutUp;
 }
+
+
+
+.timetable {
+
+}
+.timetable-days {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.timetable-day {
+  font: 29px/30px latina-ub;
+  color: #4f4f8e;
+  background-color: #fffdfd;
+  border-radius: 28px;
+  padding: 14px 32px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.timetable-day.active {
+  color: #fff;
+  background-color: #0fb6ed;
+}
+
+.timetable-days-content {
+  max-width: 1104px;
+  margin: 0 auto;
+}
+.timetable-day-content {
+  display: none;
+}
+.timetable-day-content.active {
+  display: initial;
+}
+
+.timetable-day-before {
+  margin-bottom: 22px;
+}
+.timetable-day-before li, .timetable-day-after li {
+  font: 18px/20px opensans-b;
+  color: #4f4f8e;
+  margin-bottom: 13px;
+}
+.timetable-day-before li.highlight, .timetable-day-after li.highlight {
+  color: #934c69;
+}
+.timetable-day-before li b, .timetable-day-after li b {
+  font: 15px/17px latina-ub;
+}
+
+.timetable-day-plan {
+  margin-bottom: 24px;
+}
+.timetable-day-plan .row, .timetable-day-plan .header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 9px;
+}
+
+
+.timetable-day-plan.first .header div p {
+  font: 18px/20px latina-ub;
+  color: #4f4f8e;
+  text-align: left;
+  padding: 17px 34px 19px 19px;
+  background-color: #fffdfd;
+  vertical-align: top;
+}
+
+
+.timetable-day-plan.first .header div:first-of-type p {
+  border-top-left-radius: 8px;
+}
+.timetable-day-plan.first .header div:last-of-type p {
+  border-top-right-radius: 8px;
+}
+.timetable-day-plan.first .header div:not(:first-of-type) p{
+  margin-left: 4px;
+}
+.timetable-day-plan.first .header div:not(:last-of-type) p {
+  margin-right: 4px;
+}
+
+.timetable-day-plan .row div p {
+  font: 18px/20px opensans-b;
+  color: #4f4f8e;
+  text-align: left;
+  padding: 16px 34px 13px 18px;
+  background-color: #fffdfd;
+  height: 100%;
+  // vertical-align: top;
+}
+.timetable-day-plan .row.highlight div p {
+  color: #fffdfd;
+  background-color: #0fb6ed;
+}
+.timetable-day-plan .row div:not(:first-of-type) p {
+  // width: 4px;
+  margin-left: 4px;
+}
+.timetable-day-plan .row div:not(:last-of-type) p {
+  margin-right: 4px;
+}
+.timetable-day-plan .row .author p {
+  font: 14px/16px latina-ub;
+  padding-left: 16px;
+}
+.timetable-day-plan .row .title p {
+  font: 14px/16px opensans-b;
+}
+.timetable-day-plan .row .title.has_descr p:hover {
+  cursor: pointer;
+  color: #119cea;
+}
+.timetable-day-plan .row .break p {
+  font: 14px/16px latina-ub;
+}
+
+.timetable-day-plan .row .title.has_descr {
+  position: relative;
+}
+.timetable-day-plan .row .title.open:after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  background-color: #fffdfd;
+  height: 9px;
+  left: 4px;
+  right: 0;
+  bottom: -9px;
+}
+
+.timetable-day-plan .description {
+  display: none;
+}
+.timetable-day-plan .description.show {
+  display: block;
+  font: 15px/17px opensans-b;
+  color: #4f4f8e;
+  text-align: left;
+  padding: 16px 34px 13px 18px;
+  background-color: #fffdfd;
+  margin-bottom: 9px;
+  // height: 100%;
+}
+.timetable-day-plan .description p {
+  margin-bottom: 24px;
+}
+.timetable-day-plan .description .highlight {
+  color: #934c69;
+}
+
+
+.timetable-day-plan .header .time {
+  flex: 2;
+}
+.timetable-day-plan .header .title {
+  flex: 2;
+}
+.timetable-day-plan .header .title.fit {
+  flex: 7;
+}
+
+.timetable-day-plan .row .time {
+  flex: 2;
+}
+.timetable-day-plan .row .author {
+  flex: 3;
+}
+.timetable-day-plan.first .row .title {
+  flex: 4;
+}
+.timetable-day-plan.rest .row .title {
+  flex: 2;
+}
+.timetable-day-plan .row .break {
+  flex: 7;
+}
+
+
+

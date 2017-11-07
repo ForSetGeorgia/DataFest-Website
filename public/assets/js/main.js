@@ -278,6 +278,41 @@ $(document).ready(function() {
       e.stopPropagation();
     })
 
+    $(document).on('click', '.timetable-day', function(e) {
+      var t = $(this),
+        p = t.parent(),
+        day = t.attr('data-day'),
+        content = p.parent().find('.timetable-days-content')
+
+      p.find('> .active').removeClass('active')
+      t.addClass('active')
+
+      content.find('> .active').removeClass('active')
+      content.find('.timetable-day-content[data-day="' + day + '"]').addClass('active')
+
+      e.stopPropagation()
+    })
+
+    $(document).on('click', '.timetable-day-plan .title.has_descr', function(e) {
+      console.log('click')
+      var t = $(this),
+        p = t.closest('li'),
+        room = t.attr('data-room')
+
+      if(typeof room !== 'undefined') {
+        var el = p.find('.description[data-room="' + room + '"]'),
+          showed = el.hasClass('show')
+
+        p.find('.description.show').removeClass('show')
+        el.toggleClass('show', !showed)
+      } else {
+        t.toggleClass('open')
+        p.find('.description').toggleClass('show')
+      }
+
+
+    })
+
   // init
     setTimeout(function() {
       resize()
