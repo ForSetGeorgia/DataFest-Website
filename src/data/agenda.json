@@ -150,8 +150,8 @@
           },
           {
             "time": "17:00 - 18:30", "items": [
-              { "title": null },
-              { "title": null },
+              { "title": "" },
+              { "title": "" },
               { "title": "Billion Node Graph Processing (Viktor Cherkaskyi, Zalando)", "description": "Lorem ipsum 3" },
               { "title": "Modern Gradient Boosting (Alexey Natekin, Russia)" },
               { "title": "TransparenCEE meeting" }

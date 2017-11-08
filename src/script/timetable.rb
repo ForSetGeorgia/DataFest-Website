@@ -3,22 +3,30 @@
 
 def timetable(page, items)
   current_day = 1
-  html = ""
+  html = "<ul class=\"timetable-days-content\">"
+
+  html_days = "<ul class=\"timetable-days\">"
 
   items.each_with_index {|item, item_i|
     day_ind = item_i+1
-    klass = (current_day == day_ind ? 'active' : '')
+    klass = (current_day == day_ind ? ' active' : '')
+
+    html_days += "<li class=\"timetable-day#{klass}\" data-day=\"#{day_ind}\">Day #{day_ind}</li>"
     html +=
-      "<li class=\"timetable-day-content #{klass}\" data-day=\"#{day_ind}\">" +
+      "<li class=\"timetable-day-content#{klass}\" data-day=\"#{day_ind}\">" +
         day(day_ind, item) +
       "</li>"
   }
-  html
+
+  html_days += "</ul>"
+  html += "</ul>"
+
+  return html_days + html
 end
 
 def day(day_ind, item)
   html = before(item[:before])
-  html += day_ind == 1 ? day_one(item[:timetable]) : day_rest(item[:timetable])
+  html += day_ind == 1 ? day_one(item[:timetable]) : day_rest(item[:timetable], day_ind)
   html += after(item[:after])
 
   html
@@ -86,14 +94,14 @@ def day_one(items)
   html += "</ul>"
 end
 
-def day_rest(items)
+def day_rest(items, day_ind)
   titles = items[:title]
   data = items[:data]
 
-  html = "<ul class=\"timetable-day-plan rest\"><li class=\"header\">"
+  html = "<ul class=\"timetable-day-plan rest #{day_ind == 2 ? 'second' : 'third'}\"><li class=\"header\">"
 
   titles.each_with_index {|e, e_i|
-    html += "<div class=\"#{e_i == 0 ? 'time' : 'title'}\"><p>#{e}</p></div>"
+    html += "<div class=\"#{e_i == 0 ? 'time' : 'title room'}\"><p>#{e}</p></div>"
   }
   html += "</li>"
 
@@ -116,9 +124,13 @@ def day_rest(items)
       d[:items].each_with_index.map {|item, item_i|
         ind = item_i+1
         has_description = item.key?(:description) && item[:description] != ""
+        is_empty = !(item.key?(:title) && item[:title] != "")
+        title_html +=
+          "<div class=\"room#{is_empty ? ' empty' : ''}\"><p>#{titles[ind]}</p></div>" +
+          "<div class=\"title#{has_description ? ' has_descr' : ''}#{is_empty ? ' empty' : ''}\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p>#{item[:title]}</p></div>" +
+          (has_description ? "<div class=\"description\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p>#{item[:description]}</p></div>" : '')
 
-        title_html += "<div class=\"title#{has_description ? ' has_descr' : ''}\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p>#{item[:title]}</p></div>"
-        descr_html += has_description ? "<div class=\"description\" data-room=\"#{ind}\">#{item[:description]}</div>" : ''
+        # descr_html += has_description ? "<div class=\"description\" data-room=\"#{ind}\">#{item[:description]}</div>" : ''
       }
       html += (
         "<li>" +
@@ -126,8 +138,8 @@ def day_rest(items)
             "<div class=\"time\"><p>#{d[:time]}</p></div>" +
             title_html +
           "</div>" +
-          "<div class=\"descriptions\">" +
-            descr_html +
+          "<div class=\"description\">" +
+            # descr_html +
           "</div>" +
         "</li>"
       )

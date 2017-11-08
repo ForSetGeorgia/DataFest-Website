@@ -294,20 +294,28 @@ $(document).ready(function() {
     })
 
     $(document).on('click', '.timetable-day-plan .title.has_descr', function(e) {
-      console.log('click')
+      // console.log('click')
       var t = $(this),
-        p = t.closest('li'),
-        room = t.attr('data-room')
+        row = t.parent(), // .row
+        p = row.parent(), // li
+        room = t.attr('data-room'),
+        descr = p.find('> .description')
 
       if(typeof room !== 'undefined') {
-        var el = p.find('.description[data-room="' + room + '"]'),
-          showed = el.hasClass('show')
 
-        p.find('.description.show').removeClass('show')
-        el.toggleClass('show', !showed)
+        var el = p.find('> .description'),
+          showed = el.hasClass('show') && t.hasClass('open'),
+          descr_html = row.find('.description[data-room="' + room + '"]').first().html()
+
+        // p.find('.description.show').removeClass('show')
+        // el
+        el.html(descr_html).toggleClass('show', !showed)
+        row.find('.title.has_descr.open').removeClass('open')
+        t.toggleClass('open', !showed)
+
       } else {
         t.toggleClass('open')
-        p.find('.description').toggleClass('show')
+        descr.toggleClass('show')
       }
 
 

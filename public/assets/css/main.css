@@ -139,7 +139,7 @@ a {
     color: #4f4f8e;
   }
   [data-page='agenda'] .content-container > h1 {
-    color: #fe2d43;
+    color: #0fb6ed;
   }
 
   @media (min-width: 992px) {
@@ -179,6 +179,9 @@ a {
       // max-width: 868px;
     }
     [data-page='speakers'] .content-container {
+    }
+    [data-page='agenda'] .content-container {
+      max-width: 1104px;
     }
     .content-container > h1 {
       margin: 0 0 0 42px;
@@ -1103,47 +1106,20 @@ a {
   animation-name: fadeInDown;
 }
 
-@keyframes fadeInDownBig {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -2000px, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInDownBig {
-  animation-name: fadeInDownBig;
-}
-
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-.fadeOutUp {
-  animation-name: fadeOutUp;
-}
 
 
 
 .timetable {
-
+  padding: 24px 30px 0;
 }
 .timetable-days {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 48px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 .timetable-day {
   font: 29px/30px latina-ub;
@@ -1153,6 +1129,8 @@ a {
   padding: 14px 32px;
   margin: 0 8px;
   cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 13px;
 }
 .timetable-day.active {
   color: #fff;
@@ -1160,8 +1138,9 @@ a {
 }
 
 .timetable-days-content {
-  max-width: 1104px;
-  margin: 0 auto;
+  /* max-width: 1104px; */
+  /* margin: 0 auto; */
+  /* margin: 0 42px 0 48px; */
 }
 .timetable-day-content {
   display: none;
@@ -1190,95 +1169,98 @@ a {
 }
 .timetable-day-plan .row, .timetable-day-plan .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.timetable-day-plan .header div, .timetable-day-plan .row div {
   margin-bottom: 9px;
 }
-
-
-.timetable-day-plan.first .header div p {
+.timetable-day-plan .header div p {
   font: 18px/20px latina-ub;
   color: #4f4f8e;
   text-align: left;
-  padding: 17px 34px 19px 19px;
   background-color: #fffdfd;
   vertical-align: top;
+  /* white-space: nowrap; */
+  height: 100%;
+
+}
+.timetable-day-plan.first .header div p {
+  padding: 17px 34px 19px 19px;
+}
+.timetable-day-plan.rest .header div p {
+  padding: 17px 17px 19px 19px;
 }
 
-
-.timetable-day-plan.first .header div:first-of-type p {
+.timetable-day-plan.first .header div p, .timetable-day-plan.rest .header div p {
   border-top-left-radius: 8px;
-}
-.timetable-day-plan.first .header div:last-of-type p {
   border-top-right-radius: 8px;
 }
-.timetable-day-plan.first .header div:not(:first-of-type) p{
-  margin-left: 4px;
-}
-.timetable-day-plan.first .header div:not(:last-of-type) p {
-  margin-right: 4px;
-}
 
+.timetable-day-plan.rest .header .room {
+  display: none;
+}
 .timetable-day-plan .row div p {
   font: 18px/20px opensans-b;
   color: #4f4f8e;
   text-align: left;
-  padding: 16px 34px 13px 18px;
   background-color: #fffdfd;
   height: 100%;
-  // vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.timetable-day-plan.first .row div p {
+  font: 18px/20px opensans-b;
+  padding: 16px 34px 13px 18px;
+}
+.timetable-day-plan.rest .row div p {
+  font: 13px/15px opensans-sb;
+  padding: 14px 9px 25px 11px;
+}
+
+.timetable-day-plan .row div.time p {
+  font: 18px/20px opensans-b;
+  padding: 16px 18px 13px 18px;
 }
 .timetable-day-plan .row.highlight div p {
   color: #fffdfd;
   background-color: #0fb6ed;
 }
-.timetable-day-plan .row div:not(:first-of-type) p {
-  // width: 4px;
-  margin-left: 4px;
-}
-.timetable-day-plan .row div:not(:last-of-type) p {
-  margin-right: 4px;
-}
-.timetable-day-plan .row .author p {
+
+.timetable-day-plan .row div.author p {
   font: 14px/16px latina-ub;
   padding-left: 16px;
 }
-.timetable-day-plan .row .title p {
+.timetable-day-plan .row div.title p {
   font: 14px/16px opensans-b;
+}
+.timetable-day-plan .row div.room p {
+  font: 18px/20px latina-ub;
+  padding: 17px 17px 19px 19px;
 }
 .timetable-day-plan .row .title.has_descr p:hover {
   cursor: pointer;
   color: #119cea;
 }
-.timetable-day-plan .row .break p {
+.timetable-day-plan .row div.break p {
   font: 14px/16px latina-ub;
 }
 
 .timetable-day-plan .row .title.has_descr {
   position: relative;
 }
-.timetable-day-plan .row .title.open:after {
-  position: absolute;
-  display: inline-block;
-  content: '';
-  background-color: #fffdfd;
-  height: 9px;
-  left: 4px;
-  right: 0;
-  bottom: -9px;
-}
 
-.timetable-day-plan .description {
+
+.timetable-day-plan .row .empty {
   display: none;
 }
-.timetable-day-plan .description.show {
-  display: block;
+.timetable-day-plan .description {
   font: 15px/17px opensans-b;
   color: #4f4f8e;
   text-align: left;
   padding: 16px 34px 13px 18px;
   background-color: #fffdfd;
   margin-bottom: 9px;
-  // height: 100%;
 }
 .timetable-day-plan .description p {
   margin-bottom: 24px;
@@ -1286,8 +1268,6 @@ a {
 .timetable-day-plan .description .highlight {
   color: #934c69;
 }
-
-
 .timetable-day-plan .header .time {
   flex: 2;
 }
@@ -1297,9 +1277,12 @@ a {
 .timetable-day-plan .header .title.fit {
   flex: 7;
 }
+.timetable-day-plan.second .row div, .timetable-day-plan.third .row div {
+  width: 100%;
+}
 
 .timetable-day-plan .row .time {
-  flex: 2;
+  flex: 2 2;
 }
 .timetable-day-plan .row .author {
   flex: 3;
@@ -1308,10 +1291,97 @@ a {
   flex: 4;
 }
 .timetable-day-plan.rest .row .title {
-  flex: 2;
+  flex: 2 2;
 }
-.timetable-day-plan .row .break {
+.timetable-day-plan.first .row .break {
   flex: 7;
+}
+.timetable-day-plan.second .row .break {
+  flex: 12;
+}
+.timetable-day-plan.third .row .break {
+  flex: 10;
+}
+@media (min-width: 768px) {
+/*   .timetable-days-content {
+
+  } */
+}
+@media (min-width: 1104px) {
+/*   .timetable-days {
+    flex-direction: row;
+  } */
+  .timetable-day-plan .row, .timetable-day-plan .header {
+    flex-direction: row;
+  }
+  .timetable-day-plan.rest .header .room {
+    display: initial;
+  }
+  .timetable-day-plan.first .header div:first-of-type p {
+    border-top-right-radius: 0px;
+  }
+  .timetable-day-plan.first .header div:last-of-type p {
+    border-top-left-radius: 0px;
+  }
+
+  .timetable-day-plan .header div:not(:first-of-type) p {
+    margin-left: 4px;
+  }
+  .timetable-day-plan .header div:not(:last-of-type) p {
+    margin-right: 4px;
+  }
+  .timetable-day-plan .row div:not(:first-of-type) p {
+    margin-left: 4px;
+  }
+  .timetable-day-plan .row div:not(:last-of-type) p {
+    margin-right: 4px;
+  }
+  .timetable-day-plan.first .header div:first-of-type p {
+    border-top-left-radius: 8px;
+  }
+  .timetable-day-plan.first .header div:last-of-type p {
+    border-top-right-radius: 8px;
+  }
+  .timetable-day-plan .row .empty {
+    display: initial;
+  }
+  .timetable-day-plan .description {
+    display: none;
+  }
+  .timetable-day-plan .description.show {
+    display: block;
+  }
+  .timetable-day-plan .row .title.open:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    background-color: #fffdfd;
+    height: 9px;
+    left: 4px;
+    bottom: -9px;
+  }
+  .timetable-day-plan.first .row .title.open:after {
+    right: 0;
+  }
+  .timetable-day-plan.rest .row .title.open:after {
+    right: 4px;
+  }
+  .timetable-day-plan.rest .row .room {
+    display: none;
+  }
+  .timetable-day-plan.second .row div {
+    width: 14.2%;
+  }
+  .timetable-day-plan.third .row div {
+    width: 16.6%;
+  }
+
+}
+@media (min-width: 1098px) {
+  .timetable-days-content {
+    margin: 0 0 0 0;
+  }
+
 }
 
 
