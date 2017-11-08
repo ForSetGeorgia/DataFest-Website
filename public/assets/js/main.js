@@ -315,7 +315,7 @@ $(document).ready(function() {
 
       } else {
         t.toggleClass('open')
-        descr.toggleClass('show')
+        descr.toggleClass('show animated slideInDown')
       }
 
 

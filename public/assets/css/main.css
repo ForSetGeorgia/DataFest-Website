@@ -211,9 +211,13 @@ a {
     font: 20px latina-l;
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
-  nav ul li:not(.logo) a.active, nav ul li:not(.logo) a:hover {
-    opacity: .4;
+  /* nav ul li:not(.logo) a.active, nav ul li:not(.logo) a:hover {
+    opacity: .6;
+  } */
+  nav ul li a.active, nav ul li a:hover {
+    opacity: .6;
   }
   nav ul li.logo .text-logo {
     display: none;
@@ -363,7 +367,7 @@ a {
     color: #4d4d66;
     margin: 0 5px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     nav .logo a {
       margin: 0 25px 0 0; /* 60px 0; */
     }
@@ -686,7 +690,7 @@ a {
   }
   @media (min-width: 1200px) {
     footer {
-      margin-top: 120px;
+      margin-top: 220px;
     }
   }
 /* ----------------------- animation */
@@ -1105,8 +1109,23 @@ a {
 .fadeInDown {
   animation-name: fadeInDown;
 }
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -5%, 0);
+    visibility: visible;
+    opacity: .5;
+  }
 
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
+.slideInDown {
+  animation-name: slideInDown;
+  animation-duration: .4s;
+}
 
 
 
@@ -1219,14 +1238,17 @@ a {
 }
 
 .timetable-day-plan .row div.time p {
-  font: 18px/20px opensans-b;
+  font: 18px/20px opensans;
   padding: 16px 18px 13px 18px;
 }
 .timetable-day-plan .row.highlight div p {
   color: #fffdfd;
   background-color: #0fb6ed;
 }
-
+.timetable-day-plan .row.highlight div.author p {
+  font: 18px/20px latina-ub;
+  padding: 16px 18px 13px 18px;
+}
 .timetable-day-plan .row div.author p {
   font: 14px/16px latina-ub;
   padding-left: 16px;
@@ -1239,7 +1261,8 @@ a {
   padding: 17px 17px 19px 19px;
 }
 .timetable-day-plan .row div.break p {
-  font: 14px/16px latina-ub;
+  font: 18px/20px latina-ub;
+  padding: 16px 18px 13px 18px;
 }
 
 .timetable-day-plan .row .title.has_descr {
@@ -1251,7 +1274,7 @@ a {
   display: none;
 }
 .timetable-day-plan .description {
-  font: 15px/17px opensans-b;
+  font: 15px/22px opensans-sb;
   color: #4f4f8e;
   text-align: left;
   padding: 16px 34px 13px 18px;
@@ -1347,6 +1370,11 @@ a {
   .timetable-day-plan .description.show {
     display: block;
   }
+  .timetable-day-plan .row .title:after {
+    content: '';
+    opacity: 0;
+    transition: all .2s ease 0s;
+  }
   .timetable-day-plan .row .title.open:after {
     position: absolute;
     display: inline-block;
@@ -1355,6 +1383,7 @@ a {
     height: 9px;
     left: 4px;
     bottom: -9px;
+    opacity: 1;
   }
   .timetable-day-plan.first .row .title.open:after {
     right: 0;
