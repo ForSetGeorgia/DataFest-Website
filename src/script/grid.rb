@@ -2,7 +2,7 @@
 
 def grid(page, items)
   items = items
-  html = "<div class=\"grid\">"
+  html = "<div class=\"grid\" data-fade-id=\"2\">"
   fade_n = 2
   with_end = false
   items.each_with_index {|item, item_i|

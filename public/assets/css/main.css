@@ -1238,10 +1238,6 @@ a {
   font: 18px/20px latina-ub;
   padding: 17px 17px 19px 19px;
 }
-.timetable-day-plan .row .title.has_descr p:hover {
-  cursor: pointer;
-  color: #119cea;
-}
 .timetable-day-plan .row div.break p {
   font: 14px/16px latina-ub;
 }
@@ -1366,6 +1362,10 @@ a {
   .timetable-day-plan.rest .row .title.open:after {
     right: 4px;
   }
+  .timetable-day-plan .row .title.has_descr p:hover {
+    cursor: pointer;
+    color: #119cea;
+  }
   .timetable-day-plan.rest .row .room {
     display: none;
   }
@@ -1375,6 +1375,7 @@ a {
   .timetable-day-plan.third .row div {
     width: 16.6%;
   }
+
 
 }
 @media (min-width: 1098px) {

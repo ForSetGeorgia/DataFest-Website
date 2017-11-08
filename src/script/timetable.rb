@@ -3,9 +3,9 @@
 
 def timetable(page, items)
   current_day = 1
-  html = "<ul class=\"timetable-days-content\">"
+  html = "<ul class=\"timetable-days-content\" data-fade-id=\"3\">"
 
-  html_days = "<ul class=\"timetable-days\">"
+  html_days = "<ul class=\"timetable-days\" data-fade-id=\"2\">"
 
   items.each_with_index {|item, item_i|
     day_ind = item_i+1
