@@ -2,7 +2,7 @@ $(document).ready(function() {
   // declarations
     var animationEvent = whichAnimationEvent();
     var positions = []
-    const scene = $("#scene")
+    var scene = $("#scene")
 
   // helpers
     function whichAnimationEvent(){
@@ -44,7 +44,6 @@ $(document).ready(function() {
       $app.css('left', b.width()>991 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
 
       desktop = b.width() >= 992
-      console.log('resize')
       onScroll()
     }
 
@@ -54,7 +53,7 @@ $(document).ready(function() {
       })
     }
     function setCircleAnimation ($c, _id) {
-      let id = _id
+      var id = _id
 
       if(typeof id === "undefined") {
         id = +$c.attr('data-id')
@@ -63,7 +62,7 @@ $(document).ready(function() {
         clearRandomPosition(id)
       }
 
-      const pos = getRandomPosition(id)
+      var pos = getRandomPosition(id)
 
       if(pos === null) {
         setTimeout(function () {

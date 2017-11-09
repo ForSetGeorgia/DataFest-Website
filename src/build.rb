@@ -59,6 +59,7 @@ def init
         .gsub("data-ruby-nav=\"#{page[:slug]}__\"", " class=\"active\"")
         .gsub(/data\-ruby\-nav\=\".*__\"/, "")
         .gsub('__content__', content)
+        .gsub('__timestamp__', Time.now.to_i.to_s)
 
     # create full page
     File.open("../public/#{page[:slug]}.html", "w") { |file|
