@@ -3,7 +3,6 @@ $(document).ready(function() {
     var animationEvent = whichAnimationEvent();
     var positions = []
     var scene = $("#scene")
-
   // helpers
     function whichAnimationEvent(){
       var t,
@@ -245,7 +244,6 @@ $(document).ready(function() {
         }
         e.stopPropagation();
       })
-      function onScroll () { }
     }
     else {
       $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); console.log('2') })
@@ -254,21 +252,23 @@ $(document).ready(function() {
         e.stopPropagation();
       })
 
-      $app.scroll(function() {
-        onScroll();
-      });
+    }
 
-      function onScroll () {
-        var navHeight = 80;
-        if (!is_nav_fixed && $app.scrollTop() > navHeight) {
-          is_nav_fixed = true;
-          $nav.addClass('fixed animated fadeInDown');
-        }
 
-        if(is_nav_fixed && $app.scrollTop() < navHeight) {
-          is_nav_fixed = false;
-          $nav.removeClass('fixed animated fadeInDown');
-        }
+    $app.scroll(function() {
+      onScroll();
+    });
+
+    function onScroll () {
+      var navHeight = 80;
+      if (!is_nav_fixed && $app.scrollTop() > navHeight) {
+        is_nav_fixed = true;
+        $nav.addClass('fixed animated fadeInDown');
+      }
+
+      if(is_nav_fixed && $app.scrollTop() < navHeight) {
+        is_nav_fixed = false;
+        $nav.removeClass('fixed animated fadeInDown');
       }
     }
 
@@ -291,34 +291,50 @@ $(document).ready(function() {
 
       e.stopPropagation()
     })
-
     $(document).on('click', '.timetable-day-plan .title.has_descr', function(e) {
-      // console.log('click')
-      var t = $(this),
+      toggleDescription($(this))
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan .title.has_descr i', function(e) {
+      toggleDescription($(this).parent())
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan.first .description.show i', function(e) {
+      toggleDescription($(this).parent().parent().find('.row .title.has_descr'))
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan.rest .description.show i', function(e) {
+      var descr = $(this).parent(),
+        room = descr.attr('data-room')
+
+      toggleDescription(descr.parent().find('.title[data-room="' + room + '"]'))
+      e.stopPropagation()
+    })
+
+    function toggleDescription ($title) {
+      var t = $title,
         row = t.parent(), // .row
-        p = row.parent(), // li
-        room = t.attr('data-room'),
-        descr = p.find('> .description')
+        li = row.parent(), // li
+        room = t.attr('data-room')
+
 
       if(typeof room !== 'undefined') {
+        var descr = row.find('.description[data-room="' + room + '"]').first(),
+          showed = descr.hasClass('show') && t.hasClass('open'),
+          descrs = li.find('.descriptions')
 
-        var el = p.find('> .description'),
-          showed = el.hasClass('show') && t.hasClass('open'),
-          descr_html = row.find('.description[data-room="' + room + '"]').first().html()
-
-        // p.find('.description.show').removeClass('show')
-        // el
-        el.html(descr_html).toggleClass('show', !showed)
         row.find('.title.has_descr.open').removeClass('open')
+        row.find('.description.show').removeClass('show animated slideInDown')
+        descr.toggleClass('show animated slideInDown', !showed)
         t.toggleClass('open', !showed)
+
+        descrs.html(descr.html()).toggleClass('show animated slideInDown', !showed)
 
       } else {
         t.toggleClass('open')
-        descr.toggleClass('show animated slideInDown')
+        li.find('.description').toggleClass('show animated slideInDown')
       }
-
-
-    })
+    }
 
   // init
     setTimeout(function() {

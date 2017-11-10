@@ -77,14 +77,16 @@ def day_one(items)
     else
       has_description = d.key?(:description) && d[:description] != ""
       has_highlight = d.key?(:highlight) && d[:highlight]
+      is_empty = !(d.key?(:title) && d[:title] != "")
+      lang = d.key?(:lang) && !["en", "ru", "ka"].index(d[:lang]).nil?
       html += (
         "<li>" +
           "<div class=\"row#{has_highlight ? ' highlight' : ''}\">" +
             "<div class=\"time\"><p>#{d[:time]}</p></div>" +
             "<div class=\"author\"><p>#{d[:author]}</p></div>" +
-            "<div class=\"title#{has_description ? ' has_descr' : ''}\"><p>#{d[:title]}</p></div>" +
+            "<div class=\"title#{is_empty ? ' empty' : ''}#{has_description ? ' has_descr' : ''}\"><p>#{d[:title]}</p>#{has_description ? '<i></i>' : ''}</div>" +
           "</div>" +
-          (has_description ? "<div class=\"description\">#{d[:description]}</div>" : "") +
+          (has_description ? "<div class=\"description\"><div#{lang ? " lang=\"#{d[:lang]}\"" : ''}>#{d[:description]}</div><i></i></div>" : '') +
         "</li>"
       )
     end
@@ -112,35 +114,37 @@ def day_rest(items, day_ind)
       html += (
           "<li>" +
             "<div class=\"row highlight\">" +
-              "<div class=\"time\"><p>#{d[:time]}</p></div>" +
-              "<div class=\"break\"><p>#{d[:title]}</p></div>" +
+              "<div class=\"time f\"><p>#{d[:time]}</p></div>" +
+              "<div class=\"break l\"><p>#{d[:title]}</p></div>" +
             "</div>" +
           "</li>"
         )
     else
       title_html = ""
       descr_html = ""
-
+      ln = d[:items].length
       d[:items].each_with_index.map {|item, item_i|
         ind = item_i+1
         has_description = item.key?(:description) && item[:description] != ""
         is_empty = !(item.key?(:title) && item[:title] != "")
+        lang = item.key?(:lang) && !["en", "ru", "ka"].index(item[:lang]).nil?
+        last_klass = (item_i == ln - 1 ? ' l ' : '')
         title_html +=
           "<div class=\"room#{is_empty ? ' empty' : ''}\"><p>#{titles[ind]}</p></div>" +
-          "<div class=\"title#{has_description ? ' has_descr' : ''}#{is_empty ? ' empty' : ''}\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p>#{item[:title]}</p></div>" +
-          (has_description ? "<div class=\"description\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p>#{item[:description]}</p></div>" : '')
+          "<div class=\"title#{last_klass}#{has_description ? ' has_descr' : ''}#{is_empty ? ' empty' : ''}\" #{has_description ? "data-room=\"#{ind}\"" : ''}><p#{lang ? " lang=\"#{item[:lang]}\"" : ''}>#{item[:title]}</p>#{has_description ? '<i></i>' : ''}</div>" +
+          (has_description ? "<div class=\"description\" #{has_description ? "data-room=\"#{ind}\"" : ''}><div#{lang ? " lang=\"#{item[:lang]}\"" : ''}>#{item[:description]}</div><i></i></div>" : '')
 
         # descr_html += has_description ? "<div class=\"description\" data-room=\"#{ind}\">#{item[:description]}</div>" : ''
       }
       html += (
         "<li>" +
           "<div class=\"row\">" +
-            "<div class=\"time\"><p>#{d[:time]}</p></div>" +
+            "<div class=\"time f\"><p>#{d[:time]}</p></div>" +
             title_html +
           "</div>" +
-          "<div class=\"description\">" +
+          "<div class=\"descriptions\"><div>" +
             # descr_html +
-          "</div>" +
+          "</div></div>" +
         "</li>"
       )
     end

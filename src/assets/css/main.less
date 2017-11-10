@@ -1,3 +1,5 @@
+@import "reset.less";
+
 @font-face {
   font-family: 'latina-ub';
   src: url('../fonts/Latina-UltraBold.ttf') format("truetype");
@@ -30,6 +32,15 @@
   font-family: 'opensans-sb';
   src: url('../fonts/OpenSans-Semibold.ttf') format("truetype");
 }
+@font-face {
+  font-family: 'dejavusans-b';
+  src: url('../fonts/BPG-DejaVuSans-Bold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'dejavusans';
+  src: url('../fonts/BPG-DejaVuSans.ttf') format("truetype");
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -106,6 +117,7 @@ a {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     width: 100%;
@@ -1187,7 +1199,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .timetable-day-plan .header div, .timetable-day-plan .row div {
+  .timetable-day-plan .header > div, .timetable-day-plan .row > div {
     margin-bottom: 9px;
   }
   .timetable-day-plan .header div p {
@@ -1197,13 +1209,18 @@ a {
     background-color: #fffdfd;
     vertical-align: top;
     height: 100%;
-  }
-  .timetable-day-plan.first .header div p {
-    padding: 17px 34px 19px 19px;
-  }
-  .timetable-day-plan.rest .header div p {
     padding: 17px 17px 19px 19px;
   }
+  // .timetable-day-plan.first .header div p {
+  //   padding: 17px 34px 19px 19px;
+  // }
+  .timetable-day-plan.first .header {
+    .time { order: 2; }
+    .title { order: 1; }
+  }
+  // .timetable-day-plan.rest .header div p {
+  //   padding: 17px 17px 19px 19px;
+  // }
   .timetable-day-plan.first .header div p, .timetable-day-plan.rest .header div p {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1213,7 +1230,7 @@ a {
   }
 
   .timetable-day-plan .row div p {
-    font: 18px/20px opensans-b;
+    // font: 18px/20px opensans-b;
     color: #4f4f8e;
     text-align: left;
     background-color: #fffdfd;
@@ -1221,14 +1238,13 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .timetable-day-plan.first .row div p {
-    font: 18px/20px opensans-b;
-    padding: 16px 34px 13px 18px;
-  }
-  .timetable-day-plan.rest .row div p {
-    font: 13px/15px opensans-sb;
-    padding: 14px 9px 25px 11px;
-  }
+  // .timetable-day-plan .row div p {
+  //   font: 18px/20px opensans-b;
+  // }
+  // .timetable-day-plan.rest .row div p {
+  //   font: 13px/15px opensans-sb;
+  //   padding: 14px 9px 25px 11px;
+  // }
 
   .timetable-day-plan .row div.time p {
     font: 18px/20px opensans;
@@ -1238,16 +1254,22 @@ a {
     color: #fffdfd;
     background-color: #0fb6ed;
   }
+  .timetable-day-plan .row div.author p {
+    font: 14px/16px latina-ub;
+    padding: 16px 34px 13px 18px;
+    a { color: #4f4f8e; }
+    // padding-left: 16px;
+  }
   .timetable-day-plan .row.highlight div.author p {
     font: 18px/20px latina-ub;
     padding: 16px 18px 13px 18px;
   }
-  .timetable-day-plan .row div.author p {
-    font: 14px/16px latina-ub;
-    padding-left: 16px;
-  }
   .timetable-day-plan .row div.title p {
     font: 14px/16px opensans-b;
+    padding: 16px 34px 13px 18px;
+    &:lang(ka) {
+      font: 14px/16px dejavusans-b;
+    }
   }
   .timetable-day-plan .row div.room p {
     font: 18px/20px latina-ub;
@@ -1260,22 +1282,133 @@ a {
 
   .timetable-day-plan .row .title.has_descr {
     position: relative;
+    pointer-events: none;
+    position: relative;
+    i {
+      pointer-events:all;
+      width: 10px;
+      height: 12px;
+      background: transparent url(../images/down.svg) no-repeat center;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      padding: 14px;
+      cursor: pointer;
+    }
+    &.open i {
+      background: transparent url(../images/up.svg) no-repeat center;
+    }
   }
+  .timetable-day-plan .row .title:after {
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 30ms;
+    -moz-transition: opacity 30ms;
+    -ms-transition: opacity 30ms;
+    -o-transition: opacity 30ms;
+    transition: opacity 30ms;
+  }
+  .timetable-day-plan .row .title.open:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    background-color: #fffdfd;
+    height: 11px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    opacity: 1;
+  }
+  // .timetable-day-plan.first .row .title.open:after {
+  // }
+
 
 
   .timetable-day-plan .row .empty {
     display: none;
   }
-  .timetable-day-plan .description {
+
+
+  .timetable-day-plan.first .description {
+    display: none;
+  }
+  .timetable-day-plan.first .description.show {
+    display: block;
+    margin-bottom: 9px;
+    position: relative;
+    i {
+      width: 10px;
+      height: 12px;
+      background: transparent url(../images/up.svg) no-repeat center;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      padding: 14px;
+      cursor: pointer;
+    }
+  }
+
+  .timetable-day-plan.rest .descriptions {
+    display: none;
+  }
+  .timetable-day-plan.rest .description {
+    display: none;
+  }
+  .timetable-day-plan.rest .description.show {
+    display: block;
+    margin-bottom: 9px;
+    position: relative;
+    i {
+      width: 10px;
+      height: 12px;
+      background: transparent url(../images/up.svg) no-repeat center;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      padding: 14px;
+      cursor: pointer;
+    }
+  }
+
+  // .timetable-day-plan li > .description {
+  //   display: none;
+  // }
+  // .timetable-day-plan li .row .description {
+  //   display: none;
+  // }
+  // .timetable-day-plan li > .description.show {
+  //   display: block;
+  //   margin-bottom: 9px;
+  //   i {
+  //     width: 10px;
+  //     height: 12px;
+  //     background: transparent url(../images/up.svg) no-repeat center;
+  //     position: absolute;
+  //     right: 0px;
+  //     bottom: 0px;
+  //     padding: 14px;
+  //   }
+  // }
+  .timetable-day-plan .description > div, .timetable-day-plan .descriptions > div {
+    padding: 16px 34px 24px 18px;
+    background-color: #fffdfd;
     font: 15px/22px opensans-sb;
     color: #4f4f8e;
     text-align: left;
-    padding: 16px 34px 13px 18px;
-    background-color: #fffdfd;
-    margin-bottom: 9px;
+    &:lang(ka) {
+      font: 15px/22px dejavusans;
+    }
   }
-  .timetable-day-plan .description p {
-    margin-bottom: 24px;
+
+  .timetable-day-plan .description p, .timetable-day-plan .descriptions p {
+    font: 15px/22px opensans-sb;
+    color: #4f4f8e;
+    text-align: left;
+    /* padding: 16px 34px 13px 18px; */
+    // margin-bottom: 24px;
+    &:lang(ka) {
+      font: 15px/22px dejavusans;
+    }
   }
   .timetable-day-plan .description .highlight {
     color: #934c69;
@@ -1289,7 +1422,7 @@ a {
   .timetable-day-plan .header .title.fit {
     flex: 7;
   }
-  .timetable-day-plan.second .row div, .timetable-day-plan.third .row div {
+  .timetable-day-plan.rest .row div {
     width: 100%;
   }
 
@@ -1308,18 +1441,22 @@ a {
   .timetable-day-plan.first .row .break {
     flex: 7;
   }
-  .timetable-day-plan.second .row .break {
+  .timetable-day-plan.rest .row .break {
     flex: 12;
   }
-  .timetable-day-plan.third .row .break {
-    flex: 10;
-  }
+  // .timetable-day-plan.third .row .break {
+  //   flex: 10;
+  // }
   @media (min-width: 1098px) {
     .timetable-days-content {
       margin: 0 0 0 0;
     }
   }
   @media (min-width: 1104px) {
+    .timetable-day-plan.first .header {
+      .time { order: 1; }
+      .title { order: 2; }
+    }
     .timetable-day-plan .row, .timetable-day-plan .header {
       flex-direction: row;
     }
@@ -1339,12 +1476,25 @@ a {
     .timetable-day-plan .header div:not(:last-of-type) p {
       margin-right: 4px;
     }
-    .timetable-day-plan .row div:not(:first-of-type) p {
+
+    .timetable-day-plan.first .row div:not(:first-of-type) p {
       margin-left: 4px;
     }
-    .timetable-day-plan .row div:not(:last-of-type) p {
+    .timetable-day-plan.first .row div:not(:last-of-type) p {
       margin-right: 4px;
     }
+    .timetable-day-plan.rest .row div p {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .timetable-day-plan.rest .row div.f p {
+      margin-left: 0;
+    }
+    .timetable-day-plan.rest .row div.l p {
+      margin-right: 0;
+    }
+
+
     .timetable-day-plan.first .header div:first-of-type p {
       border-top-left-radius: 8px;
     }
@@ -1352,50 +1502,48 @@ a {
       border-top-right-radius: 8px;
     }
     .timetable-day-plan .row .empty {
-      display: initial;
-    }
-    .timetable-day-plan .description {
-      display: none;
-    }
-    .timetable-day-plan .description.show {
       display: block;
     }
-    .timetable-day-plan .row .title:after {
-      content: '';
-      opacity: 0;
-      -webkit-transition: opacity 30ms;
-      -moz-transition: opacity 30ms;
-      -ms-transition: opacity 30ms;
-      -o-transition: opacity 30ms;
-      transition: opacity 30ms;
-    }
     .timetable-day-plan .row .title.open:after {
-      position: absolute;
-      display: inline-block;
-      content: '';
-      background-color: #fffdfd;
-      height: 9px;
+      // right: 4px;
       left: 4px;
-      bottom: -9px;
-      opacity: 1;
     }
-    .timetable-day-plan.first .row .title.open:after {
-      right: 0;
-    }
-    .timetable-day-plan.rest .row .title.open:after {
+    .timetable-day-plan .row .title:not(.l).open:after {
       right: 4px;
     }
     .timetable-day-plan .row .title.has_descr p:hover {
       cursor: pointer;
       color: #119cea;
     }
+
+    .timetable-day-plan .row .title.has_descr {
+      position: relative;
+      pointer-events: all;
+      i {
+        display: none;
+      }
+    }
+    .timetable-day-plan.first .description.show {
+      i { display: none; }
+    }
+    .timetable-day-plan.rest .description.show {
+      display: none;
+    }
+    .timetable-day-plan.rest .descriptions.show {
+      display: block;
+      margin-bottom: 9px;
+      i { display: none; }
+    }
+
     .timetable-day-plan.rest .row .room {
       display: none;
     }
-    .timetable-day-plan.second .row div {
+    .timetable-day-plan.rest .row div {
       width: 14.2%;
     }
-    .timetable-day-plan.third .row div {
-      width: 16.6%;
-    }
+    // .timetable-day-plan.third .row div {
+    //   width: 16.6%;
+    // }
   }
+
+@import "progress.less";
