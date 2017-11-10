@@ -2,8 +2,7 @@ $(document).ready(function() {
   // declarations
     var animationEvent = whichAnimationEvent();
     var positions = []
-    const scene = $("#scene")
-
+    var scene = $("#scene")
   // helpers
     function whichAnimationEvent(){
       var t,
@@ -44,7 +43,6 @@ $(document).ready(function() {
       $app.css('left', b.width()>991 ? 0 :($app.hasClass('toggled') ? 0 : -Math.round($nav.width())-1) )
 
       desktop = b.width() >= 992
-      console.log('resize')
       onScroll()
     }
 
@@ -54,7 +52,7 @@ $(document).ready(function() {
       })
     }
     function setCircleAnimation ($c, _id) {
-      let id = _id
+      var id = _id
 
       if(typeof id === "undefined") {
         id = +$c.attr('data-id')
@@ -63,7 +61,7 @@ $(document).ready(function() {
         clearRandomPosition(id)
       }
 
-      const pos = getRandomPosition(id)
+      var pos = getRandomPosition(id)
 
       if(pos === null) {
         setTimeout(function () {
@@ -246,7 +244,6 @@ $(document).ready(function() {
         }
         e.stopPropagation();
       })
-      function onScroll () { }
     }
     else {
       $(document).on('click', selector + ' a', function(e) { e.stopPropagation(); console.log('2') })
@@ -255,21 +252,23 @@ $(document).ready(function() {
         e.stopPropagation();
       })
 
-      $app.scroll(function() {
-        onScroll();
-      });
+    }
 
-      function onScroll () {
-        var navHeight = 80;
-        if (!is_nav_fixed && $app.scrollTop() > navHeight) {
-          is_nav_fixed = true;
-          $nav.addClass('fixed animated fadeInDown');
-        }
 
-        if(is_nav_fixed && $app.scrollTop() < navHeight) {
-          is_nav_fixed = false;
-          $nav.removeClass('fixed animated fadeInDown');
-        }
+    $app.scroll(function() {
+      onScroll();
+    });
+
+    function onScroll () {
+      var navHeight = 80;
+      if (!is_nav_fixed && $app.scrollTop() > navHeight) {
+        is_nav_fixed = true;
+        $nav.addClass('fixed animated fadeInDown');
+      }
+
+      if(is_nav_fixed && $app.scrollTop() < navHeight) {
+        is_nav_fixed = false;
+        $nav.removeClass('fixed animated fadeInDown');
       }
     }
 
@@ -277,6 +276,65 @@ $(document).ready(function() {
       $(this).closest('.card').removeClass('hover')
       e.stopPropagation();
     })
+
+    $(document).on('click', '.timetable-day', function(e) {
+      var t = $(this),
+        p = t.parent(),
+        day = t.attr('data-day'),
+        content = p.parent().find('.timetable-days-content')
+
+      p.find('> .active').removeClass('active')
+      t.addClass('active')
+
+      content.find('> .active').removeClass('active')
+      content.find('.timetable-day-content[data-day="' + day + '"]').addClass('active')
+
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan .title.has_descr', function(e) {
+      toggleDescription($(this))
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan .title.has_descr i', function(e) {
+      toggleDescription($(this).parent())
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan.first .description.show i', function(e) {
+      toggleDescription($(this).parent().parent().find('.row .title.has_descr'))
+      e.stopPropagation()
+    })
+    $(document).on('click', '.timetable-day-plan.rest .description.show i', function(e) {
+      var descr = $(this).parent(),
+        room = descr.attr('data-room')
+
+      toggleDescription(descr.parent().find('.title[data-room="' + room + '"]'))
+      e.stopPropagation()
+    })
+
+    function toggleDescription ($title) {
+      var t = $title,
+        row = t.parent(), // .row
+        li = row.parent(), // li
+        room = t.attr('data-room')
+
+
+      if(typeof room !== 'undefined') {
+        var descr = row.find('.description[data-room="' + room + '"]').first(),
+          showed = descr.hasClass('show') && t.hasClass('open'),
+          descrs = li.find('.descriptions')
+
+        row.find('.title.has_descr.open').removeClass('open')
+        row.find('.description.show').removeClass('show animated slideInDown')
+        descr.toggleClass('show animated slideInDown', !showed)
+        t.toggleClass('open', !showed)
+
+        descrs.html(descr.html()).toggleClass('show animated slideInDown', !showed)
+
+      } else {
+        t.toggleClass('open')
+        li.find('.description').toggleClass('show animated slideInDown')
+      }
+    }
 
   // init
     setTimeout(function() {

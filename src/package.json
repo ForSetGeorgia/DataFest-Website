@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ruby build.rb",
-    "watch": "nodemon -e json,html,rb --watch . --exec ruby ./build.rb"
+    "watch": "nodemon -e json,html,rb,js,css,less --watch . --exec \"ruby ./build.rb & uglifyjs ./assets/js/mc-validate.js ./assets/js/classie.js ./assets/js/uiProgressButton.js ./assets/js/main.js --compress --output ../public/assets/js/app.min.js & lessc --clean-css ./assets/css/main.less ../public/assets/css/app.min.css\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "less": "^2.7.3",
+    "less-plugin-clean-css": "^1.5.1",
+    "nodemon": "^1.12.1",
+    "uglify-js": "^3.1.8"
   }
 }
