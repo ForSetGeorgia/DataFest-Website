@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1395e;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_20" data-name="Ellipse 20" class="cls-1" cx="240" cy="240" r="240"/>
+</svg>

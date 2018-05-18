@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495.171 495.171">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f34e59;
+        opacity: 0.3;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_137" data-name="Ellipse 137" class="cls-1" cx="202.153" cy="202.153" r="202.153" transform="translate(1080.035 765.559)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.01" stop-color="#ee2163"/>
+      <stop offset="0.13" stop-color="#ef2861"/>
+      <stop offset="0.32" stop-color="#f13c5d"/>
+      <stop offset="0.55" stop-color="#f55c55"/>
+      <stop offset="0.8" stop-color="#fa894a"/>
+      <stop offset="1" stop-color="#ffb141"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-2" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1235.622, 1514.177)">
+    <path id="Path_100" data-name="Path 100" class="cls-3" d="M951.707,750.137,854.869,344.774,715.244,297.482l-324.289,164.4,60.8,344.558V907.778l229.705,42.788Z" transform="translate(623.655 370.957)"/>
+  </g>
+</svg>
