@@ -382,7 +382,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
+  color: #fff;
   border-color: #888;
   outline: 0;
 }
@@ -471,7 +471,7 @@ legend {
   display: block;
   margin-bottom: 5px;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 fieldset {
@@ -817,6 +817,108 @@ header {
   margin-bottom: 0;
 }
 
+
+/* ----------------------- subscribe */
+.subscribe {
+  position: relative;
+  float: left;
+  min-width: 20vw;
+}
+.subscribe .mc-fields-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  vertical-align: top;
+  justify-content: center;
+}
+.subscribe label {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -0.8px;
+  letter-spacing: -.08rem;
+}
+.subscribe .email {
+  border: none;
+  border-bottom: 2px solid #5B0D8C;
+  border-radius: 0;
+  text-align: left;
+  position: relative;
+  padding-left: 5px;
+}
+.subscribe .email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #70707f;
+}
+.subscribe .email::-moz-placeholder { /* Firefox 19+ */
+  color: #70707f;
+}
+.subscribe .email:-ms-input-placeholder { /* IE 10+ */
+  color: #70707f;
+}
+.subscribe .email:-moz-placeholder { /* Firefox 18- */
+  color: #70707f;
+}
+.subscribe .email:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #4f4f8e;
+}
+.subscribe .email:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #4f4f8e;
+}
+.subscribe .email:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #4f4f8e;
+}
+.subscribe .email:focus:-moz-placeholder { /* Firefox 18- */
+  color: #4f4f8e;
+}
+
+
+.subscribe .button {
+  background-color: #6AE9C5;
+  color: rgb(85, 85, 85);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  transition: .3s ease-in-out;
+  margin-left: 20px;
+}
+.subscribe .button:hover {
+  background-color: #5B0D8C;
+  color: #fff;
+}
+#mc_embed_signup .mc-field-group div.mce_inline_error {
+  display: block;
+  margin: 0;
+  padding: 6px 0 0 14px;
+  background-color: transparent;
+  font: 14px latina-l;
+  color: #e08383;
+  text-align: left;
+}
+#mc_embed_signup .mc-field-group input.mce_inline_error {
+  border-color: #e08383;
+}
+#mce-responses {
+  display: inline-block;
+  max-width: 600px;
+}
+#mce-responses .response {
+  display: block;
+  margin: 0;
+  padding: 6px 0 0 14px;
+  background-color: transparent;
+  font: 14px latina-l;
+  color: #e08383;
+  text-align: left;
+}
+#mce-responses .response a {
+  font: 14px latina-l;
+}
+
+
+
+
+
+
 .subscribe {
   position: relative;
   float: left;
@@ -845,6 +947,8 @@ header {
   position: relative;
   padding-left: 5px;
 }
+
+
 
 .quests {
   float: left;
