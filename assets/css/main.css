@@ -802,16 +802,38 @@ header {
 .welcome {
   position: relative;
   width: 80%;
-  float: left;
-  display: -ms-flexbox;
+  /* float: left; */
+/*   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-direction: column;
-      flex-direction: column;
+      flex-direction: column; */
   margin-top: 10vh;
 }
 
+.welcome h2 {
+  display: inline-block;
+  margin-right: 4rem;
+}
+.tickets {
+  display: inline-block;
+  padding: 12px 36px 6px;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  background-color: #E9420B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-decoration: none;
+  opacity: .8;
+}
+.tickets:hover {
+  color: #fff;
+  opacity: 1;
+}
 .welcome h3 {
   margin-top: 50px;
   margin-bottom: 0;
@@ -1284,5 +1306,8 @@ header {
     background-repeat: no-repeat;
     float: left;
     margin: 2px 0 0 10px;
+  }
+  .tickets {
+    opacity: 1;
   }
 }
