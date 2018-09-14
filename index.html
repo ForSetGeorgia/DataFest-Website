@@ -1,154 +1,610 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataFest Tbilisi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 
-    <meta property="og:title" content="DataFest Tbilisi">
-    <meta property="og:description" content="DataFest Tbilisi is the first annual international data event in South Caucasus supporting cross-sector and cross-border cooperation, strengthening communities and inspiring individuals to pursue and explore opportunities created by data and technology." />
-    <meta name="description" content="DataFest Tbilisi is the first annual international data event in South Caucasus supporting cross-sector and cross-border cooperation, strengthening communities and inspiring individuals to pursue and explore opportunities created by data and technology.">
-    <meta property="fb:app_id" content="136089813665895">
+    <meta name="description" content="3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to Inspire, Share knowledge, Network, and Collaborate.">
+    <meta name="keywords"  content="Data,bigdata,datafest,tbilisi,georgia,"/>
+    <meta name="resource-type" content="document"/>
+    <meta property="og:title" content="DataFest Tbilisi 2018" />
     <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="136089813665895">
     <meta property="og:url" content="https://datafest.ge/" />
-    <meta property="og:site_name" content="DataFest" />
-    <meta property="og:image" content="https://datafest.ge/assets/images/share.png" />
+    <meta property="og:image" content="https://datafest.ge/img/home-share-image.jpg" />
+    <meta property="og:site_name" content="https://datafest.ge/" />
 
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
 
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/progress.css?v=1.0" />
-    <script src="assets/js/modernizr.custom.js"></script>
+    <!-- CSS -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
-    <div class="app">
-      <div id="scene">
-        <img class="circle" data-id="1" src="assets/images/a1.svg" />
-        <img class="circle" data-id="2" src="assets/images/a2.svg" />
-        <img class="circle" data-id="3" src="assets/images/a3.svg" />
-        <img class="circle" data-id="4" src="assets/images/a4.svg" />
-        <img class="circle" data-id="5" src="assets/images/a5.svg" />
-        <img class="circle" data-id="6" src="assets/images/a6.svg" />
-        <img class="circle" data-id="7" src="assets/images/a7.svg" />
-        <img class="circle" data-id="8" src="assets/images/a1.svg" />
-        <img class="circle" data-id="9" src="assets/images/a2.svg" />
-        <img class="circle" data-id="10" src="assets/images/a3.svg" />
-      </div>
-      <img src="assets/images/datafest.png" class="logo" />
-      <div class="content">
-        <div class="intro" data-fade-id="1">
-          <h1>15-17 November 2017</h1>
-          <h2>Tbilisi, Georgia</h2>
-          <p>
-            3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to <br /><span>Inspire</span><span> • </span><span>Share knowledge</span><span> • </span><span>Network</span><span> • </span><span>Collaborate</span>
-          </p>
-        </div>
-        <ul class="schedule" data-fade-id="2">
-          <li class="day1">
-            <h3>Day 1</h3>
-            <div class="info">
-              <h4>Summit</h4>
-              <p>Short talks & panel discussions about data and communication</p>
-            </div>
-          </li>
-          <li class="day2">
-            <h3>Day 2</h3>
-            <div class="info">
-              <h4>Workshops</h4>
-              <p>Workshops and training sessions on data collection, analysis and communication</p>
-            </div>
-          </li>
-          <li class="day3">
-            <h3>Day 3</h3>
-            <div class="info">
-              <h4>Hackathon</h4>
-              <p>Mini-hackathon on solving data collection, analysis or communication challenges</p>
-            </div>
-          </li>
-        </ul>
-        <div class="hidden" data-fade-id="3">
-          <div class="subscribe">
-            <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-              <form action="//twitter.us16.list-manage.com/subscribe/post?u=4c5461b661acbc0f12e0cc253&amp;id=78e226c9bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-fields-row">
-                    <label>Stay in touch to get updates about<br /> agenda and travel grants!</label>
-                    <div class="mc-field-group">
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email">
-                    </div>
-                    <div class="progress-button">
-                      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><span>Send</span></button>
+  <body class="page-home preload">
+    <div class="page-wrap">
 
-                      <svg class="progress-circle" width="40" height="40"><path d="M20,2.5c9.669,0,17.5,7.831,17.5,17.5S29.669,37.5,20,37.5S2.5,29.669,2.5,20S10.331,2.5,20,2.5z"/></svg>
-                      <svg class="checkmark" width="40" height="40"><path d="M6.02,18.875l10.061,10.074 M16.081,28.949L33.98,11.051"/></svg>
-                      <svg class="cross" width="40" height="40"><path d="M20,20l-9.3-9.3"/><path d="M20,20l9.3,9.3"/><path d="M20,20l-9.3,9.3"/><path d="M20,20l9.3-9.3"/></svg>
-                    </div>
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c5461b661acbc0f12e0cc253_78e226c9bc" tabindex="-1" value=""></div>
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <a href="index.html" class="logo wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".1s"><img src="./img/logo.svg" alt="DataFest" title="DataFest" /></a>
+            </div>
+            <div class="col-xl-8 xl-flex justify-content-xl-end">
+              <nav class="sm-none wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".1s">
+                <div class="activecircle"></div>
+                <a href="" class="active">home</a>
+                <a href="speakers.html">speakers</a>
+                <a href="partners.html">partners</a>
+                <a href="javascript:;" style="opacity: 0.4;">agenda</a>
+              </nav>
+              <a href="http://bit.ly/DataFestTicket" target="_blank" class="ticket-btn sm-none wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".1s">tickets<span></span><div class="circle-1"></div><div class="circle-2"></div></a>
+
+              <div class="burger-btn xl-none sm-block">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="resp-menu xl-none sm-block">
+                <div class="menu">
+                  <a href="" class="item active">home</a>
+                  <a href="speakers.html" class="item">speakers</a>
+                  <a href="partners.html" class="item">partners</a>
+                  <a href="javascript:;" style="opacity: 0.4;" class="item">agenda</a>
+                  <a href="http://bit.ly/DataFestTicket" target="_blank" class="ticket-btn">tickets<span></span><div class="circle-1"></div><div class="circle-2"></div></a>
                 </div>
-              </form>
+              </div>
+
             </div>
-            <!--End mc_embed_signup-->
+          </div>
+        </div>
+      </header>
+
+      <section class="video-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-sm-12">
+              <div class="info-box">
+                <div class="info">
+                  <div class="date wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">7, 8, 9 November 2018</div>
+                  <div class="line wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"></div>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">the first</p>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">data conference</p>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">in the caucasus</p>
+                  <span class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">data, communications, technology</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8 col-sm-12">
+              <div class="video-box wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+                <video loop autoplay muted id="homeVideo">
+                  <source src="./img/home-video.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-controls play" id="video-controls" onclick="playPause()">
+                  <img class="video-controls-pause" src="./img/video-controls-pause.svg" alt="" title="" />
+                  <img class="video-controls-play" src="./img/video-controls-play.svg" alt="" title="" />
+                </div>
+                <script>
+                  var myVideo = document.getElementById("homeVideo");
+                  var videoControls = document.getElementById('video-controls');
+
+                  function playPause() {
+                    if (myVideo.paused) {
+                      myVideo.play();
+                      videoControls.classList.add("play");
+                      videoControls.classList.remove("pause");
+                    }
+                    else {
+                      myVideo.pause();
+                      videoControls.classList.add("pause");
+                      videoControls.classList.remove("play");
+                    }
+                  }
+                </script>
+              </div>
+            </div>
           </div>
 
-          <a class="facebook" href="https://www.facebook.com/DataFestTbilisi/" target="_blank">Follow us on Facebook</a>
-          <div class="partnership">
-            <p>
-              <strong>Interested in partnership?</strong>
-              Contact: <a href="mailto:nino@forset.ge" target="_top">nino@forset.ge</a>
-            </p>
+          <div class="socials text-xl-right text-sm-left wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+            <a href="https://www.facebook.com/DataFestTbilisi/" target="_blank" class="social facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/datafesttbilisi" target="_blank" class="social twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/datafesttbilisi/" target="_blank" class="social instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCVdYDItF8AhssMKrgdNPGgQ" target="_blank" class="social youtube"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" class="hashtag">#DataFestTbilisi</a>
           </div>
         </div>
-        <div class="partners" data-fade-id="4">
-          <div class="hashtag">#DataFestTbilisi</div>
-          <ul>
-            <li>
-              <label>Organized by</label>
-              <a href="https://forset.ge/en" target="_blank">ForSet</a>
-              <a href="https://digicomnet.org/" target="_blank">DigiComNet</a>
-            </li>
-            <li>
-              <label>Supported by</label>
-              <a href="http://praguecivilsociety.org/" target="_blank">Prague Civil Society Centre</a>
-            </li>
-            <li>
-              <label>Community Partner</label>
-              <a href="https://www.meetup.com/Data-Science-Tbilisi/" target="_blank">Data Science Tbilisi</a>
-            </li>
-          </ul>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-sm-12">
+              <div class="info">
+                <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">what is DataFest Tbilisi?</h2>
+                <div class="text wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">
+                  3 days about data and communication bringing together journalists, CSO activists, marketing specialists, business professionals, government officials, data analysts, developers and designers working with data or willing to explore the data opportunities to
+                </div>
+                <div class="tags wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                  <a>inspire</a>
+                  <a>share knowledge</a>
+                  <a>network</a>
+                  <a>collaborate</a>
+                </div>
+                <a href="https://datafest.ge/2017/" target="_blank" class="edition wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">
+                  <div class="icon">
+                    <img src="./img/edition-icon.svg" alt="2017 edition" title="2017 edition" />
+                    <img src="./img/edition-icon-hover.svg" alt="2017 edition" title="2017 edition" />
+                  </div>
+                  <span>2017 edition</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+              <div class="topics">
+                <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".1s">Topics  this year:</h3>
+                <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">Data</h4>
+                <div class="row icons">
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon1.svg" alt="Journalism and Truth" title="Journalism and Truth" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">Journalism and Truth</h5>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon2.svg" alt="in Politics" title="in Politics" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">in Politics</h5>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon3.svg" alt="Science and AI" title="Science and AI" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">Science and AI</h5>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon4.svg" alt="and Design" title="and Design" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">and Design</h5>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon5.svg" alt="for Marketing" title="for Marketing" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">for Marketing</h5>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="item">
+                      <div class="icon wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s"><img src="./img/topic-icon6.svg" alt="and Cyber security" title="and Cyber security" /></div>
+                      <h5 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">and Cyber security</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="speakers-section">
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">speakers</h2>
+          <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">14 inspirational talks.  28 workshops.  6 datathons</h3>
+        </div>
+
+        <div class="marquee-wrapper wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+          <div class="marquee-container">
+            <ul>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Omayma.png" alt="Omayma" title="Omayma" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Omayma Said</h5>
+                  <div class="position">Data Scientist @ Wuzzuf | Egypt</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Sergio_Gonzalezsanz.png" alt="Sergio Gonzalezsanz" title="Sergio Gonzalezsanz" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Sergio González Sanz</h5>
+                  <div class="position">Data Scientist @ Zalando | Ireland</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Mirko_Lorenz.png" alt="Mirko Lorenz" title="Mirko Lorenz" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                    </div>
+                  </div>
+                  <h5>Mirko Lorenz</h5>
+                  <div class="position">Co-founder @ Datawrapper | Germany</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Isabella_Gollini.png" alt="Isabella Gollini" title="Isabella Gollini" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Isabella Gollini</h5>
+                  <div class="position">Assistant Professor @ University College Dublin | Ireland</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Chris_Ninnes.png" alt="Chris Ninnes" title="Chris Ninnes" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Chris Ninnes</h5>
+                  <div class="position">Data Scientist @ Facebook | UK</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Alice_Lynch.png" alt="Alice Lynch" title="Alice Lynch" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Alice Lynch</h5>
+                  <div class="position">Data Scientist @ Zalando | Ireland</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Timothy_Frohner.png" alt="Timothy Frohner" title="Timothy Frohner" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                      <img class="icon" src="./img/speaker-icon-3.svg" alt="Datathons" title="Datathons" />
+                    </div>
+                  </div>
+                  <h5>Timothy Frohner</h5>
+                  <div class="position">Product Experience Analyst @ Facebook | UK</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Christiaan_Triebert.png" alt="Christiaan Triebert" title="Christiaan Triebert" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                    </div>
+                  </div>
+                  <h5>Christiaan Triebert</h5>
+                  <div class="position">Investigative Reporter @ Bellingcat | Netherlands</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Erekle_Magradze.png" alt="Erekle Magradze" title="Erekle Magradze" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-1.svg" alt="Workshop" title="Workshop" />
+                    </div>
+                  </div>
+                  <h5>Erekle Magradze</h5>
+                  <div class="position">Data Scientist @ CERN | Germany</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="item">
+                  <div class="img">
+                    <picture>
+                      <img src="./img/Aimee_O_Beirne.png" alt="Aimée O’Beirne" title="Aimée O’Beirne" />
+                    </picture>
+                    <div class="icons">
+                      <img class="icon" src="./img/speaker-icon-2.svg" alt="Talk" title="Talk" />
+                    </div>
+                  </div>
+                  <h5>Aimée O’Beirne</h5>
+                  <div class="position">Fashion Data Expert @ Zalando | Ireland</div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-xl-center wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">
+          <a href="speakers.html" class="more-btn">about speakers</a>
+        </div>
+      </section>
+
+      <section class="agenda-section">
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">agenda</h2>
+          <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">coming soon ...</h3>
+
+          <div class="row items">
+            <div class="col-xl-4 col-sm-12">
+              <a href="javascript:;" class="item left wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                <div class="img">
+                  <picture>
+                    <img src="./img/agenda-1.png" alt="inspirational talks" title="inspirational talks" />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">day 1</span>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">inspirational talks</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+              <a href="javascript:" class="item center wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                <div class="img">
+                  <picture>
+                    <img src="./img/agenda-2.png" alt="workshops" title="workshops" />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">day 2</span>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">workshops</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+              <a href="javascript:" class="item right wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                <div class="img">
+                  <picture>
+                    <img src="./img/agenda-3.png" alt="datathons" title="datathons" />
+                  </picture>
+                </div>
+                <div class="info">
+                  <span class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">day 3</span>
+                  <p class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">datathons</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tickets-section">
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">get tickets</h2>
+          <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">by 30 September at the regular price</h3>
+        </div>
+
+        <div class="items wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".4s">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4 col-sm-12">
+                <div class="item left">
+                  <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">Early Bird:</h4>
+                  <div class="line wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s"></div>
+	                <div class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+                    <p>Day 1 - 70₾</p>
+                    <p>Day 1, 2 - 110₾</p>
+                    <p>Day 1, 2, 3 - 150₾</p>
+		              </div>
+                  <a href="http://bit.ly/DataFestTicket" target="_blank" class="ticket-btn wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">tickets<span></span><div class="circle-1"></div><div class="circle-2"></div></a>
+                  <div class="date wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">sales ended on <b>August 31</b></div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item center active">
+                  <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">Regular:</h4>
+                  <div class="line wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s"></div>
+		              <div class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+                    <p>Day I - 100₾</p>
+                    <p>Day I & II - 150₾</p>
+                    <p>Day I, II & III - 200₾</p>
+		              </div>
+                  <a href="http://bit.ly/DataFestTicket" target="_blank" class="ticket-btn wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">tickets<span></span><div class="circle-1"></div><div class="circle-2"></div></a>
+                  <div class="date wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">sales end on <b>September 30</b></div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12">
+                <div class="item right">
+                  <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">Last Chance:</h4>
+                  <div class="line wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s"></div>
+		              <div class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".4s">
+                    <p>Day I - 150₾</p>
+                    <p>Day I & II - 200₾</p>
+                    <p>Day I, II & III - 250₾</p>
+		              </div>
+                  <a href="http://bit.ly/DataFestTicket" target="_blank" class="ticket-btn wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">tickets<span></span><div class="circle-1"></div><div class="circle-2"></div></a>
+                  <div class="date wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".45s">sales end on <b>November 7</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">
+            our partners
+            <br class="xl-none sm-block">
+            <a href="partners.html" class="all-partners">all partners</a>
+          </h2>
+
+          <div class="row items">
+
+            <div class="col-xl-3 col-sm-6">
+              <a href="https://praguecivilsociety.org/" target="_blank" class="item wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">
+                <div class="img">
+                  <img src="./img/Prague Civil Society Centre.png" alt="Prague Civil Society Centre" title="Prague Civil Society Centre" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <a href="http://eapcivilsociety.eu/" target="_blank" class="item wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">
+                <div class="img">
+                  <img src="./img/Eastern Partnership Civil Society Facility.png" alt="Eastern Partnership Civil Society Facility" title="Eastern Partnership Civil Society Facility" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <a href="http://www.zalando.com/" target="_blank" class="item wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">
+                <div class="img">
+                  <img src="./img/Zalando.jpg" alt="Zalando" title="Zalando" />
+                </div>
+              </a>
+            </div>
+
+            <div class="col-xl-12 col-sm-12">
+              <div class="item text-sm-center">
+                <a href="./img/become-a-partner.pdf" target="_blank" class="become-partner wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">Become a partner</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="venue-section">
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">venue</h2>
+
+          <div class="row items">
+            <div class="col-xl-6 col-sm-12">
+              <div class="item left">
+                <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">day 1</h3>
+                <a href="https://www.google.com/maps/place/%E1%83%98%E1%83%95%E1%83%90%E1%83%9C%E1%83%94+%E1%83%AF%E1%83%90%E1%83%95%E1%83%90%E1%83%AE%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1+%E1%83%A1%E1%83%90%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%91%E1%83%98%E1%83%A1+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98%E1%83%A1+%E1%83%A1%E1%83%90%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9B%E1%83%AC%E1%83%98%E1%83%A4%E1%83%9D+%E1%83%A3%E1%83%9C%E1%83%98%E1%83%95%E1%83%94%E1%83%A0%E1%83%A1%E1%83%98%E1%83%A2%E1%83%94%E1%83%A2%E1%83%98/@41.7099824,44.7758105,17z/data=!3m1!4b1!4m5!3m4!1s0x40440cd30294b88b:0x9cfe7a9b37f34a36!8m2!3d41.7099824!4d44.7779992" target="_blank" class="img wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                  <picture>
+                    <img src="./img/venue-1.png" alt="Tbilisi State University" title="Tbilisi State University" />
+                  </picture>
+                  <div class="info">
+                    <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">Tbilisi State University</h4>
+                    <div class="address wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s"><img src="./img/venue-address-icon.svg">1 Chavchavadze Ave., Tbilisi 0179</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="item right">
+                <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">day 2, 3</h3>
+                <a href="https://www.google.com/maps/place/%E1%83%94%E1%83%A0%E1%83%9D%E1%83%95%E1%83%9C%E1%83%A3%E1%83%9A%E1%83%98+%E1%83%A1%E1%83%90%E1%83%9B%E1%83%94%E1%83%AA%E1%83%9C%E1%83%98%E1%83%94%E1%83%A0%E1%83%9D+%E1%83%91%E1%83%98%E1%83%91%E1%83%9A%E1%83%98%E1%83%9D%E1%83%97%E1%83%94%E1%83%99%E1%83%90/@41.7157966,44.7827545,15z/data=!4m5!3m4!1s0x0:0xe7dc6e8317b8380!8m2!3d41.7157966!4d44.7827545" target="_blank" class="img wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s">
+                  <picture>
+                    <img src="./img/venue-1.png" alt="National Science Library" title="National Science Library" />
+                  </picture>
+                  <div class="info">
+                    <h4 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">National Science Library</h4>
+                    <div class="address wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".3s"><img src="./img/venue-address-icon.svg">1/4 Merab Aleksidze St, T’bilisi</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <h2 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".2s">questions?</h2>
+          <h3 class="wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".25s">contact us: <a href="mailto:hello@datafest.ge" target="_top">hello@datafest.ge</a></h3>
+        </div>
+        <div class="bottom wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-sm-12">
+                <div class="follow wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">
+                  <span>follow us:</span>
+                  <a href="https://www.facebook.com/DataFestTbilisi/" target="_blank" class="social facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/datafesttbilisi" target="_blank" class="social twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/datafesttbilisi/" target="_blank" class="social instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCVdYDItF8AhssMKrgdNPGgQ" target="_blank" class="social youtube"><i class="fab fa-youtube"></i></a>
+                  <a target="_blank" class="hashtag">#DataFestTbilisi</a>
+                </div>
+              </div>
+              <div class="col-xl-6 col-sm-12">
+                <div class="subscribe wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">
+                  <span>subscribe here for the news:</span>
+                  <form action="//twitter.us16.list-manage.com/subscribe/post?u=4c5461b661acbc0f12e0cc253&amp;id=78e226c9bc" method="post" target="_blank">
+                    <input type="email" name="EMAIL" placeholder="your email" id="mce-EMAIL" />
+                    <input type="submit" name="subscribe" value="send" id="mc-embedded-subscribe" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="created wow fadeInUpSmall" data-wow-duration="1s" data-wow-delay=".35s">
+                  Made by <a href="https://forset.ge/" target="_blank">ForSet</a> with <i class="fas fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     </div>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/mc-validate.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/uiProgressButton.js"></script>
-    <script src="assets/js/main.js"></script>
+
+    <!-- JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/smooth-scroll.js"></script>
+    <script src="./js/activecircle.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/events.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-100354106-3', 'auto');
       ga('send', 'pageview');
     </script>
   </body>
 </html>
-
-

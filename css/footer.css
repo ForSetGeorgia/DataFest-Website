@@ -1,0 +1,441 @@
+footer{
+	margin-top: 150px;
+}
+
+.page-speakers footer{
+	margin-top: 50px;
+}
+
+footer h2{
+	font-size: 60px;
+	color: #EB2873;
+	text-transform: inherit;
+	letter-spacing: 24px;
+}
+
+footer h3{
+	margin-top: 18px;
+	font-size: 26px;
+	color: #370355;
+	text-transform: inherit;
+  font-family: "FiraGO-Book";
+  letter-spacing: 0.48px;
+	padding-left: 23px;
+}
+
+footer h3 a{
+  font-family: "FiraGO-Bold";
+  color: #37A4F4;
+}
+
+footer .bottom{
+	padding: 42px 0;
+	margin-top: 35px;
+	background-image: linear-gradient(-27deg, rgba(106, 15, 165, 0.96) 0%, rgba(250, 21, 74, 0.44) 100%);
+}
+
+footer .bottom .follow{
+	padding-left: 23px; 
+}
+
+footer .bottom .follow span{
+	display: block;
+	font-size: 26px;
+	color: #fff;
+  letter-spacing: 0.48px;
+  font-family: "FiraGO-Book";
+  margin-bottom: 34px;
+}
+
+footer .bottom .follow a.social{
+	color: #fff;
+	margin-right: 28px;
+	transition: transform .3s;
+}
+
+footer .bottom .follow a.social:first-child{
+	margin-right: 0;
+}
+
+footer .bottom .follow a.social:hover{
+	transform: scale(1.1);
+}
+
+footer .bottom .follow a.social.facebook{
+	font-size: 26px;
+}
+
+footer .bottom .follow a.social.twitter{
+	font-size: 28px;
+}
+
+footer .bottom .follow a.social.instagram{
+  font-size: 32px;
+  position: relative;
+  top: 3px;
+}
+
+footer .bottom .follow a.social.youtube{
+  font-size: 32px;
+  position: relative;
+  top: 2px;
+}
+
+footer .bottom .follow a.hashtag{
+	color: #fff;
+	font-size: 22px;
+	letter-spacing: 0.66px;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+}
+
+footer .bottom .subscribe{
+	padding-left: 30px; 
+}
+
+footer .bottom .subscribe span{
+	display: block;
+	font-size: 26px;
+	color: #fff;
+  letter-spacing: 0.48px;
+  font-family: "FiraGO-Book";
+	padding-left: 28px;
+}
+
+footer .bottom .subscribe form{
+	display: block;
+	position: relative;
+	height: 60px;
+	margin-top: 20px;
+}
+
+footer .bottom .subscribe form input[type="email"]{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 490px;
+	height: 60px;
+	border: 1px solid #fff;
+	border-radius: 60px;
+	padding: 0 28px;
+	background-color: transparent;
+	font-size: 20px;
+	color: #fff;
+  letter-spacing: 1.2px;
+  font-family: "FiraGO-Book";
+}
+
+footer .bottom .subscribe form input[type="email"]:focus{
+	border-width: 2px;
+}
+
+footer .bottom .subscribe form input[type="email"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+footer .bottom .subscribe form input[type="email"]::-moz-placeholder {
+  color: #fff;
+}
+
+footer .bottom .subscribe form input[type="email"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+footer .bottom .subscribe form input[type="email"]:-moz-placeholder {
+  color: #fff;
+}
+
+footer .bottom .subscribe form input[type="email"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+footer .bottom .subscribe form input[type="email"]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+footer .bottom .subscribe form input[type="email"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+footer .bottom .subscribe form input[type="email"]:focus:-moz-placeholder {
+  color: transparent;
+}
+
+footer .bottom .subscribe form input[type="submit"]{
+	position: absolute;
+  right: 0;
+	top: 0;
+	width: 120px;
+	height: 60px;
+	border-radius: 60px;
+	background-color: #fff;
+	font-size: 20px;
+	color: #370355;
+  letter-spacing: 4px;
+  font-family: "FiraGO-Bold";
+  text-transform: uppercase;
+  border: 0;
+  transition: background-color .5s, color .5s;
+}
+
+footer .bottom .subscribe form input[type="submit"]:hover{
+	background-color: #370355;
+	color: #fff;
+}
+
+footer .bottom .created{
+	text-align: right;
+	font-size: 18px;
+	color: #fff;
+  opacity: 0.6;
+  font-family: "FiraGO-Regular";
+  margin-top: 78px;
+}
+
+footer .bottom .created a{
+	font-size: 18px;
+	color: #fff;
+}
+
+
+/******************** Responsive Styles ********************/
+
+@media (max-width: 1400px){
+	footer {
+    margin-top: 100px;
+	}
+
+	.page-speakers footer{
+		margin-top: 30px;
+	}
+
+	footer h2 {
+    font-size: 50px;
+    letter-spacing: 18px;
+	}
+
+	footer h3 {
+		margin-top: 12px;
+    padding-left: 18px;
+	}
+
+	footer .bottom {
+    padding: 35px 0;
+    margin-top: 30px;
+	}
+
+	footer .bottom .follow{
+		padding-left: 18px; 
+	}
+
+	footer .bottom .follow a.social{
+		margin-right: 23px;
+	}
+
+	footer .bottom .follow a.social.facebook{
+    font-size: 22px;
+	}
+
+	footer .bottom .follow a.social.twitter{
+    font-size: 24px;
+	}
+
+	footer .bottom .follow a.social.instagram{
+    font-size: 28px;
+	}
+
+	footer .bottom .follow a.social.youtube{
+    font-size: 28px;
+	}
+
+	footer .bottom .follow a.hashtag{
+		top: 0;
+	}
+
+	footer .bottom .subscribe form {
+    height: 52px;
+	}
+
+	footer .bottom .subscribe form input[type="email"] {
+    width: 370px;
+    height: 52px;
+    padding: 0 28px;
+    font-size: 18px;
+    letter-spacing: 1px;
+	}
+
+	footer .bottom .subscribe form input[type="submit"] {
+    width: 108px;
+    height: 52px;
+    font-size: 18px;
+    letter-spacing: 3px;
+	}
+
+	footer .bottom .created {
+    margin-top: 64px;
+	}
+}
+
+@media (max-width: 1140px){
+	footer {
+    margin-top: 70px;
+	}
+
+	footer h2 {
+    font-size: 30px;
+    letter-spacing: 12px;
+	}
+
+	footer h3 {
+    margin-top: 8px;
+    padding-left: 18px;
+    font-size: 20px;
+	}
+
+	footer .bottom {
+    padding: 22px 0;
+    margin-top: 24px;
+	}
+
+	footer .bottom .follow span {
+    font-size: 18px;
+    margin-bottom: 18px;
+	}
+
+	footer .bottom .follow a.social {
+    margin-right: 21px;
+	}
+
+	footer .bottom .follow a.social.facebook {
+    font-size: 16px;
+	}
+
+	footer .bottom .follow a.social.twitter {
+    font-size: 18px;
+	}
+
+	footer .bottom .follow a.social.instagram {
+    font-size: 22px;
+	}
+
+	footer .bottom .follow a.social.youtube {
+    font-size: 22px;
+	}
+
+	footer .bottom .follow a.hashtag{
+		font-size: 14px;
+	}
+
+	footer .bottom .subscribe {
+    padding-left: 0;
+	}
+
+	footer .bottom .subscribe span {
+    font-size: 18px;
+    padding-left: 24px;
+	}
+
+	footer .bottom .subscribe form {
+    display: block;
+    position: relative;
+    height: 60px;
+    margin-top: 14px;
+	}
+
+	footer .bottom .subscribe form input[type="submit"] {
+    width: 86px;
+    height: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+	}
+
+	footer .bottom .subscribe form input[type="email"] {
+    width: 236px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+	}
+
+	footer .bottom .created {
+    margin-top: 22px;
+    font-size: 14px;
+	}
+
+	footer .bottom .created a {
+    font-size: 14px;
+	}
+}
+
+@media (max-width: 767.98px){
+	footer {
+    margin-top: 20px;
+	}
+
+	.page-speakers footer{
+		margin-top: 10px;
+	}
+
+	footer h2 {
+    font-size: 24px;
+    letter-spacing: 6px;
+	}
+
+	footer h3 {
+    margin-top: 6px;
+    padding-left: 0;
+    font-size: 16px;
+	}
+
+	footer .bottom{
+		padding: 18px 0;
+		margin-top: 18px;
+	}
+
+	footer .bottom .follow {
+    padding-left: 0;
+	}
+	
+	footer .bottom .follow span {
+    margin-bottom: 8px;
+	}
+
+	footer .bottom .subscribe {
+    margin-top: 40px;
+	}
+
+	footer .bottom .subscribe span {
+    font-size: 16px;
+    padding-left: 18px;
+	}
+
+	footer .bottom .subscribe form{
+		height: auto;
+    margin-top: 8px;
+	}
+
+	footer .bottom .subscribe form input[type="email"] {
+    position: static;
+    height: 46px;
+    display: block;
+    width: 100%;
+	}
+
+	footer .bottom .subscribe form input[type="submit"] {
+    position: static;
+    height: 46px;
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+	}
+
+	footer .bottom .created {
+    margin-top: 30px;
+    text-align: center;
+	}
+}
+
+@media (max-width: 575.98px){
+
+}
