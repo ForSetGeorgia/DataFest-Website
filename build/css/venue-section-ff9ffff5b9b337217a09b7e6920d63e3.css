@@ -1,0 +1,246 @@
+section.venue-section{
+	margin-top: 150px;
+}
+
+section.venue-section h2{
+	font-size: 60px;
+	color: #EB2873;
+	text-transform: inherit;
+	letter-spacing: 12px;
+}
+
+section.venue-section .items{
+	margin-top: 20px;
+	padding: 0 23px;
+}
+
+section.venue-section .items .item{
+
+}
+
+section.venue-section .items .item.left{
+	padding-right: 30px;
+}
+
+section.venue-section .items .item.right{
+	padding-right: 30px;
+}
+
+section.venue-section .items .item h3{
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #370355;
+	text-transform: inherit;
+}
+
+section.venue-section .items .item .img{
+	display: block;
+	padding-bottom: 59%;
+	position: relative;
+	overflow: hidden;
+	margin-top: 26px;
+}
+
+section.venue-section .items .item .img picture img{
+	top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform .5s;
+}
+
+section.venue-section .items .item .img:hover picture img{
+  transform: scale(1.1);
+}
+
+section.venue-section .items .item .img:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-image: linear-gradient(-60deg, #d03393 0%, rgba(253, 39, 39, 0.43) 100%);
+	opacity: 0.6;
+}
+
+section.venue-section .items .item .img .info{
+	position: absolute;
+	left: 36px;
+	bottom: 36px;
+	right: 36px;
+	z-index: 1;
+}
+
+section.venue-section .items .item .img .info h4{
+	font-size: 50px;
+	color: #fff;
+	text-transform: inherit;
+	line-height: 60px;
+	max-width: 70%;
+}
+
+section.venue-section .items .item .img .info .address{
+	font-size: 22px;
+	color: #fff;
+  letter-spacing: 0.48px;
+  margin-top: 20px;
+}
+
+section.venue-section .items .item .img .info .address img{
+	width: 25px;
+	margin-right: 10px;position: relative;
+	top: 3px;
+}
+
+
+/******************** Responsive Styles ********************/
+
+@media (max-width: 1400px){
+	section.venue-section {
+    margin-top: 80px;
+	}
+
+	section.venue-section h2 {
+    font-size: 50px;
+    letter-spacing: 8px;
+	}
+
+	section.venue-section .items {
+    margin-top: 12px;
+    padding: 0 18px;
+	}
+
+	section.venue-section .items .item h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+	}
+
+	section.venue-section .items .item .img {
+    margin-top: 22px;
+	}
+
+	section.venue-section .items .item .img .info {
+    left: 26px;
+    bottom: 26px;
+    right: 26px;
+	}
+
+	section.venue-section .items .item .img .info h4 {
+    font-size: 40px;
+    line-height: 48px;
+	}
+
+	section.venue-section .items .item .img .info .address {
+    font-size: 18px;
+    margin-top: 15px;
+	}
+
+	section.venue-section .items .item .img .info .address img {
+    width: 23px;
+    top: 5px;
+	}
+}
+
+@media (max-width: 1140px){
+	section.venue-section {
+    margin-top: 40px;
+	}
+
+	section.venue-section h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+	}
+
+	section.venue-section .items {
+    margin-top: 8px;
+    padding: 0 18px;
+	}
+
+	section.venue-section .items .item.left {
+    padding-right: 15px;
+	}
+
+	section.venue-section .items .item.right {
+    padding-right: 15px;
+	}
+
+	section.venue-section .items .item h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+	}
+
+	section.venue-section .items .item .img {
+    margin-top: 15px;
+	}
+
+	section.venue-section .items .item .img .info {
+    left: 18px;
+    bottom: 18px;
+    right: 18px;
+	}
+
+	section.venue-section .items .item .img .info h4 {
+    font-size: 26px;
+    line-height: 32px;
+	}
+
+	section.venue-section .items .item .img .info .address {
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0;
+	}
+
+	section.venue-section .items .item .img .info .address img {
+    width: 17px;
+    top: 4px;
+    margin-right: 8px;
+	}
+}
+
+@media (max-width: 767.98px){
+	section.venue-section {
+    margin-top: 85px;
+	}
+
+	section.venue-section h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+	}
+
+	section.venue-section .items {
+    margin-top: 8px;
+    padding: 0 0px;
+	}
+
+	section.venue-section .items .item {
+    margin-bottom: 25px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+	}
+
+	section.venue-section .items .item h3 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+	}
+
+	section.venue-section .items .item .img {
+    margin-top: 10px;
+	}
+
+	section.venue-section .items .item .img .info h4 {
+    font-size: 22px;
+    line-height: 26px;
+	}
+
+	section.venue-section .items .item .img .info .address {
+    font-size: 12px;
+	}
+}
+
+@media (max-width: 575.98px){
+
+}

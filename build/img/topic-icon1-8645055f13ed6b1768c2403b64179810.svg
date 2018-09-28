@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.254 59.69" width="69.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #370355;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #370355;
+      }
+    </style>
+  </defs>
+  <g id="Group_78" data-name="Group 78" transform="translate(1 1)">
+    <g id="Group_77" data-name="Group 77">
+      <path id="Path_143" data-name="Path 143" class="cls-1" d="M68.407,58.947a2.453,2.453,0,0,0,2.348-2.478h0V15a4.522,4.522,0,0,0-4.3-4.7H5.8A4.522,4.522,0,0,0,1.5,15V56.4h0a2.453,2.453,0,0,0,2.348,2.478H68.407Z" transform="translate(-1.5 -10.3)"/>
+      <path id="Path_144" data-name="Path 144" class="cls-1" d="M68.407,58.947a2.453,2.453,0,0,0,2.348-2.478h0V15a4.522,4.522,0,0,0-4.3-4.7H5.8A4.522,4.522,0,0,0,1.5,15V56.4h0a2.453,2.453,0,0,0,2.348,2.478H68.407Z" transform="translate(-1.5 -10.3)"/>
+      <g id="Group_76" data-name="Group 76" transform="translate(7.173 9.586)">
+        <rect id="Rectangle_87" data-name="Rectangle 87" class="cls-2" width="30.649" height="1.854" transform="translate(0 17.346)"/>
+        <rect id="Rectangle_88" data-name="Rectangle 88" class="cls-2" width="20.607" height="1.854" transform="translate(34.236 17.346)"/>
+        <rect id="Rectangle_89" data-name="Rectangle 89" class="cls-2" width="20.607" height="1.854" transform="translate(34.236 8.673)"/>
+        <rect id="Rectangle_90" data-name="Rectangle 90" class="cls-2" width="20.607" height="1.854" transform="translate(34.236)"/>
+        <rect id="Rectangle_91" data-name="Rectangle 91" class="cls-2" width="20.607" height="1.854" transform="translate(34.236 25.954)"/>
+        <rect id="Rectangle_92" data-name="Rectangle 92" class="cls-2" width="30.883" height="1.854" transform="translate(0 8.673)"/>
+        <rect id="Rectangle_93" data-name="Rectangle 93" class="cls-2" width="30.649" height="1.854" transform="translate(0 25.954)"/>
+      </g>
+      <path id="Path_145" data-name="Path 145" class="cls-2" d="M54.646,92.53V84.9H39.386v7.63H35.213A2.407,2.407,0,0,0,32.8,94.943H61.362A2.407,2.407,0,0,0,58.95,92.53Z" transform="translate(-12.389 -36.253)"/>
+    </g>
+  </g>
+</svg>

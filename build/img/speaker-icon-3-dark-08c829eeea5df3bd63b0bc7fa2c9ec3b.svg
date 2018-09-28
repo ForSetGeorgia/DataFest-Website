@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.576 31.5">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.498;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #370355;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_85" data-name="Group 85" class="cls-1" transform="translate(-0.45 -0.45)">
+    <circle id="Ellipse_51" data-name="Ellipse 51" class="cls-2" cx="8.308" cy="8.308" r="8.308" transform="translate(7.094 7.421)"/>
+    <circle id="Ellipse_52" data-name="Ellipse 52" class="cls-2" cx="2.865" cy="2.865" r="2.865" transform="translate(22.36 1.2)"/>
+    <circle id="Ellipse_53" data-name="Ellipse 53" class="cls-2" cx="4.052" cy="4.052" r="4.052" transform="translate(21.173 23.096)"/>
+    <circle id="Ellipse_54" data-name="Ellipse 54" class="cls-2" cx="1.146" cy="1.146" r="1.146" transform="translate(1.2 11.923)"/>
+    <path id="Path_161" data-name="Path 161" class="cls-2" d="M23.8,47.745V41.5h3.194v7.318" transform="translate(-12.461 -24.944)"/>
+    <path id="Path_162" data-name="Path 162" class="cls-2" d="M23.8,47.921v-9.7h3.194V46.5" transform="translate(-6.742 -24.171)"/>
+    <line id="Line_44" data-name="Line 44" class="cls-2" x1="2.66" y2="3.111" transform="translate(20.723 6.234)"/>
+    <line id="Line_45" data-name="Line 45" class="cls-2" x1="1.801" y1="2.087" transform="translate(20.804 22.032)"/>
+    <line id="Line_46" data-name="Line 46" class="cls-2" x2="3.724" y2="0.737" transform="translate(3.492 13.315)"/>
+  </g>
+</svg>
