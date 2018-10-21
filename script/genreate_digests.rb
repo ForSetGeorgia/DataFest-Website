@@ -8,7 +8,7 @@ require 'digest/md5'
 require 'fileutils'
 
 build_path = 'build/'
-html_files = ['index.html', 'partners.html', 'speakers.html']
+html_files = ['index.html', 'partners.html', 'speakers.html', 'agenda-day1.html', 'agenda-day2.html', 'agenda-day3.html']
 asset_folders = ['css', 'img', 'js']
 items_to_build = html_files + asset_folders
 files_to_digest = ['css', 'js', 'png', 'jpg', 'svg', 'mp4']
