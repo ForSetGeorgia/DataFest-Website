@@ -9,6 +9,13 @@
   letter-spacing: 12px;
 }
 
+.page-agenda section.agenda-days .see-spreadsheet{
+  position: relative;
+  top: -7px;
+  left: 0;
+  transform: translate(0, 0) scale(1);
+}
+
 .page-agenda section.agenda-days h3{
   font-size: 30px;
   color: #370355;
@@ -162,6 +169,38 @@
   color: #0480db;
 }
 
+.page-agenda section.agenda-days .see-spreadsheet{
+  display: inline-block;
+  height: 88px;
+  line-height: 88px;
+  font-size: 25px;
+  letter-spacing: 1.8px;
+  border-radius: 100px;
+  border: 1px solid #370355;
+  padding: 0 90px;
+  color: #370355;
+  font-family: "FiraGO-Bold";
+  white-space: nowrap;
+  margin-top: 30px;
+/*  position: absolute;
+  top: 50%;
+  left: 50%;*/
+  /*transform: translate(-50%, -50%) scale(1);*/
+  transform: scale(1);
+  transition: color .5s, background-color .5s, transform .5s;
+}
+
+.page-agenda section.agenda-days .see-spreadsheet:hover{
+  background-color: #370355;
+  color: #fff;
+  /*transform: translate(-50%, -50%) scale(1.1);*/
+  transform: scale(1.1);
+}
+
+.page-agenda section.agenda-days .see-spreadsheet:hover{
+  transform: translate(0, 0) scale(1.1);
+}
+
 
 /******************** Responsive Styles ********************/
 
@@ -222,6 +261,13 @@
     font-size: 16px;
     line-height: 25px;
     padding-left: 30px;
+  }
+
+  .page-agenda section.agenda-days .see-spreadsheet {
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 70px;
   }
 }
 
@@ -286,6 +332,14 @@
     font-size: 14px;
     line-height: 23px;
     padding-left: 30px;
+  }
+
+  .page-agenda section.agenda-days .see-spreadsheet {
+    height: 54px;
+    line-height: 54px;
+    font-size: 16px;
+    padding: 0 46px;
+    margin-top: 10px;
   }
 }
 
@@ -357,6 +411,15 @@
     font-size: 16px;
     line-height: 25px;
     padding-left: 0;
+  }
+
+  .page-agenda section.agenda-days .see-spreadsheet {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    padding: 0px 34px;
+    letter-spacing: 1px;
+    margin-top: 32px;
   }
 }
 

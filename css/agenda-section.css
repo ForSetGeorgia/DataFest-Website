@@ -115,6 +115,7 @@ section.agenda-section .items .item .info p{
     bottom: 50px;
     left: -18px;
 	}
+
 }
 
 @media (max-width: 1140px){
@@ -163,6 +164,7 @@ section.agenda-section .items .item .info p{
     font-size: 24px;
     margin-top: 4px;
 	}
+
 }
 
 @media (max-width: 767.98px){
@@ -200,6 +202,7 @@ section.agenda-section .items .item .info p{
     left: -12px;
     width: 68%;
 	}
+
 }
 
 @media (max-width: 575.98px){
