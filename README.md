@@ -1,2 +1,3 @@
 # DataFest-Website
-Source code for [datafest.ge](https://datafest.ge)
+
+The website for each year of DataFest is located in its own branch.
