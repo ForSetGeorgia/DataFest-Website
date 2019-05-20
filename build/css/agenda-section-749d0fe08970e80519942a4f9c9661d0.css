@@ -26,6 +26,9 @@ section.agenda-section .items .item{
 	position: relative;
 	display: block;
   box-shadow: -30px 50px 99px rgba(44, 0, 93, 0.3);
+
+
+  cursor: default;
 }
 
 section.agenda-section .items .item.left{
