@@ -41,9 +41,12 @@ section.tickets-section .footnote.first{
   margin-top: 100px;
   margin-bottom: 20px;
 }
+section.tickets-section .footnote .item{
+  opacity: 0.9 !important;
+}
 
 hr.white{
-  border: solid 2px #fff;
+  border: solid 1px #fff;
   margin: 70px 0;
 }
 
@@ -91,7 +94,7 @@ section.tickets-section .items .item .line.no-line{
 }
 
 section.tickets-section .items .item p{
-	font-size: 26px;
+	font-size: 25px;
 	color: #fff;
 	letter-spacing: 1.2px;
 	/* line-height: 40px; */
