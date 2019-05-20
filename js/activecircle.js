@@ -6,7 +6,7 @@
 
     init: function(){
       this.setStartPosition();
-      this.switcher();
+      // this.switcher();
     },
     setStartPosition: function(link){
       var left = this.calculatePosition(this.activeLink),
@@ -33,21 +33,21 @@
 
         var $this = $(this),
             left = self.calculatePosition($this),
-            width = self.calculateWidth($this);  
+            width = self.calculateWidth($this);
 
         self.activeCircle.css({
           'transform': 'translateX('+(left + ((width / 2) + 1))+'px)'
-        })        
+        })
       });
 
       this.link.on('mouseout', function(){
         var $this = $(this),
             left = self.calculatePosition(self.activeLink),
-            width = self.calculateWidth(self.activeLink);       
+            width = self.calculateWidth(self.activeLink);
 
         self.activeCircle.css({
           'transform': 'translateX('+(left + ((width / 2) + 1))+'px)'
-        })        
+        })
       })
     }
   }

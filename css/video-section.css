@@ -31,8 +31,8 @@
 
 .video-section .info-box .info p{
 	color: #100355;
-	font-size: 80px;
-	line-height: 102px;
+	font-size: 60px;
+	line-height: 76.5px;
 }
 
 .video-section .info-box .info span{
@@ -153,6 +153,10 @@
   font-size: 32px;
   position: relative;
   top: 2px;
+}
+
+.video-section .socials a.social.linkedin{
+  font-size: 26px;
 }
 
 .video-section .socials a.hashtag{

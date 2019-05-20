@@ -35,7 +35,7 @@ footer .bottom{
 }
 
 footer .bottom .follow{
-	padding-left: 23px; 
+	padding-left: 23px;
 }
 
 footer .bottom .follow span{
@@ -81,6 +81,12 @@ footer .bottom .follow a.social.youtube{
   top: 2px;
 }
 
+footer .bottom .follow a.social.linkedin{
+  font-size: 32px;
+  position: relative;
+  top: 2px;
+}
+
 footer .bottom .follow a.hashtag{
 	color: #fff;
 	font-size: 22px;
@@ -91,7 +97,7 @@ footer .bottom .follow a.hashtag{
 }
 
 footer .bottom .subscribe{
-	padding-left: 30px; 
+	padding-left: 30px;
 }
 
 footer .bottom .subscribe span{
@@ -226,7 +232,7 @@ footer .bottom .created a{
 	}
 
 	footer .bottom .follow{
-		padding-left: 18px; 
+		padding-left: 18px;
 	}
 
 	footer .bottom .follow a.social{
@@ -396,7 +402,7 @@ footer .bottom .created a{
 	footer .bottom .follow {
     padding-left: 0;
 	}
-	
+
 	footer .bottom .follow span {
     margin-bottom: 8px;
 	}
