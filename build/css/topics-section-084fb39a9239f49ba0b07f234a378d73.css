@@ -1,0 +1,113 @@
+section.topics-section{
+	margin-top: 100px;
+}
+
+section.topics-section .info h2{
+	color: #eb2873;
+	font-size: 60px;
+	letter-spacing: 6px;
+	text-transform: inherit;
+  margin-bottom: 53px;
+}
+
+section.topics-section .info .topic-items{
+  padding-left: 23px;
+}
+section.topics-section .info .topic-items .topic-item{
+  margin-bottom: 38px;
+}
+section.topics-section .info .topic-items .topic-item .topic-image{
+  margin-bottom: 19px;
+}
+section.topics-section .info .topic-items .topic-item .topic-image img{
+  height: 66px;
+  display: block;
+  margin: auto;
+}
+section.topics-section .info .topic-items .topic-item .topic-text{
+	color: #370355;
+  font-family: "FiraGO-Bold";
+	font-size: 20px;
+	line-height: 25px;
+  text-align: center;
+}
+
+
+
+/******************** Responsive Styles ********************/
+
+@media (max-width: 1400px){
+	section.topics-section .info {
+    padding-right: 28px;
+	}
+
+	section.topics-section .info h2 {
+    font-size: 50px;
+    letter-spacing: 4.5px;
+    margin-bottom: 20px;
+	}
+
+  section.topics-section .info .topic-items{
+    padding-left: 18px;
+  }
+  section.topics-section .info .topic-items .topic-item{
+    margin-bottom: 19px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-image{
+    margin-bottom: 10px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-text{
+    font-size: 18px;
+    line-height: 23px;
+	}
+
+}
+
+@media (max-width: 1140px){
+	section.topics-section {
+    margin-top: 70px;
+	}
+
+	section.topics-section .info h2 {
+    font-size: 30px;
+    letter-spacing: 3.5px;
+    margin-bottom: 15px;
+	}
+
+  section.topics-section .info .topic-items .topic-item{
+    margin-bottom: 15px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-image{
+    margin-bottom: 7px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-text{
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+}
+
+@media (max-width: 767.98px){
+	section.topics-section{
+		margin-top: 40px;
+	}
+
+	section.topics-section .info {
+    padding-right: 0;
+	}
+
+	section.topics-section .info h2 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+	}
+
+  section.topics-section .info .topic-items{
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width: 575.98px){
+
+}
