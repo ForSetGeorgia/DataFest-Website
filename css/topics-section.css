@@ -10,13 +10,26 @@ section.topics-section .info h2{
   margin-bottom: 53px;
 }
 
-section.topics-section .info .text{
+section.topics-section .info .topic-items{
+  padding-left: 23px;
+}
+section.topics-section .info .topic-items .topic-item{
+  margin-bottom: 38px;
+}
+section.topics-section .info .topic-items .topic-item .topic-image{
+  margin-bottom: 19px;
+}
+section.topics-section .info .topic-items .topic-item .topic-image img{
+  height: 66px;
+  display: block;
+  margin: auto;
+}
+section.topics-section .info .topic-items .topic-item .topic-text{
 	color: #370355;
   font-family: "FiraGO-Bold";
 	font-size: 20px;
-	/* line-height: 30px; */
-	padding-left: 23px;
-  margin-bottom: 23px
+	line-height: 25px;
+  text-align: center;
 }
 
 
@@ -34,11 +47,18 @@ section.topics-section .info .text{
     margin-bottom: 20px;
 	}
 
-	section.topics-section .info .text {
-    font-size: 22px;
-    /* line-height: 38px; */
-    margin-bottom: 20px;
+  section.topics-section .info .topic-items{
     padding-left: 18px;
+  }
+  section.topics-section .info .topic-items .topic-item{
+    margin-bottom: 19px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-image{
+    margin-bottom: 10px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-text{
+    font-size: 18px;
+    line-height: 23px;
 	}
 
 }
@@ -54,12 +74,16 @@ section.topics-section .info .text{
     margin-bottom: 15px;
 	}
 
-	section.topics-section .info .text {
-    font-size: 14px;
-    /* line-height: 24px; */
+  section.topics-section .info .topic-items .topic-item{
     margin-bottom: 15px;
-	}
-
+  }
+  section.topics-section .info .topic-items .topic-item .topic-image{
+    margin-bottom: 7px;
+  }
+  section.topics-section .info .topic-items .topic-item .topic-text{
+    font-size: 14px;
+    line-height: 19px;
+  }
 
 }
 
@@ -78,11 +102,9 @@ section.topics-section .info .text{
     margin-bottom: 12px;
 	}
 
-	section.topics-section .info .text {
-    line-height: 20px;
-    margin-bottom: 0;
+  section.topics-section .info .topic-items{
     padding-left: 0;
-	}
+  }
 
 }
 
