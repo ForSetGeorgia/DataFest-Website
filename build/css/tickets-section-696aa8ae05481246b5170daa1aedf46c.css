@@ -75,6 +75,15 @@ section.tickets-section .items .item.active{
   opacity: 1;
 }
 
+section.tickets-section .items .item.active-labels{
+  pointer-events: auto;
+  opacity: 1;
+}
+section.tickets-section .items .item.active-labels .price{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 section.tickets-section .items .item h4{
 	letter-spacing: 1.2px;
 	color: #fff;
