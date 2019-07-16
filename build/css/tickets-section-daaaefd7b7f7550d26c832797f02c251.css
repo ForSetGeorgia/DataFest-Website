@@ -283,6 +283,11 @@ section.tickets-section .items .item .date b{
     padding-left: 0;
 	}
 
+  section.tickets-section .items .item.active-labels{
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
   hr.white{
     margin: 37px 0;
   }
