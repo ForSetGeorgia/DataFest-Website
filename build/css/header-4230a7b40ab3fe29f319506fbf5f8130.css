@@ -40,11 +40,13 @@ header.scrolled nav{
 }
 
 header nav a{
-	/* color: #370355; */
+	color: #370355;
 	font-size: 18px;
 	letter-spacing: 0.54px;
 	margin: 0 8px;
+}
 
+header nav a.inactive{
 	color: gray;
 	opacity: 0.5;
 	cursor: default;
