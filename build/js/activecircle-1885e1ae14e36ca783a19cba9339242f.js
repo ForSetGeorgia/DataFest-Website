@@ -6,7 +6,7 @@
 
     init: function(){
       this.setStartPosition();
-      // this.switcher();
+      this.switcher();
     },
     setStartPosition: function(link){
       var left = this.calculatePosition(this.activeLink),
