@@ -44,6 +44,11 @@ section.tickets-section .footnote.first{
 section.tickets-section .footnote .item{
   opacity: 0.9 !important;
 }
+section.tickets-section .footnote .item a{
+  color: #fff;
+  opacity: 0.8;
+  pointer-events: auto;
+}
 
 hr.white{
   border: solid 1px #fff;
