@@ -36,10 +36,13 @@ section.tickets-section .footnote{
   font-family: 'FiraGO-Light';
   color: #fff;
   opacity: 0.8;
+  margin-bottom: 20px;
 }
 section.tickets-section .footnote.first{
   margin-top: 100px;
-  margin-bottom: 20px;
+}
+section.tickets-section .footnote:last-of-type{
+  margin-bottom: 0;
 }
 section.tickets-section .footnote .item{
   opacity: 0.9 !important;
