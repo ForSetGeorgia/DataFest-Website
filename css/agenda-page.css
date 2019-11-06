@@ -9,11 +9,6 @@
     letter-spacing: 12px;
 }
 
-.stageName {
-    text-align: left;
-    font-size: 24px;
-}
-
 .page-agenda section.agenda-days .see-spreadsheet {
     position: relative;
     top: -7px;
@@ -142,14 +137,27 @@
     color: #370355;
 }
 
+.breakEvent p {
+    font-size: small;
+    color: #ccc !important;
+    font-weight: 100;
+    padding-left: 30px;
+}
+
 .page-agenda section.agenda-days .content .box h5 {
     color: #370355;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 24px;
     font-family: "FiraGO-Bold";
     text-transform: inherit;
     padding-left: 50px;
 }
+
+.stageName {
+    text-align: left;
+    font-size: 18px;
+}
+
 
 .page-agenda section.agenda-days .content .box h6 {
     color: #370355;
@@ -281,8 +289,12 @@
     }
 
     .page-agenda section.agenda-days .content .box h5 {
-        font-size: 18px;
+        font-size: 20px;
         padding-left: 30px;
+    }
+    .stageName {
+        text-align: left;
+        font-size: 16px;
     }
 
     .page-agenda section.agenda-days .content .box h6 {
@@ -353,8 +365,12 @@
     }
 
     .page-agenda section.agenda-days .content .box h5 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 22px;
+    }
+    .stageName {
+        text-align: left;
+        font-size: 20px;
     }
 
     .page-agenda section.agenda-days .content .box h6 {
@@ -442,10 +458,14 @@
     }
 
     .page-agenda section.agenda-days .content .box h5 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
         padding-left: 0;
         margin-top: 16px;
+    }
+    .stageName {
+        text-align: left;
+        font-size: 16px;
     }
 
     .page-agenda section.agenda-days .content .box h6 {
