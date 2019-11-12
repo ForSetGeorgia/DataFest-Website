@@ -165,6 +165,11 @@ section.tickets-section .items .item .date b {
     font-weight: normal;
 }
 
+section.tickets-section .items .item p.double-height {
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+
 
 /******************** Responsive Styles ********************/
 
@@ -267,9 +272,9 @@ section.tickets-section .items .item .date b {
     }
 
     section.tickets-section .items .item p.double-height {
+        margin-top: 0;
         margin-bottom: 24px;
     }
-
 
     section.tickets-section .items .item .ticket-btn {
         margin-top: 18px;
@@ -350,6 +355,7 @@ section.tickets-section .items .item .date b {
     }
 
     section.tickets-section .items .item p.double-height {
+        margin-top: 0;
         margin-bottom: 7px;
     }
 
