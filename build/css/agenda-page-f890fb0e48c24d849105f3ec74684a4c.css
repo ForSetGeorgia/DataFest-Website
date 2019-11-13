@@ -177,6 +177,15 @@
     padding-left: 50px;
 }
 
+.page-agenda section.agenda-days .content .box .requirement {
+    color: #626262;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 9px;
+    padding-left: 50px;
+    font-style: italic;
+}
+
 .page-agenda section.agenda-days .content.day-3 .box .text {
     margin-top: 0;
 }
@@ -292,6 +301,7 @@
         font-size: 20px;
         padding-left: 30px;
     }
+
     .stageName {
         text-align: left;
         font-size: 16px;
@@ -305,6 +315,12 @@
 
     .page-agenda section.agenda-days .content .box .text {
         font-size: 16px;
+        line-height: 25px;
+        padding-left: 30px;
+    }
+
+    .page-agenda section.agenda-days .content .box .requirement {
+        font-size: 14px;
         line-height: 25px;
         padding-left: 30px;
     }
@@ -368,6 +384,7 @@
         font-size: 18px;
         line-height: 22px;
     }
+
     .stageName {
         text-align: left;
         font-size: 20px;
@@ -380,6 +397,12 @@
 
     .page-agenda section.agenda-days .content .box .text {
         font-size: 14px;
+        line-height: 23px;
+        padding-left: 30px;
+    }
+
+    .page-agenda section.agenda-days .content .box .requirement {
+        font-size: 12px;
         line-height: 23px;
         padding-left: 30px;
     }
@@ -463,6 +486,7 @@
         padding-left: 0;
         margin-top: 16px;
     }
+
     .stageName {
         text-align: left;
         font-size: 16px;
@@ -476,6 +500,12 @@
 
     .page-agenda section.agenda-days .content .box .text {
         font-size: 16px;
+        line-height: 25px;
+        padding-left: 0;
+    }
+
+    .page-agenda section.agenda-days .content .box .requirement {
+        font-size: 14px;
         line-height: 25px;
         padding-left: 0;
     }
