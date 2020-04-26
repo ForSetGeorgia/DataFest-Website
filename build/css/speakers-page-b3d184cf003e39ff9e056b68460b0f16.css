@@ -132,8 +132,8 @@
 }
 
 .page-speakers section.speakers-section .items .item h5{
-  color: #FF1A72;
-  font-size: 26px;
+  color: var(--main-color-text-2020);
+  font-size: 24px;
   text-transform: inherit;
   font-family: "FiraGO-Medium";
   padding: 0 20px;
@@ -151,10 +151,16 @@
 .page-speakers section.speakers-section .items .item .text{
   padding: 0 20px;
   margin-top: 14px;
+  opacity: 0.7;
+  font-family: FiraGO;
   font-size: 18px;
-  color: #796E80;
-  font-family: "FiraGO-Book";
-  line-height: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e4e4e4;
 }
 
 

@@ -4,9 +4,23 @@ body{
 
 .page-wrap{
 	overflow: hidden;
-	background-image: url(../img/bg-pattern-ebf93566e1910cfae7423bb604b889f9.png);
+	background-color: #090b11;
+	/*background-image: url(../img/bg-pattern-ebf93566e1910cfae7423bb604b889f9.png);*/
 	background-position: top -17px left -13px;
 	background-attachment: fixed;
+}
+
+
+/******************** Index 2020 ********************/
+
+.online {
+	position: relative;
+}
+
+.online-white {
+	position: absolute;
+	top: 10px;
+	left: -10px;
 }
 
 
@@ -34,7 +48,7 @@ body{
 	height: 100%;
 	z-index: -1;
 	border-radius: 50px;
-	background-image: linear-gradient(129deg, #ff1a72 0%, #800d39 100%);
+	background-image: linear-gradient(129deg, #ff1a72 0%, var(--main-color-2020) 100%);
 	transition: transform .5s;
 }
 

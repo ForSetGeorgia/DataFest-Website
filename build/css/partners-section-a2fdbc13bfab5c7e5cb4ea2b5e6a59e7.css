@@ -63,59 +63,54 @@ section.partners-section .items .item{
 
 section.partners-section .items .item .img{
 	position: relative;
-	padding-bottom: 56%;
+	padding-bottom: 40%;
 }
 
 section.partners-section .items .item .img img{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	max-width: 60%;
+	top: 0;
+	left: 0;
+	max-width: 100%;
 	max-height: 75%;
 	opacity: 0.7;
-  -webkit-filter: grayscale(100%);
-     -moz-filter: grayscale(100%);
-   	  -ms-filter: grayscale(100%);
-    			filter: grayscale(100%);
-	transform: translate(-50%, -50%);
+  /*-webkit-filter: grayscale(100%);*/
+  /*   -moz-filter: grayscale(100%);*/
+  /* 	  -ms-filter: grayscale(100%);*/
+  /*  			filter: grayscale(100%);*/
+	/*transform: translate(-50%, -50%);*/
 	transition: all .5s;
 }
 
 
 section.partners-section .items .item:hover .img img{
 	opacity: 1;
-  -webkit-filter: grayscale(0);
-     -moz-filter: grayscale(0);
-   	  -ms-filter: grayscale(0);
-    			filter: grayscale(0);
+  /*-webkit-filter: grayscale(0);*/
+  /*   -moz-filter: grayscale(0);*/
+  /* 	  -ms-filter: grayscale(0);*/
+  /*  			filter: grayscale(0);*/
 }
 
 section.partners-section .become-partner{
-	display: inline-block;
-	height: 88px;
-	line-height: 88px;
-  font-size: 25px;
-  letter-spacing: 1.8px;
-  border-radius: 100px;
-  border: 1px solid #370355;
-  padding: 0 90px;
-  color: #370355;
-  font-family: "FiraGO-Bold";
-  white-space: nowrap;
-  margin-top: 30px;
-/*	position: absolute;
-	top: 50%;
-	left: 50%;*/
-	/*transform: translate(-50%, -50%) scale(1);*/
-  transform: scale(1);
-  transition: color .5s, background-color .5s, transform .5s;
+    display: inline-block;
+    height: 88px;
+    line-height: 88px;
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    border-radius: 100px;
+    border: 1px solid var(--main-color-2020);
+    padding: 0 90px;
+    color: var(--main-color-2020);
+    font-family: "FiraGO-Bold";
+    white-space: nowrap;
+    margin-top: 30px;
+    transform: scale(1);
+    transition: color .5s, background-color .5s, transform .5s;
 }
 
 section.partners-section .become-partner:hover{
-	background-color: #370355;
-	color: #fff;
-  /*transform: translate(-50%, -50%) scale(1.1);*/
-  transform: scale(1.1);
+    background-color: var(--main-color-2020);
+    color: var(--main-color-text-2020);
+    transform: scale(1.1);
 }
 
 .page-partners section.partners-section .become-partner:hover{

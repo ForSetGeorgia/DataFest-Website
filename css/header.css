@@ -235,7 +235,7 @@ section .ticket-btn {
         width: 160px;
         height: 380px;
         pointer-events: auto;
-        background-color: #EB2873;
+        background-color: var(--main-color-2020);
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
         transform: translateX(102%);
@@ -265,7 +265,7 @@ section .ticket-btn {
     }
 
     header .resp-menu .menu a.item.active {
-        color: #fff;
+        color: var(--main-color-text-2020);
     }
 
     header .resp-menu .menu a.item.active:before {
@@ -276,7 +276,7 @@ section .ticket-btn {
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--main-color-text-2020);
     }
 
     header .resp-menu .menu .ticket-btn {
