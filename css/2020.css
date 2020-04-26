@@ -213,7 +213,7 @@
     max-width: 512px;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 200px) {
     .image-box-online img {
         max-width: 100%;
     }
@@ -590,7 +590,12 @@
         text-align: center;
     }
     .desc-tkt {
+        margin-top: 7px;
+        text-align: center;
         font-size: 16px;
+    }
+    .contact-event-coordinator {
+        font-size: 18px !important;
     }
     .inline {
         width: 100%;

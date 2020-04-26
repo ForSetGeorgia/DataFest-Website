@@ -383,6 +383,9 @@ section.tickets-section .items .item p.double-height {
 }
 
 @media (max-width: 575.98px) {
+    section.tickets-section .items {
+        padding: 32px 0;
+    }
     section.tickets-section .items .item p.double-height{
         margin-bottom: 25px;
     }
@@ -398,3 +401,4 @@ section.tickets-section .items .item p.double-height {
         margin-bottom: 7.5px;
     }
 }
+
