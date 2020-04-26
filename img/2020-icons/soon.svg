@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="405" height="610.266" viewBox="0 0 405 610.266">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x1=".422" x2="0" y1=".81" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f45cbf" stop-opacity=".482"/>
+            <stop offset="1" stop-color="#4fea5a" stop-opacity=".678"/>
+        </linearGradient>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Group_242" data-name="Group 242" transform="translate(-.073)" style="opacity:.499">
+        <path id="prefix__Sue-Black" d="M0 0H405V540H0z" class="prefix__cls-2" transform="translate(.073)"/>
+        <text id="prefix__Soon" transform="translate(30.939 565.266)" style="fill:#e4e4e4;font-size:24px;font-family:FiraGO-Book,FiraGO">
+            <tspan fill="#e4e4e4" x="0" y="22">Soon</tspan>
+        </text>
+        <path id="prefix__Rectangle_291" d="M0 0H539.263V403.642H0z" data-name="Rectangle 291" transform="rotate(-90 270.116 269.486)"/>
+        <g id="prefix__Group_240" data-name="Group 240" transform="translate(137.174 190.172)">
+            <g id="prefix__Group_239" data-name="Group 239">
+                <path id="prefix__Path_271" d="M164.131 183.7a5.641 5.641 0 1 1-11.283 0 54.533 54.533 0 1 0-109.066 0 5.641 5.641 0 1 1-11.283 0 65.816 65.816 0 1 1 131.631 0zm-65.815-75.221a39.489 39.489 0 1 1 39.484-39.49 39.489 39.489 0 0 1-39.484 39.49zm0-11.283a28.207 28.207 0 1 0-28.207-28.207A28.207 28.207 0 0 0 98.316 97.2z" class="prefix__cls-2" data-name="Path 271" transform="translate(-32.5 -29.5)"/>
+            </g>
+        </g>
+    </g>
+</svg>

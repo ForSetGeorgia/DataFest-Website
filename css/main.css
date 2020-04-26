@@ -1,6 +1,7 @@
 @import 'general/general.css';
 @import 'general/animate.css';
 @import 'fonts/font-awesome/css/fontawesome-all.min.css';
+@import '2020.css';
 
 @import 'style.css';
 @import 'header.css';
@@ -15,3 +16,4 @@
 @import 'speakers-page.css';
 @import 'agenda-page.css';
 @import 'footer.css';
+

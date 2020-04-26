@@ -44,20 +44,20 @@ header.scrolled nav {
 }
 
 header nav a {
-    color: #370355;
+    color: var(--main-color-2020);
     font-size: 18px;
     letter-spacing: 0.54px;
     margin: 0 8px;
 }
 
 header nav a.inactive {
-    color: gray;
+    color: var(--main-color-disabled-2020);
     opacity: 0.5;
     cursor: default;
 }
 
 header nav a.active {
-    color: #eb2873;
+    color: var(--main-color-text-2020);
 }
 
 header nav .activecircle {
@@ -67,7 +67,7 @@ header nav .activecircle {
     height: 10px !important;
     border-radius: 50%;
     left: 0;
-    background-color: #eb2873;
+    background-color: var(--main-color-2020);
     transition: transform .5s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
@@ -107,7 +107,7 @@ header .previous-years-nav a:hover {
 }
 
 
-header .ticket-btn {
+section .ticket-btn {
     top: 32px;
     pointer-events: auto;
 }
@@ -123,7 +123,7 @@ header .ticket-btn {
         width: 200px;
     }
 
-    header .ticket-btn {
+    section .ticket-btn {
         top: 36px;
     }
 }
@@ -146,7 +146,7 @@ header .ticket-btn {
         letter-spacing: 0.24px;
     }
 
-    header .ticket-btn {
+    section .ticket-btn {
         top: 20px;
     }
 }

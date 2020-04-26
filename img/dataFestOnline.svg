@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520.214" height="244.214" viewBox="0 0 520.214 244.214">
+    <defs>
+        <filter id="prefix__DataFest_Online" width="520.214" height="244.214" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="1.036"/>
+            <feFlood flood-color="#f41168"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <text id="prefix__DataFest_Online-2" data-name="DataFest Online" transform="translate(4.11 89.11)" style="stroke:#fe9ba3;stroke-linecap:round;stroke-linejoin:round;font-size:107px;font-family:Metropolis-Black,Metropolis;font-weight:800;fill:none">
+            <tspan x="0" y="0">DataFest </tspan><tspan style="font-family:Metropolis-SemiBold,Metropolis;font-weight:600"><tspan x="0" y="129">Online</tspan></tspan>
+        </text>
+    </g>
+</svg>
