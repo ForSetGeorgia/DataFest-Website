@@ -51,6 +51,11 @@
     padding: 4px;
 }
 
+.youtube i{
+    position: relative;
+    right: 2px;
+}
+
 .icon-button i {
     font-size: 24px;
     color: var(--main-color-2020);

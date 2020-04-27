@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 405 540" style="enable-background:new 0 0 405 540;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.769;fill:url(#Rectangle_291_1_);enable-background:new    ;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	
+		<linearGradient id="Rectangle_291_1_" gradientUnits="userSpaceOnUse" x1="-756.9861" y1="809.4848" x2="-757.5564" y2="809.228" gradientTransform="matrix(2.448185e-14 -399.819 -299.268 -1.832488e-14 242488.3594 -302289.6562)">
+		<stop  offset="0" style="stop-color:#F45CBF;stop-opacity:0.482"/>
+		<stop  offset="1" style="stop-color:#4FEA5A;stop-opacity:0.678"/>
+	</linearGradient>
+	<rect id="Rectangle_291" class="st0" width="405" height="540"/>
+	<g id="Group_240" transform="translate(-32.5 -29.5)">
+		<g id="Group_239" transform="translate(32.5 29.5)">
+			<path id="Path_271" class="st1" d="M268.4,344.3c0,3.1-2.4,5.7-5.6,5.7s-5.7-2.4-5.7-5.6c0-0.1,0-0.1,0-0.2
+				c0.1-30.1-24.2-54.7-54.3-54.9c-30.1-0.1-54.7,24.2-54.9,54.3c0,0.2,0,0.4,0,0.5c0,3.1-2.4,5.7-5.6,5.7c-3.1,0-5.7-2.4-5.7-5.6
+				c0-0.1,0-0.1,0-0.2c0.4-36.4,30.2-65.5,66.6-65.1C239,279.6,268,308.5,268.4,344.3L268.4,344.3z M202.5,269
+				c-21.8,0-39.5-17.7-39.5-39.5s17.7-39.5,39.5-39.5s39.5,17.7,39.5,39.5l0,0C242,251.3,224.3,269,202.5,269z M202.5,257.7
+				c15.6,0,28.2-12.6,28.2-28.2s-12.6-28.2-28.2-28.2s-28.2,12.6-28.2,28.2S186.9,257.7,202.5,257.7L202.5,257.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
