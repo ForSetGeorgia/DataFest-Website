@@ -29,7 +29,7 @@ body{
 .ticket-btn{
 	position: relative;
 	display: inline-block;
-	width: 100px;
+	width: 170px;
 	height: 47px;
 	border-radius: 50px;
 	text-align: center;
@@ -57,7 +57,7 @@ body{
 }
 
 .ticket-btn .circle-1{
-	width: 140px;
+	width: 210px;
 	height: 80px;
   top: -16px;
   left: -20px;
@@ -74,7 +74,7 @@ body{
 }
 
 .ticket-btn .circle-2{
-	width: 140px;
+	width: 210px;
 	height: 80px;
   top: -16px;
   left: -20px;
@@ -152,14 +152,14 @@ body{
 
 @media (max-width: 1400px){
 	.ticket-btn {
-    width: 88px;
+    width: 140px;
     height: 40px;
     line-height: 40px;
 	}
 
 	.ticket-btn .circle-1,
 	.ticket-btn .circle-2{
-		width: 125px;
+		width: 170px;
 		height: 70px;
     top: -15px;
     left: -18px;
@@ -228,7 +228,7 @@ body{
 
 @media (max-width: 1140px){
 	.ticket-btn {
-    width: 82px;
+    width: 140px;
     height: 36px;
     line-height: 36px;
     font-size: 14px;
@@ -236,7 +236,7 @@ body{
 
 	.ticket-btn .circle-1,
 	.ticket-btn .circle-2{
-		width: 115px;
+		width: 170px;
 		height: 60px;
 		top: -12px;
 		left: -16px;

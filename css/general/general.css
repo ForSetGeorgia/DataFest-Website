@@ -31,6 +31,31 @@ body {
   animation: body-fadeIn 2s;
 }
 
+@font-face {
+  font-family: 'Metropolis';
+  src: url(../fonts/Metropolis-Regular.otf)
+}
+/*bold version*/
+@font-face {
+  font-family: 'Metropolis';
+  src: url(../fonts/Metropolis-Bold.otf)
+}
+/*extra bold version*/
+@font-face {
+  font-family: 'Metropolis';
+  src: url(../fonts/Metropolis-ExtraBold.otf)
+}
+/*semi bold version*/
+@font-face {
+  font-family: 'Metropolis';
+  src: url(../fonts/Metropolis-SemiBold.otf)
+}
+/*extra bold version*/
+@font-face {
+  font-family: 'Metropolis';
+  src: url(../fonts/Metropolis-Black.otf)
+}
+
 @keyframes body-fadeIn {
   from { opacity: 0; }
   to {  opacity: 1; }

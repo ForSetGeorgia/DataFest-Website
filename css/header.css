@@ -30,7 +30,7 @@ header .menu-height-for-index {
 
 header nav {
     position: absolute;
-    margin-right: 22px;
+    margin-right: 100px;
     top: 30px;
     right: 115px;
     height: 22px;
@@ -73,7 +73,7 @@ header nav .activecircle {
 
 header .previous-years-nav {
     position: absolute;
-    margin-right: 22px;
+    margin-right: 100px;
     top: 63px;
     right: 115px;
     height: 22px;
@@ -284,7 +284,7 @@ section .ticket-btn {
         top: 21px;
         width: 104px;
         height: 36px;
-        font-size: 16px;
+        font-size: 12px;
         font-family: "FiraGO-Bold";
     }
 
