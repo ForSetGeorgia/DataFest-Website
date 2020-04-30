@@ -4,7 +4,7 @@ body{
 
 .page-wrap{
 	overflow: hidden;
-	background-color: #07080f;
+	background-color: rgb(9,10,18);
 	/*background-image: url(../img/bg-pattern-ebf93566e1910cfae7423bb604b889f9.png);*/
 	background-position: top -17px left -13px;
 	background-attachment: fixed;
