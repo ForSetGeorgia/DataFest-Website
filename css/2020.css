@@ -321,6 +321,11 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 1140px) {
+    .agenda-card-title {
+        height: 66px;
+    }
+}
 
 .agenda-section .items .soon {
     color: transparent;

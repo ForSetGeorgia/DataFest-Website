@@ -141,7 +141,7 @@
 }
 
 .page-speakers section.speakers-section .items .item .position{
-  color: #370355;
+  color: var(--main-color-2020);
   font-size: 18px;
   font-family: "FiraGO-Medium";
   padding: 0 20px;
