@@ -111,7 +111,8 @@ function initSpeakersSlider(){
 	    $ctr.scrollLeft(newX);
 	  };
 	  interval = setInterval(doScroll, 40);
-	  tweenToNewSpeed(controller.fullSpeed);
+	  tweenToNewSpeed(1.5);
+		//2019 tweenToNewSpeed(controller.fullSpeed);
 	}
 
 	if ($('.marquee-wrapper').length) {
