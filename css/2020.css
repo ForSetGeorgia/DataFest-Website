@@ -5,6 +5,154 @@
     --main-color-disabled-2020: rgba(254, 155, 163, 0.3)
 }
 
+.agenda-title-span {
+    font-family: FiraGO;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: 0.59px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.agenda-time-zone {
+    font-family: FiraGO;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a0a0a0;
+}
+
+.agenda-title-info {
+    font-family: FiraGO;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: #ffffff;
+}
+.agenda-title-info-2 {
+    font-family: FiraGO;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.82;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: #8e8e8e;
+}
+
+.agenda-grid {
+    margin-bottom: 33px;
+}
+
+.agenda-title-pink {
+    font-family: FiraGO;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: var(--main-color-2020);
+}
+.agenda-title-pink-day-3 {
+    font-family: FiraGO;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: var(--main-color-2020);
+}
+
+@media (max-width: 1400px) {
+    .agenda-title-span {
+        font-size: 20px;
+    }
+
+    .agenda-time-zone {
+        font-size: 20px;
+    }.agenda-title-info {font-size: 18px}
+    .agenda-title-info-2 {font-size: 17px}
+    .agenda-grid {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1140px) {
+    .agenda-title-span {
+        font-size: 20px;
+    }
+
+    .agenda-time-zone {
+        font-size: 20px;
+    }
+    .agenda-title-info {
+        font-size: 16px;
+    }
+    .agenda-title-info-2 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 767.98px) {
+    .agenda-title-span {
+        font-size: 18px;
+    }
+
+    .agenda-days-outer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .agenda-time-zone {
+        font-size: 18px
+    }
+    .agenda-title-info {font-size: 18px}
+    .agenda-title-info-2 {font-size: 17px}
+    .agenda-title-pink-day-3 {
+        font-size: 17px;
+    }
+    .date-day-3 {
+        margin-bottom: 14px !important;
+        margin-top: 18px !important;
+    }
+}
+.themeImg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.themeSpan {
+    margin-top: 8px;
+    font-family: "FiraGO-Regular";
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    /*padding: 0 20px;*/
+    letter-spacing: normal;
+    text-align: center;
+    color: #868686;
+    margin-bottom: 20px;
+    width: 100%
+}
+
 .pink {
     font-family: Metropolis;
     color: var(--main-color-2020);
@@ -51,7 +199,7 @@
     padding: 4px;
 }
 
-.youtube i{
+.youtube i {
     position: relative;
     right: 2px;
 }
@@ -149,6 +297,7 @@
     text-align: left;
     color: rgba(255, 255, 255, .6);
 }
+
 .small80 {
     width: 80%;
 }
@@ -332,6 +481,10 @@
     .agenda-card-title {
         height: 66px;
     }
+
+    .themes {
+        margin-top: 70px;
+    }
 }
 
 .agenda-section .items .soon {
@@ -484,15 +637,19 @@
     .small80 {
         width: 100%;
     }
+
     .grid-item {
         padding: 0;
     }
+
     .grid-item span {
         font-size: 16px;
     }
+
     .small70 {
         width: 100%;
     }
+
     .desc-tkt {
         margin-top: 0;
         margin-bottom: 30px
@@ -594,7 +751,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: 'FiraGO-Regular';
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -719,12 +876,25 @@
         width: 60%;
         height: 70px;
     }
+
+    .title-of-partners {
+        font-size: 28px !important;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 1141px) {
     .info-box-2020 {
         margin-top: -10px;
     }
+
+    .title-of-partners {
+        font-size: 28px !important;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
 }
 
 .pulse {

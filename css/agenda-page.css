@@ -4,7 +4,7 @@
 
 .page-agenda section.agenda-days h2 {
     font-size: 60px;
-    color: #EB2873;
+    color: #fff;
     text-transform: inherit;
     letter-spacing: 12px;
 }
@@ -30,19 +30,37 @@
 }
 
 .page-agenda section.agenda-days .days .item {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 377px;
-    height: 130px;
+    height: 88px;
     position: relative;
     border-radius: 58px;
     overflow: hidden;
     opacity: 0.39;
     transition: opacity .4s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px var(--main-color-2020);
+    background-color: transparent;
+}
+
+.page-agenda section.agenda-days .days .item span {
+    color: var(--main-color-2020);
 }
 
 .page-agenda section.agenda-days .days .item.active,
 .page-agenda section.agenda-days .days .item:hover {
     opacity: 1;
+    background-color: #fff;
+}
+
+.page-agenda section.agenda-days .days .item:hover span {
+    color: #000000;
+}
+
+.page-agenda section.agenda-days .days .item.active span {
+    color: #000000;
 }
 
 .page-agenda section.agenda-days .days .item .img {
@@ -109,7 +127,8 @@
 
 .page-agenda section.agenda-days .content .box .head .date {
     font-family: "FiraGO-Book";
-    color: #2b262e;
+    padding-top: 8px;
+    color: #fff;
 }
 
 .page-agenda section.agenda-days .content .box.purple .head .date {
@@ -117,7 +136,8 @@
 }
 
 .page-agenda section.agenda-days .content .box.pink .head .date {
-    color: #ff1a72;
+    color: var(--main-color-2020);
+    padding-top: 0;
 }
 
 .page-agenda section.agenda-days .content .box .head .title {
@@ -126,7 +146,7 @@
 
 .page-agenda section.agenda-days .content .box .head .title {
     font-family: "FiraGO-Bold";
-    color: #ff1a72;
+    color: var(--main-color-2020);
 }
 
 .page-agenda section.agenda-days .content .box .head .dark-title {
@@ -197,14 +217,14 @@
 
 .page-agenda section.agenda-days .see-spreadsheet {
     display: inline-block;
-    height: 88px;
-    line-height: 88px;
+    height: 80px;
+    line-height: 80px;
     font-size: 25px;
     letter-spacing: 1.8px;
     border-radius: 100px;
-    border: 1px solid #370355;
+    border: 1px solid var(--main-color-2020);
     padding: 0 90px;
-    color: #370355;
+    color: var(--main-color-2020);
     font-family: "FiraGO-Bold";
     white-space: nowrap;
     margin-top: 30px;
@@ -217,7 +237,7 @@
 }
 
 .page-agenda section.agenda-days .see-spreadsheet:hover {
-    background-color: #370355;
+    background-color: var(--main-color-2020);
     color: #fff;
     /*transform: translate(-50%, -50%) scale(1.1);*/
     transform: scale(1.1);
@@ -272,7 +292,7 @@
 
     .page-agenda section.agenda-days .days .item {
         width: 310px;
-        height: 108px;
+        height: 72px;
     }
 
     .page-agenda section.agenda-days .days .item p {
@@ -449,7 +469,7 @@
 
     .page-agenda section.agenda-days .days .item {
         width: 280px;
-        height: 102px;
+        height: 70px;
         margin-bottom: 26px;
     }
 
