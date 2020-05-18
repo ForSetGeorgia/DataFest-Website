@@ -36,7 +36,7 @@
     position: relative;
     border-radius: 58px;
     overflow: hidden;
-    opacity: 0.39;
+    opacity: 1;
     transition: opacity .4s;
     display: flex;
     justify-content: space-around;

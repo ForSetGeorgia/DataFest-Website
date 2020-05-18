@@ -64,6 +64,7 @@ section.partners-section .items .item {
 section.partners-section .items .item .img {
     position: relative;
     padding-bottom: 40%;
+    margin-bottom: 40px;
 }
 
 section.partners-section .items .item .img img {
@@ -71,7 +72,7 @@ section.partners-section .items .item .img img {
     top: 0;
     left: 0;
     max-width: 100%;
-    max-height: 75%;
+    /*max-height: 75%;*/
     opacity: 0.7;
     /*-webkit-filter: grayscale(100%);*/
     /*   -moz-filter: grayscale(100%);*/
@@ -153,8 +154,8 @@ section.partners-section .become-partner:hover {
     }
 
     section.partners-section .items .item .img img {
-        max-width: 63%;
-        max-height: 75%;
+        /*max-width: 63%;*/
+        /*max-height: 75%;*/
     }
 
     section.partners-section .become-partner {
@@ -200,8 +201,8 @@ section.partners-section .become-partner:hover {
     }
 
     section.partners-section .items .item .img img {
-        max-width: 56%;
-        max-height: 65%;
+        /*max-width: 56%;*/
+        /*max-height: 65%;*/
     }
 
     section.partners-section .become-partner {
@@ -245,9 +246,9 @@ section.partners-section .become-partner:hover {
     }
 
     section.partners-section .items .item .img img {
-        max-width: 62%;
+        max-width: 70%;
         margin-left: 19%;
-        max-height: 75%;
+        /*max-height: 75%;*/
     }
 
     section.partners-section .become-partner {
